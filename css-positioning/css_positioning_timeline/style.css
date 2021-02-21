@@ -1,0 +1,63 @@
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 100px;
+  color: #fff;
+  font: 18px/1.5 sans-serif;
+  background-image: linear-gradient(to bottom, #772dff, #6046ff, #4756ff, #2c63ff, #006eff);
+}
+
+h2, p {
+  margin: 0;
+}
+
+/* BEGIN (write your solution here) */
+
+ul {
+  margin: 0;
+  position: relative;
+  padding: 30px 0 30px 50px;
+  list-style-type: none;
+  /* border: 1px red dotted; */
+}
+
+ul::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 2px;
+  height: 100%;
+  background: #fff;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+li::before {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 15%;
+  left: -60px;
+  content: "";
+  border-radius: 50%;
+  background: #80fcff;
+}
+
+/* Ширина и высота: 20px
+Цвет: #80fcff
+Отступ сверху от элемента timeline: 15%
+Круг должен быть отцентрован относительно вертикальной линии.
+Для закругления используйте свойство border-radius со значением 50%. */
+
+/* END */

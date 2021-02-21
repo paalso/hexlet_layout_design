@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background: #f9f9f9;
+}
+
+.header {
+  padding: 20px 40px;
+}
+
+.header-white {
+  background: #fff;
+}
+
+.nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav>ul {
+  display: flex;
+}
+
+.nav li {
+  /* BEGIN (write your solution here) */
+  position: relative;
+  /* END */
+  padding: 15px 30px;
+  cursor: pointer;
+  border: 1px red dotted;
+}
+
+.sub-menu {
+  /* BEGIN (write your solution here) */
+  display: none;
+  /* END */
+}
+
+.nav li:hover>.sub-menu {
+  /* BEGIN (write your solution here) */
+  display: block;
+  position: absolute;
+  left: 0;
+  /* END */
+  width: max-content;
+  padding-top: 25px;
+  background: #fff;
+  -webkit-box-shadow: 5px 5px 5px 0 rgba(240, 240, 240, 1);
+  -moz-box-shadow: 5px 5px 5px 0 rgba(240, 240, 240, 1);
+  box-shadow: 5px 5px 5px 0 rgba(240, 240, 240, 1);
+}
+
+.nav a {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav .nav-title {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.nav li:hover>a, .nav li:hover>.nav-title {
+  color: #717171;
+}

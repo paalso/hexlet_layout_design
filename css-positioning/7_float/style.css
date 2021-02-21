@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.left-aside {
+  /* BEGIN (write your solution here) */
+  float: left;
+  
+  /* END */
+  width: 20%;
+  height: 200px;
+
+  text-align: center;
+
+  background: #2196f3;
+}
+
+.right-aside {
+  /* BEGIN (write your solution here) */
+  float: left;
+  
+  /* END */
+  width: 20%;
+  height: 200px;
+
+  text-align: center;
+
+  background: #2196f3;
+}
+
+main {
+  /* BEGIN (write your solution here) */
+  float: left;
+  
+  /* END */
+  width: 60%;
+  height: 200px;
+
+  color: #fff;
+  text-align: center;
+
+  background: #3f51b5;
+}
+
+footer {
+  /* BEGIN (write your solution here) */
+  clear: both;
+  
+  /* END */
+  height: 120px;
+
+  color: #fff;
+  text-align: center;
+
+  background: #00bcd4;
+}

@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://ru.hexlet.io/challenges/css_positioning_timeline -->
+<html lang="ru" prefix="og: https://ogp.me/ns#" class="fontawesome-i2svg-active fontawesome-i2svg-complete"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Timeline - CSS: Позиционирование - Испытания</title>
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="YDP_GWvzgF1nfShBkRbkg1gz2qo_TRyWa_KcQFbd2moUMccRJe0WPpZohP3htzvS6wiyqNgHNFpVZLaZHoeJAQ">
+<meta name="csp-nonce">
+<style type="text/css">svg:not(:root).svg-inline--fa {
+  overflow: visible;
+}
+
+.svg-inline--fa {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.225em;
+}
+.svg-inline--fa.fa-w-1 {
+  width: 0.0625em;
+}
+.svg-inline--fa.fa-w-2 {
+  width: 0.125em;
+}
+.svg-inline--fa.fa-w-3 {
+  width: 0.1875em;
+}
+.svg-inline--fa.fa-w-4 {
+  width: 0.25em;
+}
+.svg-inline--fa.fa-w-5 {
+  width: 0.3125em;
+}
+.svg-inline--fa.fa-w-6 {
+  width: 0.375em;
+}
+.svg-inline--fa.fa-w-7 {
+  width: 0.4375em;
+}
+.svg-inline--fa.fa-w-8 {
+  width: 0.5em;
+}
+.svg-inline--fa.fa-w-9 {
+  width: 0.5625em;
+}
+.svg-inline--fa.fa-w-10 {
+  width: 0.625em;
+}
+.svg-inline--fa.fa-w-11 {
+  width: 0.6875em;
+}
+.svg-inline--fa.fa-w-12 {
+  width: 0.75em;
+}
+.svg-inline--fa.fa-w-13 {
+  width: 0.8125em;
+}
+.svg-inline--fa.fa-w-14 {
+  width: 0.875em;
+}
+.svg-inline--fa.fa-w-15 {
+  width: 0.9375em;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+.svg-inline--fa.fa-w-17 {
+  width: 1.0625em;
+}
+.svg-inline--fa.fa-w-18 {
+  width: 1.125em;
+}
+.svg-inline--fa.fa-w-19 {
+  width: 1.1875em;
+}
+.svg-inline--fa.fa-w-20 {
+  width: 1.25em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: 0.3em;
+  width: auto;
+}
+.svg-inline--fa.fa-border {
+  height: 1.5em;
+}
+.svg-inline--fa.fa-li {
+  width: 2em;
+}
+.svg-inline--fa.fa-fw {
+  width: 1.25em;
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: #ff253a;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  height: 1.5em;
+  line-height: 1;
+  max-width: 5em;
+  min-width: 1.5em;
+  overflow: hidden;
+  padding: 0.25em;
+  right: 0;
+  text-overflow: ellipsis;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: 0;
+  right: 0;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: 0;
+  left: 0;
+  right: auto;
+  top: auto;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: bottom left;
+          transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  right: 0;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: 0;
+  right: auto;
+  top: 0;
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.fa-lg {
+  font-size: 1.3333333333em;
+  line-height: 0.75em;
+  vertical-align: -0.0667em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: 2.5em;
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: -2em;
+  position: absolute;
+  text-align: center;
+  width: 2em;
+  line-height: inherit;
+}
+
+.fa-border {
+  border: solid 0.08em #eee;
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left,
+.fas.fa-pull-left,
+.far.fa-pull-left,
+.fal.fa-pull-left,
+.fab.fa-pull-left {
+  margin-right: 0.3em;
+}
+.fa.fa-pull-right,
+.fas.fa-pull-right,
+.far.fa-pull-right,
+.fal.fa-pull-right,
+.fab.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+          animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+          animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical,
+:root .fa-flip-both {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.fa-stack {
+  display: inline-block;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: 0.4;
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: 1;
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}
+
+.fad.fa-inverse {
+  color: #fff;
+}</style><link rel="shortcut icon" type="image/x-icon" href="https://cdn2.hexlet.io/assets/favicon-8fa102c058afb01de5016a155d7db433283dc7e08ddc3c4d1aef527c1b8502b6.ico">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+<script type="text/javascript" src="./Timeline - CSS_ Позиционирование - Испытания_files/main.428caf42.js.Без названия"></script><script type="text/javascript" src="./Timeline - CSS_ Позиционирование - Испытания_files/vendor.d4c99561.js.Без названия"></script><script type="text/javascript" async="" src="./Timeline - CSS_ Позиционирование - Испытания_files/saved_resource"></script><script type="text/javascript" async="" src="./Timeline - CSS_ Позиционирование - Испытания_files/analytics.js.Без названия"></script><script type="text/javascript" async="" src="./Timeline - CSS_ Позиционирование - Испытания_files/js"></script><script type="text/javascript" async="" src="./Timeline - CSS_ Позиционирование - Испытания_files/analytics.js.Без названия"></script><script type="text/javascript" integrity="sha384-RsEu4WZflrqYcEacpfoGSib3qaSvdYwT4D+DrWqeBuDarSzjwUQR1jO8gDiXZd0E" crossorigin="anonymous" async="" src="./Timeline - CSS_ Позиционирование - Испытания_files/amplitude-6.2.0-min.gz.js.Без названия"></script><script async="" src="./Timeline - CSS_ Позиционирование - Испытания_files/fbevents.js.Без названия"></script><script src="./Timeline - CSS_ Позиционирование - Испытания_files/diffuser.js.Без названия" async=""></script><script async="" src="./Timeline - CSS_ Позиционирование - Испытания_files/profitwell.js.Без названия"></script><script async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script async="" src="./Timeline - CSS_ Позиционирование - Испытания_files/gtm.js.Без названия"></script><script type="text/javascript">var _rollbarConfig = {"accessToken":"fc27636027d0460bbc1578d97d0d27ad","captureUncaught":true,"captureUnhandledRejections":true,"hostWhiteList":["https://cdn2.hexlet.io"],"ignoredMessages":["(?-mix:VK is not defined)","(?-mix:VK.Retargeting is undefined)","(?-mix:pktAnnotationHighlighter)","(?-mix:amplitude)","(?-mix:grecaptcha)","(?-mix:google_tag_manager)","(?-mix:Unexpected keyword)","(?-mix:illegal character)","(?-mix:Unexpected identifier)","(?-mix:Illegal invocation)","(?-mix:missing = in const declaration)"],"payload":{"client":{"code_version":"v5082","guess_uncaught_frames":true},"environment":"production","person":{"id":98638,"username":"Павел Сорока","email":null}}};</script>
+<script type="text/javascript">!function(r){var e={};function o(n){if(e[n])return e[n].exports;var t=e[n]={i:n,l:!1,exports:{}};return r[n].call(t.exports,t,t.exports,o),t.l=!0,t.exports}o.m=r,o.c=e,o.d=function(r,e,n){o.o(r,e)||Object.defineProperty(r,e,{enumerable:!0,get:n})},o.r=function(r){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(r,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(r,"__esModule",{value:!0})},o.t=function(r,e){if(1&e&&(r=o(r)),8&e)return r;if(4&e&&"object"==typeof r&&r&&r.__esModule)return r;var n=Object.create(null);if(o.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:r}),2&e&&"string"!=typeof r)for(var t in r)o.d(n,t,function(e){return r[e]}.bind(null,t));return n},o.n=function(r){var e=r&&r.__esModule?function(){return r.default}:function(){return r};return o.d(e,"a",e),e},o.o=function(r,e){return Object.prototype.hasOwnProperty.call(r,e)},o.p="",o(o.s=0)}([function(r,e,o){"use strict";var n=o(1),t=o(5);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdn.rollbar.com/rollbarjs/refs/tags/v2.19.3/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,e,o){"use strict";var n=o(2),t=o(3);function a(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}var l=0;function i(r,e){this.options=r,this._rollbarOldOnError=null;var o=l++;this.shimId=function(){return o},"undefined"!=typeof window&&window._rollbarShims&&(window._rollbarShims[o]={handler:e,messages:[]})}var s=o(4),d=function(r,e){return new i(r,e)},c=function(r){return new s(d,r)};function u(r){return a((function(){var e=this,o=Array.prototype.slice.call(arguments,0),n={shim:e,method:r,args:o,ts:new Date};window._rollbarShims[this.shimId()].messages.push(n)}))}i.prototype.loadFull=function(r,e,o,n,t){var l=!1,i=e.createElement("script"),s=e.getElementsByTagName("script")[0],d=s.parentNode;i.crossOrigin="",i.src=n.rollbarJsUrl,o||(i.async=!0),i.onload=i.onreadystatechange=a((function(){if(!(l||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){i.onload=i.onreadystatechange=null;try{d.removeChild(i)}catch(r){}l=!0,function(){var e;if(void 0===r._rollbarDidLoad){e=new Error("rollbar.js did not load");for(var o,n,a,l,i=0;o=r._rollbarShims[i++];)for(o=o.messages||[];n=o.shift();)for(a=n.args||[],i=0;i<a.length;++i)if("function"==typeof(l=a[i])){l(e);break}}"function"==typeof t&&t(e)}()}})),d.insertBefore(i,s)},i.prototype.wrap=function(r,e,o){try{var n;if(n="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){o&&"function"==typeof o&&o.apply(this,arguments);try{return r.apply(this,arguments)}catch(o){var e=o;throw e&&("string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e),e}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(e){return r}};for(var p="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),f=0;f<p.length;++f)i.prototype[p[f]]=u(p[f]);r.exports={setupShim:function(r,e){if(r){var o=e.globalAlias||"Rollbar";if("object"==typeof r[o])return r[o];r._rollbarShims={},r._rollbarWrappedError=null;var l=new c(e);return a((function(){e.captureUncaught&&(l._rollbarOldOnError=r.onerror,n.captureUncaughtExceptions(r,l,!0),e.wrapGlobalEventHandlers&&t(r,l,!0)),e.captureUnhandledRejections&&n.captureUnhandledRejections(r,l,!0);var a=e.autoInstrument;return!1!==e.enabled&&(void 0===a||!0===a||"object"==typeof a&&a.network)&&r.addEventListener&&(r.addEventListener("load",l.captureLoad.bind(l)),r.addEventListener("DOMContentLoaded",l.captureDomContentLoaded.bind(l))),r[o]=l,l}))()}},Rollbar:c}},function(r,e,o){"use strict";function n(r,e,o,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null);var t=e.handleUncaughtException.apply(e,n);o&&o.apply(r,n),"anonymous"===t&&(e.anonymousErrorsPending+=1)}r.exports={captureUncaughtExceptions:function(r,e,o){if(r){var t;if("function"==typeof e._rollbarOldOnError)t=e._rollbarOldOnError;else if(r.onerror){for(t=r.onerror;t._rollbarOldOnError;)t=t._rollbarOldOnError;e._rollbarOldOnError=t}e.handleAnonymousErrors();var a=function(){var o=Array.prototype.slice.call(arguments,0);n(r,e,t,o)};o&&(a._rollbarOldOnError=t),r.onerror=a}},captureUnhandledRejections:function(r,e,o){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var o,n,t;try{o=r.reason}catch(r){o=void 0}try{n=r.promise}catch(r){n="[unhandledrejection] error getting `promise` from event"}try{t=r.detail,!o&&t&&(o=t.reason,n=t.promise)}catch(r){}o||(o="[unhandledrejection] error getting `reason` from event"),e&&e.handleUnhandledRejection&&e.handleUnhandledRejection(o,n)};n.belongsToShim=o,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}}}},function(r,e,o){"use strict";function n(r,e,o){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){for(var n=e.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(e,o,t){n.call(this,e,r.wrap(o),t)};t._rollbarOldAdd=n,t.belongsToShim=o,e.addEventListener=t;for(var a=e.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,e,o){a.call(this,r,e&&e._rollbar_wrapped||e,o)};l._rollbarOldRemove=a,l.belongsToShim=o,e.removeEventListener=l}}r.exports=function(r,e,o){if(r){var t,a,l="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(t=0;t<l.length;++t)r[a=l[t]]&&r[a].prototype&&n(e,r[a].prototype,o)}}},function(r,e,o){"use strict";function n(r,e){this.impl=r(e,this),this.options=e,function(r){for(var e=function(r){return function(){var e=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,e)}},o="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleAnonymousErrors,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),n=0;n<o.length;n++)r[o[n]]=e(o[n])}(n.prototype)}n.prototype._swapAndProcessMessages=function(r,e){var o,n,t;for(this.impl=r(this.options);o=e.shift();)n=o.method,t=o.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],o.ts]):this[n].apply(this,t));return this},r.exports=n},function(r,e,o){"use strict";r.exports=function(r){return function(e){if(!e&&!window._rollbarInitialized){for(var o,n,t=(r=r||{}).globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;o=window._rollbarShims[i++];)n||(n=o.handler),o.handler._swapAndProcessMessages(l,o.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);</script>
+<meta content="IE=Edge" http-equiv="X-UA-Compatible">
+<meta content="b9d3902d34" name="verify-admitad">
+
+<script>
+//<![CDATA[
+window.gon={};gon.is_bot=false;gon.applications={};gon.hs={"autoloadBeacon":true};gon.current_user={"id":98638,"email":"40a.pvl@gmail.com","username":"paalso","created_at":"2016-03-28T20:50:36.786+03:00","last_viewed_notification_id":401661,"paid_days_count":61,"full_name":"Павел Сорока","text":"40a.pvl@gmail.com (paalso)","is_guest":false,"is_mentor":null,"current_company":null,"can_use_paid_features":true,"url":"https://hexlet.io/u/paalso"};gon.token="_1UxyQmF8KReg9-mKbuvDtQrIofMY99Jsz3vCqdJ6hCLVwnBR5tmx6-WcxpZGnBfZxBKhSsp94WNq8XT7xO5ew";gon.disqus_name="hexletio";gon.locale="ru";gon.rails_env="production";gon.mobile=false;gon.google={"analytics_key":"UA-1360700-51","optimize_key":"GTM-5QDVFPF"};gon.social_signin=false;gon.typoreporter_google_form_id="1FAIpQLSeibfGq-KvWQ2Fyru-zkFFRVTLBuzXAHAoEyN1p49FtDmNoNA";gon.notifications=[{"id":1226677,"message":"Ваше ревью для \u003cb\u003eЕдиницы измерения\u003c/b\u003e было создано","url":"/code_reviews/374645","human_created_at":"2 минуты назад","icon":"\u003cspan class=\"fas fa-bicycle\"\u003e\u003c/span\u003e"},{"id":1212508,"message":"Добавлен урок \u003cb\u003eПереполнение\u003c/b\u003e в курсе \u003cb\u003eОсновы вёрстки контента\u003c/b\u003e","url":"https://ru.hexlet.io/courses/css-content/lessons/overflow/theory_unit","human_created_at":"25 января 2021","icon":"\u003cspan class=\"fas fa-star\"\u003e\u003c/span\u003e"},{"id":1207144,"message":"Добавлен урок \u003cb\u003eФормы\u003c/b\u003e в курсе \u003cb\u003eОсновы вёрстки контента\u003c/b\u003e","url":"https://ru.hexlet.io/courses/css-content/lessons/forms/theory_unit","human_created_at":"18 января 2021","icon":"\u003cspan class=\"fas fa-star\"\u003e\u003c/span\u003e"},{"id":1204702,"message":"Ваше ревью для \u003cb\u003eПозиционирование модального окна\u003c/b\u003e было создано","url":"/code_reviews/362964","human_created_at":"15 января 2021","icon":"\u003cspan class=\"fas fa-bicycle\"\u003e\u003c/span\u003e"},{"id":1204551,"message":"Ваше ревью для \u003cb\u003eТаблицы\u003c/b\u003e было создано","url":"/code_reviews/362886","human_created_at":"15 января 2021","icon":"\u003cspan class=\"fas fa-bicycle\"\u003e\u003c/span\u003e"},{"id":1203898,"message":"Добавлен урок \u003cb\u003eПсевдоэлементы\u003c/b\u003e в курсе \u003cb\u003eОсновы вёрстки контента\u003c/b\u003e","url":"https://ru.hexlet.io/courses/css-content/lessons/pseudoelements/theory_unit","human_created_at":"14 января 2021","icon":"\u003cspan class=\"fas fa-star\"\u003e\u003c/span\u003e"}];
+//]]>
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"Hexlet","url":"https://hexlet.io","sameAs":["https://www.facebook.com/Hexlet","https://www.youtube.com/user/HexletUniversity","https://twitter.com/HexletHQ","https://soundcloud.com/hexlet"],"legalName":"Hexlet Ltd.","address":"UMA Esplanadi, Pohjoisesplanadi 39, 00100 Helsinki, Finland","vatID":"VAT ID: FI26641607","telephone":"+7 (495) 147-73-79","logo":{"@type":"ImageObject","url":"https://cdn2.hexlet.io/assets/hexlet_logo-e99fc2b3b7c1eec88899f3af1435a39aaac6fd29d011dfe2342499c0884b7a96.png"}}
+
+</script>
+
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WK88TH');
+</script>
+
+<script>
+  // in development mode
+  if (!window.Rollbar) {
+    Rollbar = {
+      error: function() {
+      },
+      configure: function() {
+      }
+    }
+  }
+  
+  Rollbar.configure({
+    payload: {
+      person: gon.current_user
+    },
+  });
+</script>
+
+<link rel="stylesheet" media="all" href="./Timeline - CSS_ Позиционирование - Испытания_files/365-a7ec18a0.css">
+<link rel="stylesheet" media="all" href="./Timeline - CSS_ Позиционирование - Испытания_files/application-d8c97fb1.css">
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://ru.hexlet.io/lessons.rss">
+<link href="https://ru.hexlet.io/challenges/css_positioning_timeline" rel="canonical">
+<meta content="website" property="og:type">
+<meta content="Timeline" property="og:title">
+<meta content="https://ru.hexlet.io/challenges/css_positioning_timeline" property="og:url">
+<meta content="CSS: Позиционирование: 
+
+Timeline — распространённый приём подачи информации на веб-сайтах. Это одновременно информативный и визуальный инструмент, позволяющий быстро донести важные этапы для пользователя.
+
+Существует множество различных дизайнов для создания временной шкалы и одну из них вы реализуете в этом испытании.
+
+Результатом выполнения задания станет следующий макет:
+
+
+
+Вся необходимая вёрстка уже представлена в файле index.html. Допишите стили для нужных классов. Сделайте их без привязки к определённым тегам. Это позволит использовать не только ту структуру, которая дана, но и построить timeline на других тегах.
+Базовые стили обёртки timeline
+
+Внутренние отступы: 30px сверху, 0px справа, 30 пикселей снизу и 50px слева.
+От обёртки строится вертикальная черта. Она должна растягиваться на 100 процентов высоты обёртки. Ширина линии: 2px, цвет: #fff.
+
+Базовые стили элемента timeline
+
+Внешний отступ снизу: 100px. У последнего элемента не должно быть отступа.
+
+Базовый стиль круга элемента timeline
+
+Ширина и высота: 20px
+Цвет: #80fcff
+
+Отступ сверху от элемента timeline: 15%
+Круг должен быть отцентрован относительно вертикальной линии.
+
+
+Для закругления используйте свойство border-radius со значением 50%.
+Подсказки
+
+Подумайте, какие значения left имеют вертикальная линия и круг. Исходите из ширины элементов и внутренних отступов обёртки .timeline
+
+
+
+" property="og:description">
+<meta content="https://cdn2.hexlet.io/assets/hexlet_logo_wide-35dfc9cd81ca50f5829cb3a50c4a81e30f4a9b42547e67d1d1a9a39e35e0f968.png" property="og:image">
+<meta content="CSS: Позиционирование 
+
+Timeline — распространённый приём подачи информации на веб-сайтах. Это одновременно информативный и визуальный инструмент, позволяющий быстро донести важные этапы для пользователя.
+
+Существует множество различных дизайнов для создания временной шкалы и одну из них вы реализуете в этом испытании.
+
+Результатом выполнения задания станет следующий макет:
+
+
+
+Вся необходимая вёрстка уже представлена в файле index.html. Допишите стили для нужных классов. Сделайте их без привязки к определённым тегам. Это позволит использовать не только ту структуру, которая дана, но и построить timeline на других тегах.
+Базовые стили обёртки timeline
+
+Внутренние отступы: 30px сверху, 0px справа, 30 пикселей снизу и 50px слева.
+От обёртки строится вертикальная черта. Она должна растягиваться на 100 процентов высоты обёртки. Ширина линии: 2px, цвет: #fff.
+
+Базовые стили элемента timeline
+
+Внешний отступ снизу: 100px. У последнего элемента не должно быть отступа.
+
+Базовый стиль круга элемента timeline
+
+Ширина и высота: 20px
+Цвет: #80fcff
+
+Отступ сверху от элемента timeline: 15%
+Круг должен быть отцентрован относительно вертикальной линии.
+
+
+Для закругления используйте свойство border-radius со значением 50%.
+Подсказки
+
+Подумайте, какие значения left имеют вертикальная линия и круг. Исходите из ширины элементов и внутренних отступов обёртки .timeline
+
+
+
+" name="description">
+
+<style type="text/css">.hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}</style><script type="text/javascript" charset="utf-8" src="./Timeline - CSS_ Позиционирование - Испытания_files/saved_resource(1)" async=""></script><script type="text/javascript" charset="utf-8" src="./Timeline - CSS_ Позиционирование - Испытания_files/t_prism_sitemessages.php" async=""></script><style hs-beacon="active" data-styled-version="5.1.1"></style></head>
+<body class="min-vh-100">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK88TH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white hexlet-navbar border-bottom">
+<a aria-hidden="true" class="navbar-brand mr-4" href="https://ru.hexlet.io/my">
+Хекслет
+</a>
+<button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarResponsive">
+<ul class="navbar-nav mr-auto">
+<li class="nav-item"><a class="nav-link hexlet-navbar-link px-3 " href="https://ru.hexlet.io/programs"><div class="my-2">Программы</div></a></li>
+<li class="nav-item"><a class="nav-link hexlet-navbar-link px-3 " href="https://ru.hexlet.io/courses"><div class="my-2">Курсы</div></a></li>
+<li class="nav-item"><a class="nav-link hexlet-navbar-link px-3 " href="https://ru.hexlet.io/pricing"><div class="my-2">Цены</div></a></li>
+<li class="nav-item"><a class="nav-link hexlet-navbar-link px-3 " href="https://ru.hexlet.io/teams"><div class="my-2">Компаниям</div></a></li>
+</ul>
+<div class="navbar-nav">
+<div class="d-flex"></div>
+<div class="nav-item">
+<div class="dropdown">
+<a class="nav-link" href="https://ru.hexlet.io/search"><svg class="svg-inline--fa fa-search fa-w-16" aria-hidden="true" focusable="false" data-prefix="far" data-icon="search" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"></path></svg><!-- <span class="far fa-search"></span> Font Awesome fontawesome.com -->
+</a></div>
+</div>
+<div class="nav-item" id="notifications"><div class="dropdown"><a class="nav-link dropdown-toggle" href="https://ru.hexlet.io/challenges/css_positioning_timeline#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" role="button"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bell" class="svg-inline--fa fa-bell fa-w-14 mr-1 text-danger" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path></svg></a><div class="dropdown-menu dropdown-menu-right vw-100 py-0 overflow-hidden" aria-labelledby="navbarDropdownMenuLink" style="max-width: 430px;"><div class="dropdown-header d-flex"><span>Оповещения</span><a href="https://ru.hexlet.io/account/notifications/edit" class="ml-auto x-link-only-hover"><span>настройки</span></a></div><a class="dropdown-item text-wrap border-top pt-2 px-3 d-flex" href="https://ru.hexlet.io/code_reviews/374645"><div class="hexlet-notification-icon rounded-circle mr-2 bg-info text-white flex-shrink-0 d-flex"><div class="m-auto"><svg class="svg-inline--fa fa-bicycle fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bicycle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M512.509 192.001c-16.373-.064-32.03 2.955-46.436 8.495l-77.68-125.153A24 24 0 0 0 368.001 64h-64c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h50.649l14.896 24H256.002v-16c0-8.837-7.163-16-16-16h-87.459c-13.441 0-24.777 10.999-24.536 24.437.232 13.044 10.876 23.563 23.995 23.563h48.726l-29.417 47.52c-13.433-4.83-27.904-7.483-42.992-7.52C58.094 191.83.412 249.012.002 319.236-.413 390.279 57.055 448 128.002 448c59.642 0 109.758-40.793 123.967-96h52.033a24 24 0 0 0 20.406-11.367L410.37 201.77l14.938 24.067c-25.455 23.448-41.385 57.081-41.307 94.437.145 68.833 57.899 127.051 126.729 127.719 70.606.685 128.181-55.803 129.255-125.996 1.086-70.941-56.526-129.72-127.476-129.996zM186.75 265.772c9.727 10.529 16.673 23.661 19.642 38.228h-43.306l23.664-38.228zM128.002 400c-44.112 0-80-35.888-80-80s35.888-80 80-80c5.869 0 11.586.653 17.099 1.859l-45.505 73.509C89.715 331.327 101.213 352 120.002 352h81.3c-12.37 28.225-40.562 48-73.3 48zm162.63-96h-35.624c-3.96-31.756-19.556-59.894-42.383-80.026L237.371 184h127.547l-74.286 120zm217.057 95.886c-41.036-2.165-74.049-35.692-75.627-76.755-.812-21.121 6.633-40.518 19.335-55.263l44.433 71.586c4.66 7.508 14.524 9.816 22.032 5.156l13.594-8.437c7.508-4.66 9.817-14.524 5.156-22.032l-44.468-71.643a79.901 79.901 0 0 1 19.858-2.497c44.112 0 80 35.888 80 80-.001 45.54-38.252 82.316-84.313 79.885z"></path></svg><!-- <span class="fas fa-bicycle"></span> Font Awesome fontawesome.com --></div></div><div class="small"><div>Ваше ревью для <b>Единицы измерения</b> было создано</div><div class="d-block my-1 text-muted">2 минуты назад</div></div></a><a class="dropdown-item text-wrap border-top pt-2 px-3 d-flex" href="https://ru.hexlet.io/courses/css-content/lessons/overflow/theory_unit"><div class="hexlet-notification-icon rounded-circle mr-2 bg-info text-white flex-shrink-0 d-flex"><div class="m-auto"><svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg><!-- <span class="fas fa-star"></span> Font Awesome fontawesome.com --></div></div><div class="small"><div>Добавлен урок <b>Переполнение</b> в курсе <b>Основы вёрстки контента</b></div><div class="d-block my-1 text-muted">25 января 2021</div></div></a><a class="dropdown-item text-wrap border-top pt-2 px-3 d-flex" href="https://ru.hexlet.io/courses/css-content/lessons/forms/theory_unit"><div class="hexlet-notification-icon rounded-circle mr-2 bg-info text-white flex-shrink-0 d-flex"><div class="m-auto"><svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg><!-- <span class="fas fa-star"></span> Font Awesome fontawesome.com --></div></div><div class="small"><div>Добавлен урок <b>Формы</b> в курсе <b>Основы вёрстки контента</b></div><div class="d-block my-1 text-muted">18 января 2021</div></div></a><a class="dropdown-item text-wrap border-top pt-2 px-3 d-flex" href="https://ru.hexlet.io/code_reviews/362964"><div class="hexlet-notification-icon rounded-circle mr-2 bg-info text-white flex-shrink-0 d-flex"><div class="m-auto"><svg class="svg-inline--fa fa-bicycle fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bicycle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M512.509 192.001c-16.373-.064-32.03 2.955-46.436 8.495l-77.68-125.153A24 24 0 0 0 368.001 64h-64c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h50.649l14.896 24H256.002v-16c0-8.837-7.163-16-16-16h-87.459c-13.441 0-24.777 10.999-24.536 24.437.232 13.044 10.876 23.563 23.995 23.563h48.726l-29.417 47.52c-13.433-4.83-27.904-7.483-42.992-7.52C58.094 191.83.412 249.012.002 319.236-.413 390.279 57.055 448 128.002 448c59.642 0 109.758-40.793 123.967-96h52.033a24 24 0 0 0 20.406-11.367L410.37 201.77l14.938 24.067c-25.455 23.448-41.385 57.081-41.307 94.437.145 68.833 57.899 127.051 126.729 127.719 70.606.685 128.181-55.803 129.255-125.996 1.086-70.941-56.526-129.72-127.476-129.996zM186.75 265.772c9.727 10.529 16.673 23.661 19.642 38.228h-43.306l23.664-38.228zM128.002 400c-44.112 0-80-35.888-80-80s35.888-80 80-80c5.869 0 11.586.653 17.099 1.859l-45.505 73.509C89.715 331.327 101.213 352 120.002 352h81.3c-12.37 28.225-40.562 48-73.3 48zm162.63-96h-35.624c-3.96-31.756-19.556-59.894-42.383-80.026L237.371 184h127.547l-74.286 120zm217.057 95.886c-41.036-2.165-74.049-35.692-75.627-76.755-.812-21.121 6.633-40.518 19.335-55.263l44.433 71.586c4.66 7.508 14.524 9.816 22.032 5.156l13.594-8.437c7.508-4.66 9.817-14.524 5.156-22.032l-44.468-71.643a79.901 79.901 0 0 1 19.858-2.497c44.112 0 80 35.888 80 80-.001 45.54-38.252 82.316-84.313 79.885z"></path></svg><!-- <span class="fas fa-bicycle"></span> Font Awesome fontawesome.com --></div></div><div class="small"><div>Ваше ревью для <b>Позиционирование модального окна</b> было создано</div><div class="d-block my-1 text-muted">15 января 2021</div></div></a><a class="dropdown-item text-wrap border-top pt-2 px-3 d-flex" href="https://ru.hexlet.io/code_reviews/362886"><div class="hexlet-notification-icon rounded-circle mr-2 bg-info text-white flex-shrink-0 d-flex"><div class="m-auto"><svg class="svg-inline--fa fa-bicycle fa-w-20" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bicycle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M512.509 192.001c-16.373-.064-32.03 2.955-46.436 8.495l-77.68-125.153A24 24 0 0 0 368.001 64h-64c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h50.649l14.896 24H256.002v-16c0-8.837-7.163-16-16-16h-87.459c-13.441 0-24.777 10.999-24.536 24.437.232 13.044 10.876 23.563 23.995 23.563h48.726l-29.417 47.52c-13.433-4.83-27.904-7.483-42.992-7.52C58.094 191.83.412 249.012.002 319.236-.413 390.279 57.055 448 128.002 448c59.642 0 109.758-40.793 123.967-96h52.033a24 24 0 0 0 20.406-11.367L410.37 201.77l14.938 24.067c-25.455 23.448-41.385 57.081-41.307 94.437.145 68.833 57.899 127.051 126.729 127.719 70.606.685 128.181-55.803 129.255-125.996 1.086-70.941-56.526-129.72-127.476-129.996zM186.75 265.772c9.727 10.529 16.673 23.661 19.642 38.228h-43.306l23.664-38.228zM128.002 400c-44.112 0-80-35.888-80-80s35.888-80 80-80c5.869 0 11.586.653 17.099 1.859l-45.505 73.509C89.715 331.327 101.213 352 120.002 352h81.3c-12.37 28.225-40.562 48-73.3 48zm162.63-96h-35.624c-3.96-31.756-19.556-59.894-42.383-80.026L237.371 184h127.547l-74.286 120zm217.057 95.886c-41.036-2.165-74.049-35.692-75.627-76.755-.812-21.121 6.633-40.518 19.335-55.263l44.433 71.586c4.66 7.508 14.524 9.816 22.032 5.156l13.594-8.437c7.508-4.66 9.817-14.524 5.156-22.032l-44.468-71.643a79.901 79.901 0 0 1 19.858-2.497c44.112 0 80 35.888 80 80-.001 45.54-38.252 82.316-84.313 79.885z"></path></svg><!-- <span class="fas fa-bicycle"></span> Font Awesome fontawesome.com --></div></div><div class="small"><div>Ваше ревью для <b>Таблицы</b> было создано</div><div class="d-block my-1 text-muted">15 января 2021</div></div></a><a class="dropdown-item text-wrap border-top pt-2 px-3 d-flex" href="https://ru.hexlet.io/courses/css-content/lessons/pseudoelements/theory_unit"><div class="hexlet-notification-icon rounded-circle mr-2 bg-info text-white flex-shrink-0 d-flex"><div class="m-auto"><svg class="svg-inline--fa fa-star fa-w-18" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg><!-- <span class="fas fa-star"></span> Font Awesome fontawesome.com --></div></div><div class="small"><div>Добавлен урок <b>Псевдоэлементы</b> в курсе <b>Основы вёрстки контента</b></div><div class="d-block my-1 text-muted">14 января 2021</div></div></a></div></div></div>
+<div class="nav-item">
+<div class="dropdown">
+<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle nav-link" data-toggle="dropdown" href="https://ru.hexlet.io/challenges/css_positioning_timeline#" title="Баллов: 3905">
+<svg class="svg-inline--fa fa-user fa-w-14" aria-hidden="true" focusable="false" data-prefix="far" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z"></path></svg><!-- <span class="far fa-user"></span> Font Awesome fontawesome.com -->
+</a>
+<span class="sr-only">Список</span>
+<div class="dropdown-menu dropdown-menu-right">
+<div class="dropdown-header d-flex align-items-center position-relative">
+<img class="mr-2 rounded-circle" width="50" height="50" src="./Timeline - CSS_ Позиционирование - Испытания_files/you-bc72575a0e6eb39de3e28e54a8df1138beaa57cd5300061ecb5c202773131f9e.jpg">
+<div>
+<a title="Мой профиль" class="h6 font-weight-bold text-dark x-link-only-hover mb-0 stretched-link" href="https://ru.hexlet.io/u/paalso">paalso</a>
+<div class="text-muted">40a.pvl@gmail.com</div>
+</div>
+</div>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="https://ru.hexlet.io/account/profile/edit">Настройки</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="https://ru.hexlet.io/account/promo_codes/new">Промокод</a>
+<a class="dropdown-item" href="https://ru.hexlet.io/gift">Доступ в подарок</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" target="_blank" href="https://help.hexlet.io/">Помощь</a>
+<form class="button_to" method="post" action="https://ru.hexlet.io/session"><input type="hidden" name="_method" value="delete"><input class="dropdown-item" type="submit" value="Выйти"><input type="hidden" name="authenticity_token" value="YDP_GWvzgF1nfShBkRbkg1gz2qo_TRyWa_KcQFbd2moUMccRJe0WPpZohP3htzvS6wiyqNgHNFpVZLaZHoeJAQ"></form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+
+
+<main class="mb-5">
+<div class="jumbotron jumbotron-fluid pt-4 pb-5">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-12 col-lg-10">
+<div class="d-flex align-items-center mb-2">
+<svg class="svg-inline--fa fa-bars fa-w-14 mr-2 text-muted" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg><!-- <span class="fas fa-bars mr-2 text-muted"></span> Font Awesome fontawesome.com -->
+<a class="x-link-only-hover" href="https://ru.hexlet.io/challenges">Испытания</a>
+</div>
+<h1>Html: Timeline</h1>
+<span class="mr-3">
+<svg class="svg-inline--fa fa-chalkboard fa-w-20" aria-hidden="true" focusable="false" data-prefix="fal" data-icon="chalkboard" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><path fill="currentColor" d="M632 448h-24V64c0-17.67-14.33-32-32-32H64c-17.67 0-32 14.33-32 32v384H8c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8h624c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8zm-344 0v-64h192v64H288zm224 0v-64c0-17.67-14.33-32-32-32H288c-17.67 0-32 14.33-32 32v64H64V64h512v384h-64z"></path></svg><!-- <span class="fal fa-chalkboard"></span> Font Awesome fontawesome.com -->
+<a class="x-link-only-hover" href="https://ru.hexlet.io/courses/css-positioning">CSS: Позиционирование</a>
+</span>
+<span>
+<svg class="svg-inline--fa fa-comments fa-w-18" aria-hidden="true" focusable="false" data-prefix="far" data-icon="comments" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M532 386.2c27.5-27.1 44-61.1 44-98.2 0-80-76.5-146.1-176.2-157.9C368.3 72.5 294.3 32 208 32 93.1 32 0 103.6 0 192c0 37 16.5 71 44 98.2-15.3 30.7-37.3 54.5-37.7 54.9-6.3 6.7-8.1 16.5-4.4 25 3.6 8.5 12 14 21.2 14 53.5 0 96.7-20.2 125.2-38.8 9.2 2.1 18.7 3.7 28.4 4.9C208.1 407.6 281.8 448 368 448c20.8 0 40.8-2.4 59.8-6.8C456.3 459.7 499.4 480 553 480c9.2 0 17.5-5.5 21.2-14 3.6-8.5 1.9-18.3-4.4-25-.4-.3-22.5-24.1-37.8-54.8zm-392.8-92.3L122.1 305c-14.1 9.1-28.5 16.3-43.1 21.4 2.7-4.7 5.4-9.7 8-14.8l15.5-31.1L77.7 256C64.2 242.6 48 220.7 48 192c0-60.7 73.3-112 160-112s160 51.3 160 112-73.3 112-160 112c-16.5 0-33-1.9-49-5.6l-19.8-4.5zM498.3 352l-24.7 24.4 15.5 31.1c2.6 5.1 5.3 10.1 8 14.8-14.6-5.1-29-12.3-43.1-21.4l-17.1-11.1-19.9 4.6c-16 3.7-32.5 5.6-49 5.6-54 0-102.2-20.1-131.3-49.7C338 339.5 416 272.9 416 192c0-3.4-.4-6.7-.7-10C479.7 196.5 528 238.8 528 288c0 28.7-16.2 50.6-29.7 64z"></path></svg><!-- <span class="far fa-comments"></span> Font Awesome fontawesome.com -->
+<a class="x-link-only-hover" href="https://ru.hexlet.io/my/topics?q%5Bcommunitable_of_Lesson_type_exercise_id_eq%5D=1375&amp;q%5Bcommunitable_type_eq%5D=Exercise">6 сообщений</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-12 col-lg-10">
+<div class="d-flex justify-content-between flex-wrap">
+<div class="d-flex flex-wrap">
+<div class="d-flex align-items-center mr-5 my-1">
+<svg class="svg-inline--fa fa-user-friends fa-w-20 fa-2x fa-fw mr-2" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="user-friends" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" data-fa-i2svg=""><g class="fa-group"><path class="fa-secondary" fill="currentColor" d="M480 256a96 96 0 1 0-96-96 96 96 0 0 0 96 96zm48 32h-3.8c-13.9 4.8-28.6 8-44.2 8s-30.3-3.2-44.2-8H432c-20.4 0-39.2 5.9-55.7 15.4 24.4 26.3 39.7 61.2 39.7 99.8v38.4c0 2.2-.5 4.3-.6 6.4H592a48 48 0 0 0 48-48 111.94 111.94 0 0 0-112-112z"></path><path class="fa-primary" fill="currentColor" d="M192 256A112 112 0 1 0 80 144a111.94 111.94 0 0 0 112 112zm76.8 32h-8.3a157.53 157.53 0 0 1-68.5 16c-24.6 0-47.6-6-68.5-16h-8.3A115.23 115.23 0 0 0 0 403.2V432a48 48 0 0 0 48 48h288a48 48 0 0 0 48-48v-28.8A115.23 115.23 0 0 0 268.8 288z"></path></g></svg><!-- <span class="fad fa-user-friends fa-2x fa-fw mr-2"></span> Font Awesome fontawesome.com -->
+<div class="my-auto">
+<span class="h3">34</span>
+<div class="text-muted">Студентов</div>
+</div>
+</div>
+<div class="d-flex align-items-center text-success mr-5 my-1">
+<svg class="svg-inline--fa fa-percent fa-w-14 fa-2x fa-fw mr-2" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="percent" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><g class="fa-group"><path class="fa-secondary" fill="currentColor" d="M336 288a112 112 0 1 0 112 112 111.94 111.94 0 0 0-112-112zm0 160a48 48 0 1 1 48-48 48 48 0 0 1-48 48zM112 0a112 112 0 1 0 112 112A111.94 111.94 0 0 0 112 0zm0 160a48 48 0 1 1 48-48 48 48 0 0 1-48 48z"></path><path class="fa-primary" fill="currentColor" d="M4.7 474.1l368-463.7A24 24 0 0 1 392.3.2l31.6-.1c19.4-.1 30.9 21.8 19.7 37.8L77.4 501.6a24 24 0 0 1-19.6 10.2l-33.4.1c-19.5 0-30.9-21.9-19.7-37.8z"></path></g></svg><!-- <span class="fad fa-percent fa-2x fa-fw mr-2"></span> Font Awesome fontawesome.com -->
+<div class="my-auto">
+<div class="h3 mb-0">70%</div>
+<div class="text-muted">Завершения</div>
+</div>
+</div>
+</div>
+<div class="my-1">
+<a class="btn btn-primary btn-lg" href="https://ru.hexlet.io/challenges/css_positioning_timeline/instance">Начать испытание
+</a></div>
+</div>
+<div class="p-3 card border mt-3">
+<div class="card-title">
+<div class="text-right text-muted">Обновлено: 30 янв., 17:03</div>
+</div>
+<div class="card-body">
+<div class="hexlet-markdown-body">
+<p>Timeline — распространённый приём подачи информации на веб-сайтах. Это одновременно информативный и визуальный инструмент, позволяющий быстро донести важные этапы для пользователя.</p>
+
+<p>Существует множество различных дизайнов для создания временной шкалы и одну из них вы реализуете в этом испытании.</p>
+
+<p>Результатом выполнения задания станет следующий макет:</p>
+
+<p><img alt="Timeline HTML CSS" class="px-2 px-md-3 px-lg-4 px-xl-5 ls-is-cached lazyloaded" data-src="https://cdn2.hexlet.io/derivations/image/original/eyJpZCI6IjUwZDRmMDA4NDEzNjYyOTlmNTRkYWZkMTg0YzBmN2RhLmpwZyIsInN0b3JhZ2UiOiJjYWNoZSJ9?signature=a92573cbaf49df93d30d3159cfe244e07fe58c30bf287ebc48d80b1021072865" src="./Timeline - CSS_ Позиционирование - Испытания_files/original-50d4f00841366299f54dafd184c0f7da"></p>
+
+<p>Вся необходимая вёрстка уже представлена в файле <em>index.html</em>. Допишите стили для нужных классов. Сделайте их без привязки к определённым тегам. Это позволит использовать не только ту структуру, которая дана, но и построить timeline на других тегах.</p>
+<h2 id="bazovye-stili-obyortki-timeline">Базовые стили обёртки timeline</h2>
+<ul>
+<li>Внутренние отступы: 30px сверху, 0px справа, 30 пикселей снизу и 50px слева.</li>
+<li>От обёртки строится вертикальная черта. Она должна растягиваться на 100 процентов высоты обёртки. Ширина линии: 2px, цвет: <code>#fff</code>.</li>
+</ul>
+<h2 id="bazovye-stili-elementa-timeline">Базовые стили элемента timeline</h2>
+<ul>
+<li>Внешний отступ снизу: 100px. У последнего элемента не должно быть отступа.</li>
+</ul>
+<h2 id="bazovyy-stil-kruga-elementa-timeline">Базовый стиль круга элемента timeline</h2>
+<ul>
+<li>Ширина и высота: 20px</li>
+<li>Цвет: <code>#80fcff</code></li>
+<li>Отступ сверху от элемента timeline: 15%</li>
+<li>Круг должен быть отцентрован относительно вертикальной линии.</li>
+</ul>
+
+<p>Для закругления используйте свойство <code>border-radius</code> со значением 50%.</p>
+<h2 id="podskazki">Подсказки</h2>
+<ul>
+<li>Подумайте, какие значения <code>left</code> имеют вертикальная линия и круг. Исходите из ширины элементов и внутренних отступов обёртки <code>.timeline</code></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="row mt-5">
+<div class="col-12 col-md-3 text-md-right pr-md-5 mt-4">
+<h4 class="mb-0">Код-ревью</h4>
+</div>
+<div class="col-12 col-md-9 mt-4">
+<div class="table-responsive">
+<table class="table">
+<tbody><tr>
+<th>Автор</th>
+<th>Дата обновления</th>
+<th>Версий</th>
+<th></th>
+</tr>
+<tr>
+<td>
+<a class="x-link-only-hover" href="https://ru.hexlet.io/u/andrewflexpk">andrewflexpk</a>
+</td>
+<td>12 февр., 12:33</td>
+<td>2</td>
+<td>
+<a class="x-link-only-hover hexlet-disabled" title="Для доступа к ревью нужно самостоятельно завершить упражнение.">
+<strike>
+Смотреть
+</strike>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="x-link-only-hover" href="https://ru.hexlet.io/u/user-3f89686450f2a433">user-3f89686450f2a433</a>
+</td>
+<td>12 февр., 13:00</td>
+<td>2</td>
+<td>
+<a class="x-link-only-hover hexlet-disabled" title="Для доступа к ревью нужно самостоятельно завершить упражнение.">
+<strike>
+Смотреть
+</strike>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="x-link-only-hover" href="https://ru.hexlet.io/u/coiner">coiner</a>
+</td>
+<td>06 февр., 19:21</td>
+<td>1</td>
+<td>
+<a class="x-link-only-hover hexlet-disabled" title="Для доступа к ревью нужно самостоятельно завершить упражнение.">
+<strike>
+Смотреть
+</strike>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="x-link-only-hover" href="https://ru.hexlet.io/u/mikhailr1337">mikhailr1337</a>
+</td>
+<td>04 февр., 14:01</td>
+<td>5</td>
+<td>
+<a class="x-link-only-hover hexlet-disabled" title="Для доступа к ревью нужно самостоятельно завершить упражнение.">
+<strike>
+Смотреть
+</strike>
+</a>
+</td>
+</tr>
+<tr>
+<td>
+<a class="x-link-only-hover" href="https://ru.hexlet.io/u/rain-ra">rain-ra</a>
+</td>
+<td>03 февр., 16:54</td>
+<td>1</td>
+<td>
+<a class="x-link-only-hover hexlet-disabled" title="Для доступа к ревью нужно самостоятельно завершить упражнение.">
+<strike>
+Смотреть
+</strike>
+</a>
+</td>
+</tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</main>
+<footer class="bg-light border-top py-4 mt-auto">
+<div class="container-xl">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 pt-3">
+<div class="col">
+<ul class="list-unstyled h3 text-left d-flex flex-wrap">
+<li class="mr-4 mb-2">
+<a target="_blank" class="x-link-without-decoration" rel="noopener noreferrer nofollow" href="https://slack-ru.hexlet.io/"><svg class="svg-inline--fa fa-slack fa-w-14 fa-1x" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="slack" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M94.12 315.1c0 25.9-21.16 47.06-47.06 47.06S0 341 0 315.1c0-25.9 21.16-47.06 47.06-47.06h47.06v47.06zm23.72 0c0-25.9 21.16-47.06 47.06-47.06s47.06 21.16 47.06 47.06v117.84c0 25.9-21.16 47.06-47.06 47.06s-47.06-21.16-47.06-47.06V315.1zm47.06-188.98c-25.9 0-47.06-21.16-47.06-47.06S139 32 164.9 32s47.06 21.16 47.06 47.06v47.06H164.9zm0 23.72c25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06H47.06C21.16 243.96 0 222.8 0 196.9s21.16-47.06 47.06-47.06H164.9zm188.98 47.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06s-21.16 47.06-47.06 47.06h-47.06V196.9zm-23.72 0c0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06V79.06c0-25.9 21.16-47.06 47.06-47.06 25.9 0 47.06 21.16 47.06 47.06V196.9zM283.1 385.88c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06-25.9 0-47.06-21.16-47.06-47.06v-47.06h47.06zm0-23.72c-25.9 0-47.06-21.16-47.06-47.06 0-25.9 21.16-47.06 47.06-47.06h117.84c25.9 0 47.06 21.16 47.06 47.06 0 25.9-21.16 47.06-47.06 47.06H283.1z"></path></svg><!-- <span class="fab fa-slack fa-1x"></span> Font Awesome fontawesome.com -->
+</a></li>
+<li class="mr-4 mb-2">
+<a target="_blank" class="x-link-without-decoration" rel="noopener noreferrer nofollow" href="https://www.youtube.com/user/HexletUniversity"><svg class="svg-inline--fa fa-youtube fa-w-18 fa-1x" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg><!-- <span class="fab fa-youtube fa-1x"></span> Font Awesome fontawesome.com -->
+</a></li>
+<li class="mr-4 mb-2">
+<a target="_blank" class="x-link-without-decoration" rel="noopener noreferrer nofollow" href="https://twitter.com/HexletHQ"><svg class="svg-inline--fa fa-twitter fa-w-16 fa-1x" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg><!-- <span class="fab fa-twitter fa-1x"></span> Font Awesome fontawesome.com -->
+</a></li>
+<li class="mr-4 mb-2">
+<a target="_blank" class="x-link-without-decoration" rel="noopener noreferrer nofollow" href="https://t.me/hexlet_ru"><svg class="svg-inline--fa fa-telegram fa-w-16 fa-1x" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="telegram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" data-fa-i2svg=""><path fill="currentColor" d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path></svg><!-- <span class="fab fa-telegram fa-1x"></span> Font Awesome fontawesome.com -->
+</a></li>
+<li class="mr-4 mb-2">
+<a target="_blank" class="x-link-without-decoration" rel="noopener noreferrer nofollow" href="https://www.facebook.com/Hexlet"><svg class="svg-inline--fa fa-facebook fa-w-16 fa-1x" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg><!-- <span class="fab fa-facebook fa-1x"></span> Font Awesome fontawesome.com -->
+</a></li>
+<li class="mr-4 mb-2">
+<a target="_blank" class="x-link-without-decoration" rel="noopener noreferrer nofollow" href="https://vk.com/hexlet"><svg class="svg-inline--fa fa-vk fa-w-18 fa-1x" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="vk" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path></svg><!-- <span class="fab fa-vk fa-1x"></span> Font Awesome fontawesome.com -->
+</a></li>
+<li class="mr-4 mb-2">
+<a target="_blank" class="x-link-without-decoration" rel="noopener noreferrer nofollow" href="https://www.instagram.com/hexlethq"><svg class="svg-inline--fa fa-instagram fa-w-14 fa-1x" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg><!-- <span class="fab fa-instagram fa-1x"></span> Font Awesome fontawesome.com -->
+</a></li>
+</ul>
+<ul class="list-unstyled">
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/pages/about">О проекте</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" target="_blanl" rel="noopener noreferrer nofollow" href="https://www.notion.so/hexlet/c6406ed8890747e690d32b050faf42c2">Карьера в Хекслете</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/testimonials">Отзывы студентов</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/blog/categories/success">Истории успеха</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" rel="noopener noreferrer nofollow" href="https://hexlet.printdirect.ru/?partner_id=615497">Магазин мерча</a>
+</li>
+</ul>
+<p class="mt-3 text-muted">
+<span class="d-block">Hexlet Ltd.</span>
+<span class="d-block">UMA Esplanadi, Pohjoisesplanadi 39, 00100 Helsinki, Finland</span>
+<span class="d-block">VAT ID:&nbsp;FI26641607</span>
+<span class="d-block"><a href="tel:+7(495)147-73-79">+7 (495) 147-73-79</a></span>
+</p>
+<ul class="list-unstyled">
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/pages/tos">Условия использования</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/pages/privacy">Политика конфиденциальности</a>
+</li>
+</ul>
+</div>
+<div class="col">
+<div class="font-weight-bold mb-2">Помощь</div>
+<ul class="list-unstyled">
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/knowledge">База знаний</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" target="_blank" rel="noopener noreferrer" href="https://help.hexlet.io/">Справка</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/community">Вопросы по урокам</a>
+</li>
+<li class="mb-1">
+<a rel="nofollow" class="x-link-only-hover" href="mailto:support@hexlet.io">support@hexlet.io</a>
+</li>
+</ul>
+<div class="font-weight-bold mb-2">Компаниям</div>
+<ul class="list-unstyled">
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/teams">Хекслет для компаний</a>
+</li>
+</ul>
+</div>
+<div class="col">
+<div class="font-weight-bold mb-2">Профессии</div>
+<ul class="list-unstyled">
+<li class="mb-1 mb-sm-2 mb-lg-3">
+<a class="x-link-only-hover text-primary" target="_blank" rel="noopener noreferrer" href="https://premium.hexlet.io/">Индивидуальное обучение программированию</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/programs/frontend">Фронтенд-программист</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/programs/python">Python-программист</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/programs/php">PHP-программист</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/programs/backend">Node.js-программист</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/programs/layout-designer">Верстальщик</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/programs/java">Java-программист</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/programs/rails">Rails-программист</a>
+</li>
+</ul>
+</div>
+<div class="col">
+<div class="font-weight-bold mb-2">Полезно</div>
+<ul class="list-unstyled">
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/blog">Блог</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" target="_blank" rel="noopener noreferrer" href="https://ru.code-basics.com/">Code Basics</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" target="_blank" rel="noopener noreferrer" href="https://codebattle.hexlet.io/">Code Battle</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" target="_blank" rel="noopener noreferrer" href="https://guides.hexlet.io/">Hexlet Guides</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" href="https://ru.hexlet.io/categories/sandbox/courses">Песочница</a>
+</li>
+<li class="mb-1">
+<a class="x-link-only-hover" target="_blank" rel="noopener noreferrer" href="https://cv.hexlet.io/">Хекслет-резюме</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/saved_resource(2)"></script>
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/runtime-6a253acc3da5e383db7a.js.Без названия" crossorigin="anonymous"></script>
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/76-62641b4ba4d4ba41151b.js.Без названия" crossorigin="anonymous"></script>
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/947-0efd3fd24e90139d33d5.js.Без названия" crossorigin="anonymous"></script>
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/172-5ffd78a10a399f9071a4.js.Без названия" crossorigin="anonymous"></script>
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/693-da742f26d4a80660972c.js.Без названия" crossorigin="anonymous"></script>
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/980-5da1e9044c3030482dc8.js.Без названия" crossorigin="anonymous"></script>
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/535-284ae01ed9418c38cb4e.js.Без названия" crossorigin="anonymous"></script>
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/365-4772b837ac8bfd21ba9c.js.Без названия" crossorigin="anonymous"></script>
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/857-bf0ccf152d45027e618a.js.Без названия" crossorigin="anonymous"></script>
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/application-9864f8aed83841b2404b.js.Без названия" crossorigin="anonymous"></script><div></div>
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/935-7f8bfff985e62da9bf9c.js.Без названия" crossorigin="anonymous"></script>
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/894-88027c604fe3aa52f2ef.js.Без названия" crossorigin="anonymous"></script>
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/997-beddc28a7d0ef402590a.js.Без названия" crossorigin="anonymous"></script>
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/877-a1c4d748e6c44fdea6ee.js.Без названия" crossorigin="anonymous"></script>
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/522-1ca01db5ec2f5bf3470b.js.Без названия" crossorigin="anonymous"></script>
+<script src="./Timeline - CSS_ Позиционирование - Испытания_files/notifications-b2ecfaf28229d32d0cb2.js.Без названия" crossorigin="anonymous"></script>
+
+
+
+
+<iframe frameborder="0" allowtransparency="true" scrolling="no" name="__privateStripeMetricsController0150" allowpaymentrequest="true" src="./Timeline - CSS_ Позиционирование - Испытания_files/m-outer-d6c2bdb836ab7d041671a72774049a01.html" aria-hidden="true" tabindex="-1" style="border: none !important; margin: 0px !important; padding: 0px !important; width: 1px !important; min-width: 100% !important; overflow: hidden !important; display: block !important; visibility: hidden !important; position: fixed !important; height: 1px !important; pointer-events: none !important; user-select: none !important;"></iframe>
+<script type="text/javascript" id="">(function(a,e,f,g,b,c,d){a[b]=a[b]||function(){(a[b].a=a[b].a||[]).push(arguments)};a[b].l=1*new Date;c=e.createElement(f);d=e.getElementsByTagName(f)[0];c.async=1;c.src=g;d.parentNode.insertBefore(c,d)})(window,document,"script","https://mc.yandex.ru/metrika/tag.js","ym");ym(google_tag_manager["GTM-WK88TH"].macro(2),"init",{clickmap:!0,trackLinks:!0,accurateTrackBounce:!0,webvisor:!0});</script>
+<div style="display: none; visibility: hidden;">    <script type="text/javascript">(function(a,e,f,g,b,c,d){a.ProfitWellObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};a[b].l=1*new Date;c=e.createElement(f);d=e.getElementsByTagName(f)[0];c.async=1;c.src=g;d.parentNode.insertBefore(c,d)})(window,document,"script","https://dna8twue3dlxq.cloudfront.net/js/profitwell.js","profitwell");profitwell("auth_token",google_tag_manager["GTM-WK88TH"].macro(3));gon.current_user.is_guest||profitwell("user_email",gon.current_user.email);</script>
+</div><script type="text/javascript" id="">(function(a,d,e,f,g,b,c){a.visitorGlobalObjectAlias=f;a[a.visitorGlobalObjectAlias]=a[a.visitorGlobalObjectAlias]||function(){(a[a.visitorGlobalObjectAlias].q=a[a.visitorGlobalObjectAlias].q||[]).push(arguments)};a[a.visitorGlobalObjectAlias].l=(new Date).getTime();b=d.createElement("script");b.src=e;b.async=!0;c=d.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)})(window,document,"https://diffuser-cdn.app-us1.com/diffuser/diffuser.js","vgo");vgo("setAccount",google_tag_manager["GTM-WK88TH"].macro(4));
+vgo("setTrackByDefault",!0);gon.current_user.is_guest||vgo("setEmail",gon.current_user.email);vgo("process");</script>
+<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("dataProcessingOptions",[]);fbq("init",google_tag_manager["GTM-WK88TH"].macro(5));fbq("track","PageView");</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1901967613399172&amp;ev=PageView&amp;noscript=1"></noscript>
+<script type="text/javascript" id="">!function(){var a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://vk.com/js/api/openapi.js?167";a.onload=function(){VK.Retargeting.Init(google_tag_manager["GTM-WK88TH"].macro(6));VK.Retargeting.Hit()};document.body.appendChild(a)}();</script><script type="text/javascript" async="" src="https://vk.com/js/api/openapi.js?167"></script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-478287-5RVMp" style="position:fixed; left:-999px;" alt=""></noscript><script type="text/javascript" id="">(function(g,c){function k(a,f){a.prototype[f]=function(){this._q.push([f].concat(Array.prototype.slice.call(arguments,0)));return this}}function l(a){function f(m){a[m]=function(){a._q.push([m].concat(Array.prototype.slice.call(arguments,0)))}}for(var h=0;h<n.length;h++)f(n[h])}var d=g.amplitude||{_q:[],_iq:{}},b=c.createElement("script");b.type="text/javascript";b.integrity="sha384-RsEu4WZflrqYcEacpfoGSib3qaSvdYwT4D+DrWqeBuDarSzjwUQR1jO8gDiXZd0E";b.crossOrigin="anonymous";b.async=!0;b.src="https://cdn.amplitude.com/libs/amplitude-6.2.0-min.gz.js";
+b.onload=function(){g.amplitude.runQueuedFunctions||console.log("[Amplitude] Error: could not load SDK")};c=c.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c);b=function(){this._q=[];return this};c="add append clearAll prepend set setOnce unset".split(" ");for(var e=0;e<c.length;e++)k(b,c[e]);d.Identify=b;b=function(){this._q=[];return this};c=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"];for(e=0;e<c.length;e++)k(b,c[e]);d.Revenue=b;var n="init logEvent logRevenue setUserId setUserProperties setOptOut setVersionName setDomain setDeviceId enableTracking setGlobalUserProperties identify clearUserProperties setGroup logRevenueV2 regenerateDeviceId groupIdentify onInit logEventWithTimestamp logEventWithGroups setSessionId resetSessionId".split(" ");
+l(d);d.getInstance=function(a){a=(a&&0!==a.length?a:"$default_instance").toLowerCase();d._iq.hasOwnProperty(a)||(d._iq[a]={_q:[]},l(d._iq[a]));return d._iq[a]};g.amplitude=d})(window,document);var amp=amplitude.getInstance(),options={includeReferrer:!0,includeUtm:!0,includeGclid:!0};amp.init(google_tag_manager["GTM-WK88TH"].macro(7),gon.current_user.id,options);amp.setDomain(".hexlet.io");var userProperties={device_type:gon.mobile?"Mobile":"Desktop"};gon.current_user.isGuest||(userProperties.email=gon.current_user.email);
+amp.setUserProperties(userProperties);</script><script type="text/javascript" id="">!function(b,d,f){function e(){var c=d.getElementsByTagName("script")[0],a=d.createElement("script");a.type="text/javascript";a.async=!0;a.src="https://beacon-v2.helpscout.net";c.parentNode.insertBefore(a,c)}if(b.Beacon=f=function(c,a,g){b.Beacon.readyQueue.push({method:c,options:a,data:g})},f.readyQueue=[],"complete"===d.readyState)return e();b.attachEvent?b.attachEvent("onload",e):b.addEventListener("load",e,!1)}(window,document,window.Beacon||function(){});
+gon.hs.autoloadBeacon?Beacon("init",google_tag_manager["GTM-WK88TH"].macro(8)):Beacon("init",google_tag_manager["GTM-WK88TH"].macro(9));gon.current_user.is_guest||Beacon("on","open",function(){Beacon("identify",{name:gon.current_user.full_name,email:gon.current_user.email,PaidDaysCount:gon.current_user.paid_days_count,CanUsePaidFeatures:gon.current_user.can_use_paid_features,CurrentCompany:gon.current_user.current_company,"\u0421urrentCompanyUrl":gon.current_user.current_company_url,CreatedAt:gon.current_user.created_at,Profile:gon.current_user.url})});</script><script type="text/javascript" id="">var eventName="view-challenge-description-page",slug=location.pathname.split("/")[2];amplitude.getInstance().logEvent(eventName,{slug:slug});</script>
+<script type="text/javascript" id="" src="./Timeline - CSS_ Позиционирование - Испытания_files/js(1)"></script>
+<script type="text/javascript" id="">window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);var config={optimize_id:gon.google.optimize_key};gon.current_user.is_guest||(config.user_id=gon.current_user.id);gon.social_signin&&(config.page_referrer=window.location.origin);
+if(ga&&"function"===typeof ga.getAll){var trackers=ga.getAll(),i,len;i=0;for(len=trackers.length;i<len;i+=1)if(trackers[i].get("trackingId")===google_tag_manager["GTM-WK88TH"].macro(13)){var clientId=trackers[i].get("clientId");document.cookie="_ga_cid\x3d"+clientId+"; path\x3d/";config.dimension2=clientId}}gtag("config",google_tag_manager["GTM-WK88TH"].macro(14),config);</script>
+<script type="text/javascript" id="">if(ga&&"function"===typeof ga.getAll){var trackers=ga.getAll(),i,len;i=0;for(len=trackers.length;i<len;i+=1)if(trackers[i].get("trackingId")===google_tag_manager["GTM-WK88TH"].macro(19)){var clientId=trackers[i].get("clientId");document.cookie="ga_client_id\x3d"+clientId+"; path\x3d/;domain\x3dhexlet.io"}};</script><div id="beacon-container"><div class="hsds-beacon"><div class="Beacon"><div class="sc-AxheI gkgGqG"></div><div class="sc-AxhCb jaxpMS BeaconContainer is-configDisplayRight" data-css-with-delay="false"></div><div class="sc-fznyAO kxXCkG BeaconFabButtonFrame" style="border-radius: 60px; height: 60px; position: fixed; transform: scale(1); width: 60px; z-index: 1049;"><iframe aria-label="Toggle Customer Support" id="" data-cy="FrameComponent" src="./Timeline - CSS_ Позиционирование - Испытания_files/saved_resource.html"></iframe></div><span></span><span></span></div></div></div></body></html>

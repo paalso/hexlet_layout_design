@@ -1,0 +1,14 @@
+/* BEGIN (write your solution here) */
+.box-shadow {
+  height: 150px;
+  background-color: #461a96;
+}
+
+.box {
+  position: relative;
+  top: -153px;
+  left: -3px;
+  height: 150px;
+  background-color: #673ab7;
+}
+/* END */

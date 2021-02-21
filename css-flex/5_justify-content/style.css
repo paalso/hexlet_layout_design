@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.container {
+  /* BEGIN (write your solution here) */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* END */
+}
+
+.nav-item {
+  padding: 15px 20px;
+  color: #fff;
+  background: #03a9f4;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background: #026897;
+}
+
+.nav-item a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav-wrap {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.logo {
+  margin-right: 2em;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 2em;
+}
+
+footer {
+  box-sizing: border-box;
+  height: 150px;
+  color: #fff;
+  font-size: 3em;
+  line-height: 2em;
+  background: #03a9f4;
+}

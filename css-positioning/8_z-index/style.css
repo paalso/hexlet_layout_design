@@ -1,0 +1,26 @@
+.circle {
+  /* BEGIN (write your solution here) */
+  position: absolute;
+  /* END */
+
+  width: 300px;
+  height: 300px;
+
+  border-radius: 50%;
+}
+
+.circle-blue {
+  /* BEGIN (write your solution here) */
+  background: blue;
+  z-index: 1;
+  /* END */
+}
+
+.circle-red {
+  /* BEGIN (write your solution here) */
+  background: red;
+  opacity: 0.5;
+  z-index: 2;
+  /* END */
+}
+

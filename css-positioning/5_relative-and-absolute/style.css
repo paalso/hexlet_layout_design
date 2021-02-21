@@ -1,0 +1,54 @@
+.books-card {
+  /* BEGIN (write your solution here) */
+	position: relative;
+  
+  /* END */
+  box-sizing: border-box;
+  width: 500px;
+  height: 300px;
+  padding: 50px;
+
+  background: #2980b9;
+  background: -webkit-linear-gradient(to right, #fff, #6dd5fa, #2980b9);
+  background: linear-gradient(to right, #fff, #6dd5fa, #2980b9);
+
+  cursor: pointer;
+}
+
+.book-name {
+  width: 50%;
+
+  color: #00bcd4;
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.book-author {
+  color: #03a9f4;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.book-description {
+  /* BEGIN (write your solution here) */
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  
+  /* END */
+
+  color: #fff;
+
+  background: #03a9f4;
+
+  opacity: 0;
+
+  transition: 1s;
+}
+
+.books-card:hover > .book-description {
+  opacity: 1;
+}

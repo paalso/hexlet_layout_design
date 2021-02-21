@@ -1,0 +1,84 @@
+<!-- https://ru.hexlet.io/courses/css-content/lessons/table/exercise_unit -->
+<!-- https://ru.hexlet.io/code_reviews/362886 -->
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список дел на неделю</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <table class="todo-table">
+        <thead>
+            <!-- BEGIN (write your solution here) -->
+            <tr>
+                <th>Понедельник</th>
+                <th>Вторник</th>
+                <th>Среда</th>
+                <th>Четверг</th>
+                <th>Пятница</th>
+                <th>Суббота</th>
+                <th>Воскресенье</th>
+            </tr>
+            <!-- END -->
+        </thead>
+        <tbody>
+            <!-- BEGIN (write your solution here) -->
+            <tr>
+                <td class="bg-blue" colspan="3">
+                    <p class="todo-name">Бассейн</p>
+                    <p class="todo-time">9:30 - 10:30</p>
+                </td>
+                <td class="bg-orange" rowspan="2">
+                    <p class="todo-name">Отвезти маму</p>
+                    <p class="todo-time">9:30 - 10:30</p>
+                </td>
+                <td class="bg-blue">
+                    <p class="todo-name">Бассейн</p>
+                    <p class="todo-time">9:30 - 10:30</p>
+                </td>
+                <td class="bg-green" rowspan="2">
+                    <p class="todo-name">Гольф</p>
+                    <p class="todo-time">9:30 - 12:30</p>
+                </td>
+                <td class="bg-orange" rowspan="3">
+                    <p class="todo-name">Отдых</p>
+                    <p class="todo-time">9:30 - 13:30</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="bg-orange">
+                    <p class="todo-name">Магазин</p>
+                    <p class="todo-time">11:00 - 12:00</p>
+                </td>
+                <td class="bg-blue" rowspan="2">
+                    <p class="todo-name">Съездить к Саше</p>
+                    <p class="todo-time">11:30 - 13:00</p>
+                </td>
+                <td class="bg-green" rowspan="2">
+                    <p class="todo-name">Уборка</p>
+                    <p class="todo-time">11:30 - 13:00</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="bg-green">
+                    <p class="todo-name">Магазин</p>
+                    <p class="todo-time">12:00 - 13:00</p>
+                </td>
+                <td></td>
+                <td class="bg-green">
+                    <p class="todo-name">Отвезти Ольгу</p>
+                    <p class="todo-time">11:30 - 13:00</p>
+                </td>
+            </tr>
+            <!-- END -->
+        </tbody>
+    </table>
+</body>
+
+</html>

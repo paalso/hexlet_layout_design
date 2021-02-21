@@ -1,0 +1,33 @@
+.btn {
+  display: block;
+  width: 200px;
+  padding: 15px;
+  background: #2196f3;
+  border: none;
+  cursor: pointer;
+}
+
+.display-flex {
+  /* BEGIN (write your solution here) */
+  display: flex;
+  /* END */
+}
+
+.flex-element-center {
+  /* BEGIN (write your solution here) */
+  justify-content: center;
+  align-items: center;
+  /* END */
+}
+
+.margin-right-1 {
+  /* BEGIN (write your solution here) */
+  margin-right: 1em;
+  /* END */
+}
+
+.text-white {
+  /* BEGIN (write your solution here) */
+  color: white;
+  /* END */
+}

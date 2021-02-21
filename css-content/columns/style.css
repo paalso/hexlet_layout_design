@@ -1,0 +1,69 @@
+/* Секция .article делит текст на две колонки с отступом в 50 пикселей.
+Между колонками создайте вертикальную границу шириной 1 пиксель и цветом #3d405b
+Секция .applicants так же делит элементы на две колонки.
+Сама секция занимает всю ширину страницы. Заголовок внутри секции так же располагается
+на всю ширину блока.
+Контент внутри блоков .member не должен переноситься. */
+
+html {
+    color: #463f3a;
+    font: 18px/1.5 sans-serif;
+}
+
+body {
+    width: 980px;
+    margin: 0 auto;
+    padding: 70px;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+h1 {
+    color: #e07a5f;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.article {
+    /* BEGIN (write your solution here) */
+    column-count: 2;
+    column-gap: 50px;
+    column-rule: solid 1px #3d405b;
+    /* END */
+}
+
+.applicants {
+    margin: 50px 0;
+    padding: 20px;
+    color: #f4f1de;
+    /* BEGIN (write your solution here) */
+    column-span: all;
+    column-count: 2;
+    /* END */
+    background: #3d405b;
+}
+
+.applicants-header {
+    /* BEGIN (write your solution here) */
+    column-span: all;
+    /* END */
+}
+
+.member {
+    /* BEGIN (write your solution here) */
+    break-inside: avoid;
+    /* END */
+}
+
+.member-name {
+    margin: 20px 0 0;
+    font-weight: bold;
+}

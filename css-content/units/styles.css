@@ -1,0 +1,126 @@
+/*
+Общие стили
++ Для элемента html установите размер шрифта 18 пикселей с полуторным межстрочным интервалом.
++ Установите шрифт без засечек. Фон имеет значение #1d2026. Основной цвет текста #8a94a7.
+
++ Элемент body должен занимать всю доступную ширину и высоту страницы.
++ Дополнительно сбросьте все значения внешних и внутренних отступов.
+(Вроде бы это лучше делать ч/з селектор "все" * - ПС)
+
++ Заголовки первых трёх уровней не имеют внешних отступов.
++ Внутренние отступы сверху и снизу должны быть равны размеру шрифта у элемента html.
+
++ Список не имеет внешних отступов. Внутренние отступы по вертикали: 18px
+
+Стили карточки прайсинга
++ Основная обёртка с классом .card имеет ширину в 300 пикселей.
++ Внутренние отступы по вертикали в 2.5 раза больше размера шрифта html.
++ По горизонтали — в 2 раза больше. Блок должен иметь фон #2c3039.
+
++ Список с классом .card-list имеет размер шрифта 14 пикселей.
+
++ Блок .price имеет размер шрифта 18 пикселей и межстрочный интервал 1.
++ Элемент span внутри блока имеет белый цвет и размер шрифта в три раза больше, чем у родителя.
+
++ Заголовок третьего уровня имеет белый цвет и должен быть размером 0.9 от значения родителя.
+
++ Кнопка с классом .btn имеет размер шрифта в 0.7 от размера шрифта у элемента html
+
+Подсказки
+Вспомните разницу единиц измерения em и rem
+Для фона используйте свойство background
+Для цвета текста используйте свойство color
+Linter
+Readme
+Terminal 1
+Terminal 2
+*/
+
+html {
+    /* BEGIN (write your solution here) */
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    color: #8a94a7;
+    background: #1d2026;
+    /* END */
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* BEGIN (write your solution here) */
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    /* END */
+}
+
+h1, h2, h3 {
+    /* BEGIN (write your solution here) */
+    margin: 0;
+    padding: 1rem;
+    /* END */
+}
+
+ul {
+    /* BEGIN (write your solution here) */
+    margin: 0;
+    padding: 18px 0;
+    /* END */
+}
+
+/* BEGIN (write your solution here) */
+
+.card {
+    width: 300px;
+    padding: 2.5rem 2rem;
+    background: #2c3039;
+}
+
+.card-list {
+    font-size: 14px;
+}
+
+.price {
+    font-size: 18px;
+    line-height: 1em;
+}
+
+.price span {
+    font-size: 3em;
+    color: #fff;
+}
+
+.card h3 {
+    font-size: 0.9em;
+    color: #fff;
+}
+
+/* END */
+
+.btn {
+    display: block;
+    padding: 1em 0;
+    color: white;
+    /* BEGIN (write your solution here) */
+    font-size: 0.7rem;
+    /* END */
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn-blue {
+    background: #097dea;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.border-bottom {
+    border-bottom: 1px solid rgba(138, 148, 167, 0.24);
+}

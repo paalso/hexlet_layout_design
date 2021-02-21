@@ -1,0 +1,5 @@
+https://ru.hexlet.io/courses/css-positioning/lessons/float/
+https://ru.hexlet.io/code_reviews/313912
+
+Используя технику "старых мастеров" создайте типичный трёхколоночный макет. Вёрстка доступна в файле index.html. Ваша задача — используя свойства float и clear сделать необходимый макет.
+

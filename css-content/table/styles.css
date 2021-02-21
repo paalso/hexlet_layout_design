@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    color: #333;
+    font: 18px/1.5 sans-serif;
+}
+
+.bg-blue {
+    color: #fff;
+    background: #009bcc;
+}
+
+.bg-green {
+    color: #fff;
+    background: #96c21f;
+}
+
+.bg-orange {
+    color: #fff;
+    background: #ed6b04;
+}
+
+.todo-table {
+    width: 100%;
+    background: #f5f5f5;
+}
+
+.todo-table th {
+    vertical-align: middle;
+}
+
+.todo-table td, .todo-table th {
+    width: 14%;
+    padding: 20px 0;
+}
+
+.todo-table td {
+    text-align: center;
+}
+
+.todo-name {
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.todo-time {
+    margin-top: 0;
+    font-size: 14px;
+}
