@@ -1,0 +1,30 @@
+.d-flex {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+main > * {
+  min-height: 50vh;
+}
+
+/* BEGIN (write your solution here) */
+.left-aside {
+  width: 200px;
+  background: #d32f2f;
+}
+
+.content-side {
+  flex-grow: 1;
+  background: #388e3c;
+  border: 1px red dotted;
+}
+
+.right-aside {
+  width: 350px;
+  background: #1976d2;
+}
+
+/* END */
