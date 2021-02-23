@@ -1,0 +1,41 @@
+/** CSS STYLE **/
+body {
+  margin: 0;
+}
+
+.bg-gray {
+  background: #bdbdbd;
+}
+
+.bg-orange {
+  background: #ffcc80;
+}
+
+.bg-green {
+  background: #66bb6a;
+}
+
+.h-100vh {
+  height: 100vh;
+}
+
+.flex-container {
+  /* BEGIN (write your solution here) */
+  display: flex;
+  flex-direction: column;
+  /* END */
+}
+
+.flex-item {
+  /* BEGIN (write your solution here) */
+  /* flex-basis: 200px;
+  flex-grow: 1; */
+  flex: 1 1 200px;
+  /* END */
+}
+
+.no-shrink {
+  /* BEGIN (write your solution here) */
+  flex-shrink: 0;
+  /* END */
+}
