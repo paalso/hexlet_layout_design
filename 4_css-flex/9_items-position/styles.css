@@ -1,0 +1,62 @@
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 30px 50px;
+}
+
+.flex-item {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  height: 50px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-weight: bold;
+  border: 2px solid;
+  border-radius: 5px;
+}
+
+.bg-blue {
+  background: #a2cbfa;
+  border-color: #4390e1;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.progress-20 {
+  /* BEGIN (write your solution here) */
+  order: 1;
+  /* END */
+  width: 20%;
+}
+
+.progress-25 {
+  /* BEGIN (write your solution here) */
+  order: 2;
+  /* END */
+  width: 25%;
+}
+
+.progress-33 {
+  /* BEGIN (write your solution here) */
+  order: 3;
+  /* END */
+  width: 33%;
+}
+
+.progress-50 {
+  /* BEGIN (write your solution here) */
+  order: 4;
+  /* END */
+  width: 50%;
+}
+
+.progress-69 {
+  /* BEGIN (write your solution here) */
+  order: 5;
+  /* END */
+  width: 69%;
+}
