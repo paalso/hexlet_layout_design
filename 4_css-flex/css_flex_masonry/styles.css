@@ -21,44 +21,16 @@
 
 /* BEGIN (write your solution here) */
 
-.gallery-item:nth-child(1) {
+.gallery-item:nth-child(3n+1) {
   order: 1;
 }
 
-.gallery-item:nth-child(4) {
+.gallery-item:nth-child(3n+2) {
   order: 2;
 }
 
-.gallery-item:nth-child(7) {
+.gallery-item:nth-child(3n+3) {
   order: 3;
-}
-
-.gallery-item:nth-child(10) {
-  order: 4;
-}
-
-.gallery-item:nth-child(2) {
-  order: 5;
-}
-
-.gallery-item:nth-child(5) {
-  order: 6;
-}
-
-.gallery-item:nth-child(8) {
-  order: 7;
-}
-
-.gallery-item:nth-child(3) {
-  order: 8;
-}
-
-.gallery-item:nth-child(6) {
-  order: 9;
-}
-
-.gallery-item:nth-child(9) {
-  order: 10;
 }
 
 /* END */
