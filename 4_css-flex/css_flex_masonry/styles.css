@@ -1,0 +1,100 @@
+.gallery {
+  /* BEGIN (write your solution here) */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* END */
+  box-sizing: border-box;
+  width: 60%;
+  height: 700px;
+  padding: 20px 30px;
+  background: #f9f9f9;
+}
+
+.gallery-item {
+  box-sizing: border-box;
+  width: 32%;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 2px rgba(0, 90, 250, 0.05), 0 4px 4px rgba(0, 90, 250, 0.05), 0 8px 8px rgba(0, 90, 250, 0.05), 0 16px 16px rgba(0, 90, 250, 0.05);
+}
+
+/* BEGIN (write your solution here) */
+
+.gallery-item:nth-child(1) {
+  order: 1;
+}
+
+.gallery-item:nth-child(4) {
+  order: 2;
+}
+
+.gallery-item:nth-child(7) {
+  order: 3;
+}
+
+.gallery-item:nth-child(10) {
+  order: 4;
+}
+
+.gallery-item:nth-child(2) {
+  order: 5;
+}
+
+.gallery-item:nth-child(5) {
+  order: 6;
+}
+
+.gallery-item:nth-child(8) {
+  order: 7;
+}
+
+.gallery-item:nth-child(3) {
+  order: 8;
+}
+
+.gallery-item:nth-child(6) {
+  order: 9;
+}
+
+.gallery-item:nth-child(9) {
+  order: 10;
+}
+
+/* END */
+
+.gallery-blue .gallery-item {
+  background: #90caf9;
+}
+
+.height-120 {
+  height: 120px;
+}
+
+.height-140 {
+  height: 140px;
+}
+
+.height-150 {
+  height: 150px;
+}
+
+.height-160 {
+  height: 160px;
+}
+
+.height-170 {
+  height: 170px;
+}
+
+.height-180 {
+  height: 180px;
+}
+
+.height-190 {
+  height: 190px;
+}
+
+.text-white {
+  color: #fff;
+}
