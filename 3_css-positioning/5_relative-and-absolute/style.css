@@ -31,13 +31,13 @@
 
 .book-description {
   /* BEGIN (write your solution here) */
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    padding: 30px;
   /* END */
 
   color: #fff;

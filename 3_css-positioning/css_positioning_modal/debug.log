@@ -1,0 +1,4 @@
+[0314/212907.542:ERROR:registration_protocol_win.cc(103)] CreateFile: Не удается найти указанный файл. (0x2)
+[0314/212908.900:ERROR:registration_protocol_win.cc(103)] CreateFile: Не удается найти указанный файл. (0x2)
+[0314/212908.907:ERROR:registration_protocol_win.cc(103)] CreateFile: Не удается найти указанный файл. (0x2)
+[0314/212917.160:ERROR:registration_protocol_win.cc(103)] CreateFile: Не удается найти указанный файл. (0x2)

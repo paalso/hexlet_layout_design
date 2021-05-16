@@ -1,68 +1,81 @@
 body {
-  margin: 0;
-  padding: 0;
-  color: #333;
-  font-family: sans-serif;
-  line-height: 1.5;
-  background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: sans-serif;
+    line-height: 1.5;
+    background: #f9f9f9;
 }
 
 h1 {
-  margin: 0;
+    margin: 0;
 }
 
 p {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
-.flexible-aside {
-  /* BEGIN (write your solution here) */
-  /* END */
+/* Авторское решение */
+
+/* .flexible-aside {
+    flex: 1 1 300px;
 }
 
 .main {
-  /* BEGIN (write your solution here) */
-  /* END */
+    flex: 9999 1 700px;
+} */
+
+@media (min-width: 1040px) {
+    .flexible-aside {
+        flex-basis: 300px;
+    }
+    .main {
+        flex-basis: 700px;
+        flex-grow: 1;
+    }
 }
 
 .d-flex {
-  display: flex;
+    display: flex;
 }
 
 .flex-wrap {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
+    -border: dotted 1px brown;
 }
 
 .container {
-  padding: 10px 20px;
+    padding: 10px 20px;
+    -border: dotted 1px red;
 }
 
 .nav {
-  border-bottom: 1px solid #e0e0e0;
+    -border: dotted 1px darkblue;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 .nav li {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  padding: 15px 30px;
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding: 15px 30px;
 }
 
 .nav a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 .nav li:hover {
-  color: #3c3c3c;
-  background: #f1f1f1;
-  cursor: pointer;
+    color: #3c3c3c;
+    background: #f1f1f1;
+    cursor: pointer;
 }
