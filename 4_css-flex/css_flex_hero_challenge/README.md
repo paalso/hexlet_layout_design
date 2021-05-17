@@ -1,0 +1,22 @@
+С одной стороны задание [Html: Hero Section](https://ru.hexlet.io/challenges/css_flex_hero_challenge) вроде бы не очень сложное, но
+1. Не вполне поняно зачем flex'ы, если есть блок, внутри которого стандарный поток - блоки друг под другом, отделенные marginами.
+А вот абсолютное позиционирование пригождается - для блока с "01" и картинки.
+
+2. Совпадет сразу очень хорошо (на рис. по ссылке видно - это из Pixel Perfect), но добиться полного совпадения не получается:
+
+    A) Сбоит надпись "Фронтенд программист", 
+по ходу дела обнаружил, что в Firefox и Chrome чуть по разному отображаются шрифты
+(в Firefox лучшее совпадение получается при шрифте в 61.5px, а не 64px).
+И, кстати, надпись "ПРОФЕССИЯ" идеально ложится почему то при letter-spacing: 0.32em, а не 0.3em.
+Возможно, скачанные мной шрифты у меня не так работают?
+
+    B) Никак пиксель в пиксель не попадает стрелочка после "Узнать после", уж какие костыли к ней не крутил.
+А основной текст идеально совпадает, если margin-bottom после "Фронтенд программист" указать 67px, а не 65px (в Chromе).
+В общем, не получилось. Обидно.
+Может, правда, совсем что то фундаментально недопонял и неправильно сделал.
+
+Firefox:
+[https://drive.google.com/file/d/1KeCR96fjj5xmzwsTD6TcINYCdu_UD4Fz/view?usp=sharing](https://drive.google.com/file/d/1KeCR96fjj5xmzwsTD6TcINYCdu_UD4Fz/view?usp=sharing)
+
+Chrome:
+[https://drive.google.com/file/d/1p21L1gRVLjCAHMgSgvFwE3NdealFmdAq/view?usp=sharing](https://drive.google.com/file/d/1p21L1gRVLjCAHMgSgvFwE3NdealFmdAq/view?usp=sharing)
