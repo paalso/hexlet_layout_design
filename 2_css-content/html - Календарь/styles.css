@@ -1,17 +1,90 @@
 /* BEGIN (write your solution here) */
 
+@font-face {
+  font-weight: normal;
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik-Regular.ttf');
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: 'Rubik';
+  src: url('../assets/fonts/Rubik-Bold.ttf');
+}
+
 /* END */
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin: 0;
-    /* BEGIN (write your solution here) */
-    /* END */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  /* BEGIN (write your solution here) */
+  padding: 0;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1;
+  font-family: Rubik, sans-serif;
+  background-color: #e5e5e5;
+  /* END */
 }
 
 /* BEGIN (write your solution here) */
+
+.calendar {
+  width: 250px;
+  padding: 60px;
+  padding-bottom: 30px;
+  background-color: #1e1f25;
+  border-radius: 12px;
+}
+
+.calendar-header {
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.calendar-date {
+  /* Непонятный момент: обязательно нужно указывать явно 100%, иначе
+  искажается ширина тапблицы - она ужимается почему то */
+  width: 100%;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  font-size: 14px;
+  line-height: 2;
+  border-bottom: 1px solid #313131;
+}
+
+.calendar-date td {
+  padding: 0;
+  text-align: center;
+  line-height: 2.3;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.calendar-date td.rounded-green {
+  background-color: #589c5f;
+  border-radius: 50%;
+}
+
+.calendar-todo {
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+}
+
+.todo-time {
+  color: #ccc;
+  font-size: 10px;
+}
+
+.todo-name {
+  margin: 5px 0 20px 0;
+  font-size: 14px;
+}
 
 /* END */
