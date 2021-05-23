@@ -1,0 +1,78 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font: 18px/1.5 sans-serif;
+    background-color: #0093e9;
+    background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+}
+
+.form {
+    box-sizing: border-box;
+    width: 500px;
+    padding: 30px 80px;
+    border-radius: 7px;
+    background: #fff;
+}
+
+/* BEGIN (write your solution here) */
+
+.form-input * {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    border: 1px solid #e2e2e2;
+}
+
+.form-input input[type="text"] {
+    height: 50px;
+}
+
+.form-input textarea {
+    height: 200px;
+    resize: none;
+}
+
+/* END */
+
+.btn {
+    padding: 15px 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-green {
+    color: #fff;
+    background: #4caf50;
+}
+
+.block-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mb-1 {
+    margin-bottom: 1em;
+}
+
+.mb-2 {
+    margin-bottom: 1.5em;
+}
+
+.small {
+    font-size: 14px;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}

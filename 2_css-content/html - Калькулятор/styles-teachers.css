@@ -1,0 +1,78 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Roboto Mono";
+  src: url(../assets/fonts/RobotoMono-Regular.woff2) format('woff2');
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+  background: #333131;
+}
+
+p {
+  margin: 5px 0;
+}
+
+/* BEGIN */
+
+.calculation {
+  width: 300px;
+  background: #2c3e50;
+}
+
+.calculator-result {
+  padding: 30px;
+  color: #fff;
+  text-align: right;
+  background: #505c68;
+}
+
+.calculator-line {
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!!! */
+  column-count: 4;
+  column-gap: 0;
+}
+
+.calculator-item {
+  display: block;
+  width: 100%;
+  height: 75px;
+  color: #fff;
+  font-size: 1.2em;
+  font-family: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.calculator-item:hover {
+  background: #364c63;
+}
+
+/* END */
+
+.small {
+  font-size: 80%;
+}
+
+.bg-blue {
+  background: #3498db;
+}
+
+.bg-blue:hover {
+  background: #67b2e4;
+}
+
+.text-big {
+  font-size: 3em;
+}
+
+.text-gray {
+  color: #ced4d9;
+}
