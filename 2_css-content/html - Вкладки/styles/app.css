@@ -52,7 +52,6 @@ h2 {
     column-count: 3;
     column-gap: 0;
     /* END */
-    border: dotted 1px red;
 }
 
 /* BEGIN (write your solution here) */
@@ -70,16 +69,21 @@ h2 {
     break-inside: avoid;
 }
 
-.tab-name:hover {
+.tab-name:hover,
+.tab-name:focus {
     border-bottom: solid 3px #5ffbf1;
 }
 
-.tab-name:hover~.tabs-content {
+.tab-name[data-tab="html"]:hover~.tabs-content .tabs-content-item[data-tab="html"],
+.tab-name[data-tab="html"]:focus~.tabs-content .tabs-content-item[data-tab="html"],
+.tab-name[data-tab="css"]:hover~.tabs-content .tabs-content-item[data-tab="css"],
+.tab-name[data-tab="css"]:focus~.tabs-content .tabs-content-item[data-tab="css"],
+.tab-name[data-tab="js"]:hover~.tabs-content .tabs-content-item[data-tab="js"],
+.tab-name[data-tab="js"]:focus~.tabs-content .tabs-content-item[data-tab="js"] {
     display: block;
 }
 
 .tabs-content {
-    display: none;
     column-count: 3;
     column-span: all;
     column-gap: 30px;
@@ -87,8 +91,8 @@ h2 {
 }
 
 .tabs-content-item {
+    display: none;
     padding: 20px;
-    -display: none;
 }
 
 /* END */
