@@ -1,0 +1,145 @@
+/* https://ru.hexlet.io/challenges/css_flex_histogram_challenge/instance */
+
+:root {
+    --light: #fafafa;
+    --red: #e53935;
+    --green: #4caf50;
+    --blue: #2196f3;
+}
+
+html {
+    color: #333;
+    font: 18px/1.5 sans-serif;
+    background-color: var(--light);
+}
+
+body {
+    margin: 0;
+    padding: 50px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+p {
+    margin: 0;
+    margin-top: 5px;
+}
+
+/* BEGIN (write your solution here) */
+
+.histogram {
+    width: 100%;
+}
+
+.histogram th {
+    position: relative;
+}
+
+.histogram-header {
+    display: flex;
+    justify-content: center;
+}
+
+.genre-designation {
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+}
+
+.histogram-blue {
+    background-color: var(--blue);
+}
+
+.histogram-red {
+    background-color: var(--red);
+}
+
+.histogram-green {
+    background-color: var(--green);
+}
+
+.histogram tbody {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.histogram-row {
+    position: relative;
+    display: flex;
+    min-height: 400px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.histogram-name {
+    position: absolute;
+    left: 50%;
+    top: -25px;
+    transform: translateX(-50%);
+}
+
+.histogram-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+.histogram-col [data-height="35p"] {
+    flex-basis: 35%;
+}
+
+.histogram-col [data-height="40p"] {
+    flex-basis: 40%;
+}
+
+.histogram-col [data-height="50p"] {
+    flex-basis: 50%;
+}
+
+.histogram-col [data-height="63p"] {
+    flex-basis: 63%;
+}
+
+.histogram-col [data-height="80p"] {
+    flex-basis: 80%;
+}
+
+.histogram-col [data-height="75p"] {
+    flex-basis: 75%;
+}
+
+.histogram-col [data-height="77p"] {
+    flex-basis: 77%;
+}
+
+.histogram-col [data-height="90p"] {
+    flex-basis: 90%;
+}
+
+/* END */
+
+.w-50px {
+    width: 50px;
+}
+
+.mt-50px {
+    margin-top: 50px;
+}
+
+.px-20 {
+    padding-right: 20px;
+    padding-left: 20px;
+}
