@@ -15,11 +15,14 @@
 @font-face {
   font-weight: normal;
   font-family: 'Brygada 1918';
+  src: url('../assets/fonts/Brygada1918-Regular.woff');
   src: url('../assets/fonts/Brygada-1918.ttf');
 }
 
 :root {
   --color-yellow: #f7df1e;
+  --color-yellow: #f7df1e;
+  --color-dark: #0b1d26;
 }
 
 * {
@@ -28,87 +31,100 @@
   box-sizing: border-box;
 }
 
+img {
+  display: block;
+}
+
 body {
+  font: normal 16px/36px 'Open Sans', sans-serif;
   color: #fff;
-  background-color: #0b1d26;
-  font-family: 'Open Sans', sans-serif;
+  background-color: var(--color-dark);
 }
 
 .hero-section {
-  position: relative;
-  width: 580px;
-  margin-top: 227px;
-  margin-left: 375px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 1900px;
+  height: 912px;
+  margin-top: 100px;
+  margin-left: 345px;
+  border: dotted 1px red;
 }
 
-.section-logo {
+.hero-section>* {
+  width: 640px;
+  border: dotted 1px red;
+}
+
+.section-image img {
+  width: 450px;
+  margin-left: 130px;
+  border: dotted 1px red;
+}
+
+.section-content {
+  position: relative;
+  padding: 127px 30px;
+}
+
+.section-content-logo {
   position: absolute;
-  top: 27px;
-  left: -100px;
+  top: 154px;
+  left: -70px;
   font-weight: bold;
   font-size: 200px;
   line-height: 0%;
   opacity: 0.1;
   letter-spacing: 4.2px;
+  -border: dotted 1px white;
 }
 
-.section-pucture {
-  position: absolute;
-  top: -127px;
-  left: 740px;
-}
-
-.section-header {
+.section-content-header {
   display: flex;
   align-items: center;
-  height: 32.2px;
+  height: 32px;
   margin-bottom: 20px;
 }
 
-.section-header .line {
+.section-content-header .line {
   width: 70px;
   height: 2px;
   margin-right: 30px;
   background-color: var(--color-yellow);
 }
 
-.hero-section span {
-  color: var(--color-yellow);
+.section-content-header span {
   font-size: 14px;
+  letter-spacing: 0.3em;
+  font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.32em;
-  /* вместо 0.3em */
+  color: var(--color-yellow);
 }
 
-.section-title {
-  margin-bottom: 67px;
-  /* 65px */
-  font-family: 'Brygada 1918', serif;
-  font-size: 61.5px;
+.section-content-title {
+  margin-bottom: 65px;
+  font-family: 'Brygada 1918', sans-serif;
   font-size: 64px;
-  line-height: 70.4px;
+  font-weight: normal;
+  line-height: 70px;
 }
 
-.section-text {
+.section-content-text {
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 36px;
 }
 
-.section-link {
+.section-content-link {
   color: var(--color-yellow);
   font-size: 17px;
-  line-height: 39.1px;
+  line-height: 39px;
   text-decoration: none;
 }
 
-.section-link a {
-  position: relative;
-  top: 1.5px;
-  margin-left: 6px;
+.section-content-link a {
+  margin-left: 10px;
   color: var(--color-yellow);
   font-family: 'Arial', sans-serif;
   font-size: 25.5px;
-  line-height: 25.5px;
   text-decoration: none;
 }
