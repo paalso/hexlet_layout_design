@@ -1,0 +1,133 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Brygada+1918&family=Open+Sans:wght@400;700&display=swap');*/
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Bold.ttf');
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: 'Brygada 1918';
+  src: url('../assets/fonts/Brygada1918-Regular.woff');
+  src: url('../assets/fonts/Brygada-1918.ttf');
+}
+
+/* BEGIN */
+
+:root {
+  --primary: #f7df1e;
+  --white: #fff;
+  --dark: #0b1d26;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: var(--white);
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.3;
+  background: var(--dark);
+}
+
+h1 {
+  position: relative;
+  z-index: 10;
+  margin: 20px 0 50px;
+  font-weight: 400;
+  font-size: 64px;
+  font-family: "Brygada 1918", serif;
+  line-height: 1.1;
+}
+
+.container {
+  width: 1280px;
+  padding: 100px 0;
+}
+
+.col-2 {
+  display: flex;
+}
+
+.col-2>* {
+  width: 50%;
+  padding: 0 30px;
+}
+
+.tagline {
+  position: relative;
+  margin: 0;
+  padding-left: 100px;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.tagline::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 70px;
+  height: 2px;
+  background: var(--primary);
+  transform: translateY(-50%);
+  content: '';
+}
+
+.count {
+  position: absolute;
+  top: 30px;
+  left: -100px;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 200px;
+  line-height: 0;
+  opacity: 0.1;
+}
+
+.read-more {
+  position: relative;
+  color: var(--primary);
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.read-more::after {
+  position: absolute;
+  top: 50%;
+  padding-left: 10px;
+  font-size: 1.5em;
+  line-height: 1;
+  transform: translateY(-50%);
+  content: '→';
+}
+
+.text-right {
+  text-align: right;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+/* END */

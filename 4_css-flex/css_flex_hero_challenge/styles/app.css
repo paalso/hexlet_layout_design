@@ -21,7 +21,6 @@
 
 :root {
   --color-yellow: #f7df1e;
-  --color-yellow: #f7df1e;
   --color-dark: #0b1d26;
 }
 
@@ -47,20 +46,16 @@ body {
   align-items: center;
   width: 1900px;
   height: 912px;
-  margin-top: 100px;
-  margin-left: 345px;
-  border: dotted 1px red;
+  margin-left: 310px;
 }
 
 .hero-section>* {
   width: 640px;
-  border: dotted 1px red;
 }
 
 .section-image img {
   width: 450px;
   margin-left: 130px;
-  border: dotted 1px red;
 }
 
 .section-content {
@@ -77,7 +72,6 @@ body {
   line-height: 0%;
   opacity: 0.1;
   letter-spacing: 4.2px;
-  -border: dotted 1px white;
 }
 
 .section-content-header {
