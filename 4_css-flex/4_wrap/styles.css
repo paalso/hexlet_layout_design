@@ -17,11 +17,12 @@ img {
 
 .catalog {
   display: flex;
-  flex-wrap: wrap;
+  -flex-wrap: wrap;
 }
 
 .catalog-item {
   width: 350px;
+  border: dotted 1px red;
 }
 
 /* END */

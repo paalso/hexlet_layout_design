@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #303846;
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.5;
+    background: #f0f3f4;
+}
+
+.p-2 {
+    padding: 2em;
+}
+
+.mr-1 {
+    margin-right: 1em;
+}
+
+.font-2 {
+    font-size: 2em;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.bg-light {
+    background: #f7f7f7;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.mt-2 {
+    margin-top: 2em;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0dfdf;
+}
+
+.nav-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-horizontal a {
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-horizontal .active-link {
+    color: #424e75;
+}
+
+.nav-horizontal a:hover {
+    color: #c44741;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.catalog {
+    /* BEGIN (write your solution here) */
+    display: flex;
+    flex-wrap: wrap;
+    /* END */
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.catalog-item {
+    /* BEGIN (write your solution here) */
+    width: 32%;
+    max-width: 400px;
+    /* END */
+    margin: 5px;
+    padding: 10px 25px;
+    border: 1px solid #e8e8e8;
+    background: #f9f9f9;
+}
+
+.catalog-item .img {
+    height: 150px;
+}
+
+.catalog-item-name {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.catalog-item-price {
+    color: #666;
+    font-weight: bold;
+}
+
+/* BEGIN (write your solution here) */
+
+@media (max-width: 1199px) {
+    .catalog-item {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 599px) {
+    .catalog-item {
+        width: 100%;
+    }
+}
+
+/* END */
+
+/* Author's solution */
+
+/* BEGIN */
+
+/* .catalog-item {
+    width: 100%;
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+    .catalog-item {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .catalog-item {
+        width: 32%;
+        max-width: 400px;
+    }
+} */
+
+/* END */
