@@ -1,0 +1,144 @@
+body {
+    width: 900px;
+    margin: 0 auto;
+
+    font-size: 16px;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+/* Контейнер .grid-header. Внутри него находятся три колонки:
+Первая колонка занимает пространство, равное максимальной ширине контента внутри колонки.
+Третья колонка занимает 200 пикселей по ширине.
+Вторая колонка занимает всё остальное пространство. */
+.grid-header {
+    /* BEGIN (write your solution here) */
+    display: grid;
+    grid-template-columns: max-content 1fr 200px;
+
+    /* Author's version */
+    grid-template-columns: max-content auto 200px;
+    /* END */
+}
+
+/* Контейнер .grid-main. Внутри него находятся две колонки:
+Первая колонка занимает 300 пикселей.
+Вторая колонка занимает всё остальное пространство. */
+.grid-main {
+    /* BEGIN (write your solution here) */
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    /* END */
+}
+
+/* Контейнер grid-footer. Его задача — размещать колонки по 150 пикселей.
+Таких колонок может быть сколько угодно. */
+.grid-footer {
+    /* BEGIN (write your solution here) */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 150px);
+    /* END */
+}
+
+.header {
+    padding: 20px;
+
+    background: #e4e4e4;
+}
+
+.company-name {
+    margin: 0;
+
+    font-weight: bold;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+}
+
+.horizontal-menu {
+    display: flex;
+    margin: 0;
+
+    list-style: none;
+}
+
+.horizontal-menu li {
+    padding: 0 20px;
+}
+
+.horizontal-menu a {
+    padding-bottom: 3px;
+
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+
+    border-bottom: 1px dashed;
+}
+
+.tel {
+    margin: 0;
+
+    color: #333;
+    font-weight: bold;
+    text-align: right;
+}
+
+.vertical-menu {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.vertical-menu li {
+    padding: 0 20px;
+    -border: dotted 1px red;
+}
+
+.vertical-menu a {
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.aside {
+    padding: 20px;
+
+    background: #f6f6f6;
+}
+
+.main-section {
+    padding: 20px;
+
+    border: 3px solid #f6f6f6;
+    border-top: none;
+    border-bottom: none;
+}
+
+.footer div {
+    height: 50px;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.bg-red {
+    background: #ef9a9a;
+}
+
+.bg-green {
+    background: #a5d6a7;
+}
+
+.bg-blue {
+    background: #90caf9;
+}
