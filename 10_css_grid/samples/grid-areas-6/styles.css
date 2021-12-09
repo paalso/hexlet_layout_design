@@ -1,5 +1,9 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+}
+
+body {
   font-family: sans-serif;
 }
 
@@ -7,14 +11,21 @@ html * {
   box-sizing: border-box;
 }
 
+.container {
+  margin: 0 auto;
+  width: 85vw;
+}
+
 .grid-6 {
   display: grid;
+  grid-template-rows: 15vh 75vh 10vh;
   grid-template-areas:
     "header     header     header header header      header"
     "left-aside main       main   main   right-aside right-aside"
     "footer     footer     footer footer footer      footer";
-    -height: 100vh;
-}
+  column-gap: 50px;
+
+  }
 
 .grid-element {
   padding: 5px;
@@ -45,7 +56,6 @@ html * {
 
 .grid-header {
   grid-area: header;
-  max-height: 100px;
 }
 
 .grid-left-aside {
@@ -58,10 +68,8 @@ html * {
 
 .grid-right-aside {
   grid-area: right-aside;
-  border: 1px dotted red;
 }
 
 .grid-footer {
   grid-area: footer;
-  max-height: 100px;
 }
