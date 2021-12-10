@@ -1,0 +1,172 @@
+body {
+  width: 980px;
+  margin: 0 auto;
+
+  font-size: 16px;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+
+  color: #333;
+}
+
+h1 {
+  font-size: 2.3em;
+  line-height: 1;
+}
+
+.template-grid {
+  /* BEGIN (write your solution here) */
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "header     header"
+    "carousel   carousel"
+    "left-aside main";
+  grid-gap: 20px;
+    /* END */
+}
+
+.header {
+  display: flex;
+  grid-area: header;
+  justify-content: space-between;
+  padding: 0 20px;
+  
+  background: #eceff1;
+}
+
+.main {
+  /* BEGIN (write your solution here) */
+  grid-area: main;
+  /* END */
+}
+
+.left-aside {
+  /* BEGIN (write your solution here) */
+  grid-area: left-aside;
+  /* END */
+}
+
+.carousel {
+  /* BEGIN (write your solution here) */
+  grid-area: carousel;
+  /* END */
+  min-height: 300px;
+  margin-bottom: 30px;
+
+  background: #f5f5f5;
+}
+
+.horizontal-menu {
+  display: flex;
+  padding: 0;
+
+  list-style: none;
+}
+
+.horizontal-menu li {
+  padding: 0 10px;
+}
+
+.horizontal-menu a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.vertical-menu {
+  padding: 0;
+
+  list-style: none;
+}
+
+.vertical-menu a {
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  font-weight: bold;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+.grid-12 {
+  /* BEGIN (write your solution here) */
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 20px;
+  /* END */
+}
+
+.col-3 {
+  /* BEGIN (write your solution here) */
+  grid-column: span 3;
+  /* END */
+}
+
+.col-4 {
+  /* BEGIN (write your solution here) */
+  grid-column: span 4;
+  /* END */
+}
+
+.col-6 {
+  /* BEGIN (write your solution here) */
+  grid-column: span 6;
+  /* END */
+}
+
+.col-12 {
+  /* BEGIN (write your solution here) */
+  grid-column: span 12;
+  /* END */
+}
+
+.btn {
+  display: block;
+  max-width: 200px;
+  padding: 10px;
+
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+
+  border: 1px solid;
+}
+
+.btn:hover {
+  filter: invert(0.6);
+}
+
+.btn-outline-green {
+  border-color: green;
+}
+
+.card {
+  padding: 20px;
+
+  border: 1px solid #d3d3d3;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+
+  text-align: center;
+}
+
+.images {
+  height: 150px;
+
+  background: #f5f5f5;
+}
