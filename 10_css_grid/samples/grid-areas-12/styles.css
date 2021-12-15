@@ -9,15 +9,17 @@ html * {
 
 .grid-12 {
   display: grid;
+  grid-template-columns: 2fr 7fr 3fr;
+  grid-template-rows: 15vh 69vh 10vh;
   grid-template-areas:
-    "header     header     header header header header header header header header      header      header"
-    "left-aside left-aside main   main   main   main   main   main   main   right-aside right-aside right-aside"
-    "footer     footer     footer footer footer footer footer footer footer footer      footer      footer";
-    height: 100vh;
+    "header     header header"
+    "left-aside main   right-aside"
+    "footer     footer footer";
+  gap: 3vh;
   }
   
   .grid-element {
-    padding: 5px;
+    padding: 20px;
     
     font-size: 14px;
     color: #fff;
@@ -25,11 +27,6 @@ html * {
   
   .grid-header {
     grid-area: header;
-    height: 15vh;
-  }
-  
-  .grid-left-aside, .main, .grid-right-aside {
-    height: 75vh;
   }
   
   .grid-left-aside {
@@ -45,7 +42,6 @@ html * {
   }
   .grid-footer {
     grid-area: footer;
-    height: 10vh;
   }
   
   .bg-gray {

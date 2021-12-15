@@ -19,16 +19,17 @@ html * {
 .grid-6 {
   display: grid;
   grid-template-rows: 15vh 75vh 10vh;
+  grid-template-columns: 1fr 3fr 2fr;
   grid-template-areas:
-    "header     header     header header header      header"
-    "left-aside main       main   main   right-aside right-aside"
-    "footer     footer     footer footer footer      footer";
-  column-gap: 50px;
+    "header     header header"
+    "left-aside main   right-aside"
+    "footer     footer footer";
+  gap: 50px;
 
   }
 
 .grid-element {
-  padding: 5px;
+  padding: 20px;
 
   font-size: 14px;
   color: #fff;
