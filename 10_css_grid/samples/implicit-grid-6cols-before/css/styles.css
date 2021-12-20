@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+}
+
+.grid-6 {
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  grid-auto-columns: 100px;
+}
+
+.grid-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+
+  height: 100px;
+}
+
+.grid-element div {
+  width: min-content;
+}
+
+.grid-element:nth-child(1) {
+  grid-column-start: -10;
+}
+
+.grid-element:nth-child(2) {
+  grid-column-start: -8;
+}
+
+
+.bg-gray {
+  background: grey;
+}
+
+.bg-red {
+  background: red;
+}
+
+.bg-blue {
+  background: blue;
+}
+
+.bg-green {
+  background: green;
+}
+
+.bg-orange {
+  background: orange;
+}
+
+.bg-lighcoral {
+  background: lightcoral;
+}

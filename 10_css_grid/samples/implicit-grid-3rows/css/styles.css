@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-rows: repeat(3, 100px);
+  grid-auto-rows: 50px;
+}
+
+.grid-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+
+  width: 400px;
+}
+
+.grid-element div {
+  width: min-content;
+}
+
+.bg-gray {
+  background: grey;
+}
+
+.bg-red {
+  background: red;
+}
+
+.bg-blue {
+  background: blue;
+}
+
+.bg-green {
+  background: green;
+}
+
+.bg-orange {
+  background: orange;
+}
+
+.bg-lighcoral {
+  background: lightcoral;
+}
