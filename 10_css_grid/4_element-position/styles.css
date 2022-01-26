@@ -1,0 +1,89 @@
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
+
+.code-editor {
+  /* BEGIN (write your solution here) */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, max-content);
+  /* END */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  color: #fff;
+  font: 18px/1.5 monospace;
+
+  background: #1f2428;
+
+  border: 1px dotted yellow;
+}
+
+.editor-header {
+  --font-size: 10px;
+  --line-height: 1.5;
+
+  /* BEGIN (write your solution here) */
+  grid-column: 1 / -1;
+  grid-row: 1 / span 1;
+  /* END */
+  height: calc(var(--font-size) * var(--line-height));
+  padding: 5px 0;
+
+  color: #1f2428;
+  font: var(--font-size) / var(--line-height) sans-serif;
+  text-align: center;
+
+  background: #fff;
+  box-shadow: 0 4px 8px -4px rgb(0 0 0 / 87%);
+}
+
+.editor-tree {
+  /* BEGIN (write your solution here) */
+  grid-column: 1 / span 2;
+  grid-row: 2 / span 1;
+  /* END */
+  border-right: 1px solid #1a1a1a;
+}
+
+.editor-main {
+  /* BEGIN (write your solution here) */
+  grid-column: 3 / -1;
+  grid-row: 2 / span 1;
+  /* END */
+  padding: 30px;
+
+  background: #24292e;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.editor-footer {
+  /* BEGIN (write your solution here) */
+  grid-column: 3 / -1;
+  grid-row: 3 / span 1;
+  /* END */
+  padding: 30px;
+}
+
+.code-selector {
+  color: #03a9f4;
+}
+
+.code-rule {
+  color: #ffcb6b;
+}
+
+.code-value {
+  color: #ff5370;
+}
+
+.dir {
+  color: #4caf50;
+}
+
+.git {
+  color: #03a9f4;
+}
+
+.git-branch {
+  color: #f44336;
+}
