@@ -1,0 +1,20 @@
+.link-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.link-wrapper a {
+  color: #00f;
+  text-decoration: none;
+}
+.link-wrapper a img {
+  display: none;
+}
+.link-wrapper a:hover {
+  color: #f00;
+}
+.link-wrapper a:hover img {
+  display: block;
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

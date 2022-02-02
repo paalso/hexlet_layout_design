@@ -1,0 +1,14 @@
+.text-link {
+  color: white;
+  text-decoration: none;
+
+  span {
+    font-weight: bold;
+  }
+
+  &:hover {
+    color: blue;
+    text-decoration: underline;
+
+  }
+}

@@ -1,0 +1,31 @@
+$blue: #00f;
+$red: #f00;
+$green: #0f0;
+
+.link-wrapper {
+
+  display: flex;
+  justify-content: center;
+
+  a {
+    color: $blue;
+    text-decoration: none;
+
+    img {
+      display: none;
+    }
+    &:hover {
+      color: $red;
+  
+      img {
+        display: block;
+        width: 100%;
+      }
+    }
+
+  }
+
+
+
+
+}
