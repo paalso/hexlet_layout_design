@@ -1,0 +1,26 @@
+// https://ru.hexlet.io/code_reviews/504621
+
+@mixin opacity-transition-1s {
+  transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+}
+
+@mixin link-hover {
+  opacity: 0.5;
+  @include opacity-transition-1s;
+}
+
+@mixin link {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover {
+    @include link-hover;
+  }
+}
+
+.link {
+  @include link;
+
+}
