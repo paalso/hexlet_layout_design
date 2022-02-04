@@ -1,0 +1,151 @@
+/* https://ru.hexlet.io/code_reviews/504387 */
+
+:root {
+  --border-big-size: 15px;
+  --border-medium-size: 10px;
+  --border-small-size: 8px;
+  --border-color: #333;
+  --red: #f44336;
+  --yellow: #ffeb3b;
+  --blue: #2196f3;
+}
+
+body {
+  box-sizing: border-box;
+  width: 700px;
+  height: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid {
+  /* BEGIN (write your solution here) */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  width: 100%;
+  /* END */
+  box-sizing: border-box;
+  height: 100%;
+  padding: 20px;
+
+  border: 5px solid var(--border-color);
+}
+
+/* BEGIN (write your solution here) */
+.grid > div {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: solid var(--border-color) var(--border-medium-size);
+}
+
+.cell11 {
+  grid-column: 1 / 6;
+  grid-row: 1 / 5;
+  border-right: solid var(--border-color) var(--border-big-size);
+}
+
+.cell12 {
+  grid-column: 6 / 8;
+  grid-row: 1 / 5;
+  border-right: solid var(--border-color) var(--border-small-size);
+}
+
+.cell13 {
+  grid-column: 8 / -1;
+  grid-row: 1 / 5;
+}
+
+.cell21 {
+  grid-column: 1 / 6;
+  grid-row: 5 / 7;
+  border-right: solid var(--border-color) var(--border-big-size);
+}
+
+.cell22 {
+  grid-column: 6 / 8;
+  grid-row: 5 / 7;
+  border-right: solid var(--border-color) var(--border-small-size);
+}
+
+.cell23 {
+  grid-column: 8 / -1;
+  grid-row: 5 / 7;
+}
+
+.cell31 {
+  grid-column: 1 / 6;
+  grid-row: 7 / 10;
+  border-right: solid var(--border-color) var(--border-big-size);
+}
+
+.cell32 {
+  grid-column: 6 / 8;
+  grid-row: 7 / 10;
+  border-right: solid var(--border-color) var(--border-small-size);
+}
+
+.cell33 {
+  grid-column: 8 / 11;
+  grid-row: 7 / 10;
+  border-right: solid var(--border-color) var(--border-big-size);
+}
+
+.cell34 {
+  grid-column: 11 / -1;
+  grid-row: 7 / 10;
+}
+
+.cell41 {
+  grid-column: 1 / 6;
+  grid-row: 10 / -1;
+  border-bottom: none !important;
+  border-right: solid var(--border-color) var(--border-big-size);
+}
+
+.cell42 {
+  grid-column: 6 / 8;
+  grid-row: 10 / 12;
+  border-right: solid var(--border-color) var(--border-small-size);
+}
+
+.cell43 {
+  grid-column: 8 / 11;
+  grid-row: 10 / 12;
+  border-right: solid var(--border-color) var(--border-big-size);
+}
+
+.cell44 {
+  grid-column: 11 / -1;
+  grid-row: 10 / -1;
+  border-bottom: none !important;
+}
+
+.cell51 {
+  grid-column: 6 / 8;
+  grid-row: 12 / -1;
+  border-bottom: none !important;
+  border-right: solid var(--border-color) var(--border-small-size);
+}
+
+.cell52 {
+  grid-column: 8 / 11;
+  grid-row: 12 / -1;
+  border-bottom: none !important;
+  border-right: solid var(--border-color) var(--border-big-size);
+}
+
+.red {
+  background-color: var(--red);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.blue {
+  background-color: var(--blue);
+}
+/* END */
