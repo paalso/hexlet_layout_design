@@ -1,0 +1,36 @@
+// https://ru.hexlet.io/courses/sass-programming/lessons/function/exercise_unit
+// https://ru.hexlet.io/code_reviews/505836 
+
+// Функции
+// ========
+
+/*
+Создайте функцию grid-container-width, которая высчитывает
+ширину в зависимости от того, сколько колонок мы хотим использовать.
+
+Вам доступны 2 переменные:
+
+$grid-width — ширина одной колонки.
+$gutter-width — ширина отступа от колонки.
+Функция принимает один аргумент — количество колонок,
+которые должен занимать элемент. На выходе получаем число
+с единицей измерения. */
+
+$grid-width: 45px;
+$gutter-width: 15px;
+
+
+@function grid-container-width($cols-number) {
+  @return ($grid-width + $gutter-width) * $cols-number - $gutter-width;
+}
+
+.container {
+  width: grid-container-width(15);
+}
+
+
+/*
+.container {
+  width: 885px;
+}
+*/

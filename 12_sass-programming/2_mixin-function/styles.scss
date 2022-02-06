@@ -1,0 +1,33 @@
+// https://ru.hexlet.io/courses/sass-programming/lessons/mixin-function/exercise_unit
+// https://ru.hexlet.io/code_reviews/505252
+
+// Миксины как функции
+// ====================
+
+/*
+Создайте миксин bg-gradient, принимающий 3 цвета.
+С помощью этих трёх цветов создайте линейный градиент по следующему шаблону:
+
+linear-gradient(90deg, первый цвет 0%, второй цвет 35%, третий цвет 100%);
+Так же для браузеров, которые не поддерживают градиент необходимо помочь
+и указать ещё одно свойство background с заранее заданным цветом.
+Этим цветом будет второй аргумент нашего миксина. */
+
+
+@mixin bg-gradient($r, $g, $b) {
+  background: $g;
+  background: linear-gradient(90deg, $r 0%, $g 35%, $b 100%);
+}
+
+
+.primary-gradient {
+  @include bg-gradient(#D16BA5, #86A8E7, #5FFBF1);
+}
+
+// После компиляции должен получиться следующий CSS код: 
+/*
+.primary-gradient {
+  background: #86A8E7;
+  background: linear-gradient(90deg, #D16BA5 0%, #86A8E7 35%, #5FFBF1 100%);
+}
+*/
