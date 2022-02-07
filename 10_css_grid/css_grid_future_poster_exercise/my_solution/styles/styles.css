@@ -11,7 +11,7 @@
 @font-face {
   font-weight: bold;
   font-family: 'Roboto';
-  src: url('../assets/fonts/Roboto-Bold.woff2');
+  src: url('../assets/fonts/Roboto-Bold.woff2') format("woff2");
 }
 
 /* END */
@@ -29,19 +29,19 @@ body {
   position: relative;
   display: grid;
 
+/*  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+*/
   grid-template-columns: 3fr 4.8fr repeat(4, 3fr);
   grid-template-rows: 1.65fr 10.3fr repeat(2, 1.65fr) 2.8fr 1.65fr;
 
-  box-sizing: border-box;
-
   height: 100vh;
-  width: 960px;
+  width: 980px;
   margin: 0 auto;
 
   background-image: url("../assets/images/future-poster.jpg");
   background-position-x: center;
   background-size: cover;
-  background-color: var(--cover-color);
 
   color: var(--text-color);
 }
@@ -56,7 +56,7 @@ body {
   bottom: 0;
   background: var(--cover-color);
   opacity: var(--cover-opacity);
-  z-index: 1;
+  z-index: 1; /* Explicit is better than implicit. */
 }
 
 .dark1 {
