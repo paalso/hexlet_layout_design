@@ -1,0 +1,60 @@
+/* BEGIN */
+@font-face {
+  font-weight: bold;
+  font-family: "Roboto";
+  src: url("../assets/fonts/Roboto-Bold.woff2") format("woff2");
+}
+
+/* END */
+
+body {
+  margin: 0;
+
+  font-family: "Roboto", sans-serif;
+
+  background-color: #15141c;
+}
+
+/* BEGIN */
+
+.future-poster {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  width: 980px;
+  height: 100vh;
+  margin: 0 auto;
+
+  background-image: url("../assets/images/future-poster.jpg");
+  background-position-x: center;
+  background-size: cover;
+}
+
+.poster-cell {
+  background-color: #15141c;
+}
+
+.poster-bg {
+  background-color: #673ab7;
+  opacity: 0.6;
+}
+
+.header-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 50px;
+
+  color: #fff;
+  font-size: 4em;
+  text-align: right;
+}
+
+.header-cell-2 {
+  font-size: 2em;
+}
+
+.span-3 {
+  grid-column: span 3;
+}
