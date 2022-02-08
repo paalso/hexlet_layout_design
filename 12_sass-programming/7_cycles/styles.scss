@@ -1,0 +1,83 @@
+// https://ru.hexlet.io/courses/sass-programming/lessons/cycles/exercise_unit
+// https://ru.hexlet.io/code_reviews/507490
+
+// Циклы
+// ======
+
+/*
+Напишите миксин colors принимающий на вход цветовую тему в виде
+ассоциативного массива. Для каждого цвета из массива создаётся два
+селектора вида:
+- bg-название цвета в теме.Внутри этого селектора находится свойство
+background с необходимым значением.
+- text-название цвета в теме. Внутри этого селектора находится свойство
+color с необходимым значением.
+
+Цветовая схема в качестве значения каждого цвета имеет ассоциативный
+массив из двух элементов: цвет для светлой темы и цвет для тёмной
+темы. Выбор темы настраивается с помощью второго аргумента миксина $tone,
+который по умолчанию имеет значение light. */
+
+$theme-colors: (
+  "primary":    ("light": "#F5E6E8", "dark": "#1B262C"),
+  "secondary":  ("light": "#D5C6E0", "dark": "#0F4C75"),
+  "success":    ("light": "#AAA1C8", "dark": "#3282B8"),
+  "info":       ("light": "#967AA1", "dark": "#F9F9F9"),
+  "warning":    ("light": "#192A51", "dark": "#BBE1FA"),
+);
+ 
+@mixin colors($theme-colors, $tone: "light") {
+  @each $name, $colors in $theme-colors {
+    $color: map-get($colors, $tone);
+
+    .bg-#{$name} {
+      background: unquote($color);
+    }
+
+    .text-#{$name} {
+      color: unquote($color);
+    }
+  }
+}
+
+@include colors($theme-colors);
+
+
+/*
+После компиляции должен получиться следующий CSS код
+(для примера будут выведены только селекторы для primary и secondary):
+
+.bg-primary {
+  background: #F5E6E8;
+}
+ 
+.text-primary {
+  color: #F5E6E8;
+}
+ 
+.bg-secondary {
+  background: #D5C6E0;
+}
+ 
+.text-secondary {
+  color: #D5C6E0;
+}
+*/
+
+/*
+Author's version
+// BEGIN
+@mixin colors($colors, $tone: "light") {
+  @each $color-name, $color-value in $colors {
+    $color: string.unquote(map.get($color-value, $tone));
+
+    .bg-#{$color-name} {
+      background: $color;
+    }
+    .text-#{$color-name} {
+      color: $color;
+    }
+  }
+}
+
+*/
