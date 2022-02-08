@@ -1,0 +1,113 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('../src/fonts/Raleway-Bold.ttf');
+}
+
+:root {
+  --color-gray: #dfe2d9;
+  --color-dark: #333;
+  --font-style: 'Raleway', sans-serif;
+  --vertical-line-height: 25vh;
+}
+
+body {
+  box-sizing: border-box;
+  width: 715px;
+  margin: 0 auto;
+  padding: 20px 0 calc(var(--vertical-line-height) / 2);
+
+  color: var(--color-dark);
+  font-family: var(--font-style);
+  line-height: 1.7;
+
+  background: var(--color-gray);
+}
+
+p {
+  margin: 0;
+
+  font-weight: bold;
+}
+
+h1 {
+  margin: 0;
+  font-size: 80px;
+}
+
+/* BEGIN (write your solution here) */
+.grid {
+  display: grid;
+
+  position: relative;
+  top: 15px;
+
+  /* Костыли - при проверке какое то необъяснимое смещение
+  На самом деле - нет. Почему то казалось, что grid-контейнер
+  занимает место, - по ширине - которе занимают columnts, в
+  соответствии с тем, что задано в свойстве grid-template-columns:...
+  Но на самом деле, по умолчанию grid-контейнер  занимает всю ширину
+  родительского контейнера, что, по идее логично т.к. это - блочный элемент
+  
+  В результате, в моем варианте grid-контейнер был выровнен по левому краю
+  (как и положено по умолчанию), а у автора - по правому. Тут я забыл про
+  то, что grid-єлементы можно выравнивать с помощью свойства justify-content.
+  Этот метод и применил автор, я же забыл о нем и двигал с помощью костыля
+
+  И еще - у автора более естественное решение с четырьмя рядами в сетке, где
+  два ряда отводятся под надписи 
+  left: 70px;
+  top: 10px;
+  */
+
+  grid-template-columns: repeat(5, 85px);
+  grid-template-rows: repeat(3, var(--vertical-line-height));
+  justify-content: end;
+
+  /* Расстояния между колонками: 40px по вертикали и 55px по горизонтали. */
+  column-gap: 55px;
+  row-gap: 40px;
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.left-text>div {
+  margin-bottom: 40px;
+}
+
+.inner-grid {
+  display: grid;
+
+  position: absolute;
+  top: calc(25vh * 1.5 + 40px);
+  left: 0;
+
+  grid-template-columns: repeat(5, 85px);
+  grid-template-rows: calc(2 * var(--vertical-line-height));
+
+  column-gap: 55px;
+  opacity: 0.7;
+}
+
+/* END */
+
+.blue {
+  background: #0271a1;
+}
+
+.orange {
+  background: #f37022;
+}
+
+.pink {
+  background: #cd0076;
+}
