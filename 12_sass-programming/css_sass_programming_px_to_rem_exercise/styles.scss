@@ -1,0 +1,45 @@
+@use 'sass:math';
+
+$rem-base: 16px;
+
+@function list-to-string($list, $glue: ' ') {
+  $list-length: length($list);
+  $result: "";
+  @for $i from 1 to $list-length {
+    $result: $result + nth($list, $i) + $glue;
+  }
+  @return unquote($result + nth($list, $list-length));
+}
+
+
+@function add-suffix($base, $suffix) {
+  @return #{$base}#{$suffix};
+}
+
+@function px-to-rem($args) {
+  @if (type-of($args)==number) {
+    @return add-suffix(math.div($args, $rem-base), "rem");
+  }
+
+  $rems: ();
+
+  @each $arg in $args {
+    $rems: append($rems, add-suffix(math.div($arg, $rem-base), 'rem'));
+  }
+
+  @return list-to-string($rems);
+}
+
+
+.px-20 {
+  padding-left: px-to-rem(20px);
+  padding-right: px-to-rem(20px);
+}
+
+.card {
+  padding: px-to-rem(20px 15px 30px 45px);
+}
+
+.card {
+  padding: px-to-rem(-20px -16px);
+}

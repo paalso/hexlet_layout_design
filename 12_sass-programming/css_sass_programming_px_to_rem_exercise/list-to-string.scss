@@ -1,0 +1,8 @@
+@function list-to-string($list) {
+  $result: #{$list};
+  @debug type-of($value: $result);
+  @return $result;
+}
+
+
+@debug list-to-string(25px 50px 10px);

@@ -1,0 +1,93 @@
+// https://ru.hexlet.io/challenges/css_sass_programming_adaptive_exercise/instance
+// https://ru.hexlet.io/code_reviews/509296
+
+// Миксин для адаптивной вёрстки
+// ==============================
+
+/*
+При использовании SASS или любого другого препроцессора всегда хочется
+облегчить себе жизнь. Особенно, если речь идёт о создании адаптивной
+вёрстки. Постоянное использование @media и указание селекторов внутри —
+мучительно долго. К тому же возникает проблема постоянного перехода
+от одной точки остановки до другой.
+
+Чтобы избежать этих проблем можно создать специальный миксин,
+который поможет уменьшить количество SASS кода и облегчит его чтение.
+
+Создайте миксин media, принимающий следующие аргументы:
+
+Текстовое обозначение точки остановки. Таких точек в текущем задании
+четыре: small, medium, large, custom. По умолчанию выбирается значение small.
+Максимальную ширину точки остановки. Она используется, если указан тип
+точки остановки custom. */
+
+
+
+$breakpoints: (breakpoint-small: 768px,
+  breakpoint-medium: 992px,
+  breakpoint-large: 1200px);
+
+@mixin media($breakpoint: "small", $max-width: null) {
+
+  @if ($breakpoint !="custom") {
+    $max-width: map-get($breakpoints, "breakpoint-#{$breakpoint}");
+  }
+
+  @media screen and (max-width: #{$max-width}) {
+    & {
+      @content;
+    }
+  }
+}
+
+.card {
+  width: 25%;
+
+  @include media(large) {
+    width: 33%;
+  }
+
+  @include media(medium) {
+    width: 50%;
+  }
+
+  @include media(small) {
+    width: 100%;
+  }
+
+  @include media(custom, 300px) {
+    display: none;
+  }
+}
+
+// После компиляции получится следующий CSS код:
+
+/*
+.card {
+  width: 25%;
+}
+ 
+@media screen and (max-width: 1200px) {
+  .card {
+    width: 33%;
+  }
+}
+ 
+@media screen and (max-width: 992px) {
+  .card {
+    width: 50%;
+  }
+}
+ 
+@media screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+ 
+@media screen and (max-width: 300px) {
+  .card {
+    display: none;
+  }
+}
+*/
