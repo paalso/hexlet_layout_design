@@ -304,10 +304,6 @@ button {
   background-color: #fafafa;
 }
 
-.instagram-app-header>* {
-  border: red dotted 1px;
-}
-
 /* --- instagram-app-stories ---------------------------- */
 .instagram-app-stories {
   display: flex;
