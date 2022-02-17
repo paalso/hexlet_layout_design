@@ -34,7 +34,7 @@ body {
 
 h1 {
   /* BEGIN (write your solution here) */
-  font: 32px "Grand Hotel";
+  font: 32px "Grand Hotel", cursive;
   /* END */
 }
 
@@ -78,7 +78,6 @@ button {
   padding: 0;
 
   background-color: unset;
-  /* WTF? */
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -140,191 +139,47 @@ button {
 }
 
 /* BEGIN (write your solution here) */
+/* Author почему то не любит такое и єто сильно все усложняет */
 * {
   margin: 0;
   padding: 0;
-}
-
-/* --- instagram-app-header ---------------------------- */
-
-@font-face {
-  font-weight: normal;
-  font-family: "Roboto";
-  src: url(../assets/fonts/Roboto-regular.woff2) format("woff2");
-}
-
-@font-face {
-  font-weight: 500;
-  font-family: "Roboto";
-  src: url(../assets/fonts/Roboto-500.woff2) format("woff2");
-}
-
-@font-face {
-  font-weight: 700;
-  font-family: "Roboto";
-  src: url(../assets/fonts/Roboto-700.woff2) format("woff2");
-}
-
-@font-face {
-  font-weight: 400;
-  font-family: "Grand Hotel";
-  src: url(../assets/fonts/GrandHotel.woff2) format("woff2");
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
-
-  font-family: 'Roboto', sans-serif;
-}
-
-h1 {
-  /* BEGIN (write your solution here) */
-  font: 32px "Grand Hotel";
-  /* END */
-}
-
-img {
-  max-width: 100%;
-
-  vertical-align: middle;
+  box-sizing: border-box;
 }
 
 button {
-  font-family: inherit;
-}
-
-.mobile {
-  width: 375px;
-
-  color: #262626;
-
-  background: #fff;
-
-  box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
-}
-
-.mobile-header {
-  display: flex;
-  align-items: center;
-  padding: 10px 20px;
-
-  background: #f5f5f5;
-}
-
-.mobile-time {
-  font-weight: bold;
-  font-size: 13px;
-}
-
-.icon {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  padding: 0;
-
-  background-color: unset;
-  /* WTF? */
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  background: none;
   border: none;
-
   cursor: pointer;
-}
-
-.icon-signal {
-  background-image: url(../assets/icons/signal.svg);
-}
-
-.icon-connection {
-  background-image: url(../assets/icons/wifi.svg);
-}
-
-.icon-battery {
-  background-image: url(../assets/icons/battery.svg);
-}
-
-.icon-camera {
-  background-image: url(../assets/icons/camera.svg);
-}
-
-.icon-igtv {
-  background-image: url(../assets/icons/igtv.svg);
-}
-
-.icon-messanger {
-  background-image: url(../assets/icons/messanger.svg);
-}
-
-.icon-more {
-  background-image: url(../assets/icons/more.svg);
-}
-
-.icon-save {
-  background-image: url(../assets/icons/save.svg);
-}
-
-.icon-like {
-  background-image: url(../assets/icons/like.svg);
-}
-
-.icon-comment {
-  background-image: url(../assets/icons/comment.svg);
-}
-
-.icon-home {
-  background-image: url(../assets/icons/home.svg);
-}
-
-.icon-search {
-  background-image: url(../assets/icons/search.svg);
-}
-
-.icon-add {
-  background-image: url(../assets/icons/add.svg);
-}
-
-/* BEGIN (write your solution here) */
-* {
-  margin: 0;
-  padding: 0;
 }
 
 /* --- instagram-app-header ---------------------------- */
 .instagram-app-header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
-  justify-content: center;
   align-items: center;
   padding: 20px 15px;
+
   background-color: #fafafa;
 }
 
 /* --- instagram-app-stories ---------------------------- */
-.instagram-app-stories {
+.instagram-stories {
   display: flex;
   justify-content: flex-start;
-  padding: 12px;
+  padding: 10px;
 }
 
-.instagram-app-stories-item {
+.instagram-stories-item {
   width: 65px;
   margin-right: 20px;
-  background: none;
-  border: none;
-  cursor: pointer;
 }
 
-.instagram-app-stories-item .avatar-container {
+.instagram-stories-item .avatar {
   padding: 5px;
   border: 1px solid #e0e0e0;
 }
 
-.instagram-app-stories-item .avatar-caption {
+.instagram-stories-item .avatar-caption {
   margin-top: 5px;
   font-family: "Roboto";
   font-size: 12px;
