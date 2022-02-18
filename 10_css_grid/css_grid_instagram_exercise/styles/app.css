@@ -203,11 +203,8 @@ button {
   padding: 15px 10px;
 }
 
-.instagram-post-user {
-  display: flex;
-}
-
 .instagram-post-user-avatar {
+  box-sizing: content-box;
   width: 35px;
   margin-right: 10px;
   float: left;
@@ -218,9 +215,9 @@ button {
   padding: 20px 15px;
 }
 
-.instagram-post-footer-icons {
+.instagram-post-actions {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 20px;
 }
 
@@ -229,13 +226,10 @@ button {
 }
 
 /* Отчасти костыль. Из условия: 'Отступ между текстами: стандартный.'
-Выше пришлось обнулить все стандарные отступы, а здесь - типа восстанавливаем */
+Выше обнуляем все стандарные отступы, а здесь - типа восстанавливаем, в соотвествии
+с условием: Футер > Тексты > Отступ между текстами: стандартный */
 .instagram-post-footer-comments p {
   margin-bottom: 1em;
-}
-
-.instagram-post-footer-comments p:last-child {
-  margin-bottom: 0;
 }
 
 .instagram-app-footer {
