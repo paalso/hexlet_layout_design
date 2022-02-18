@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "Space Mono";
+    src: url("../assets/fonts/SpaceMono-Regular.ttf");
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+  
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  }
+  
+  .keyboard {
+    /* BEGIN (write your solution here) */
+    
+    /* END */
+    width: 1200px;
+
+    border: blue dotted 1px;
+  }
+  
+  .key {
+    /* BEGIN (write your solution here) */
+    grid-column: span 1;
+    /* END */
+    padding: 5px;
+  
+    font: 18px/1.5 "Space Mono", monospace;
+  
+    background-color: #f4f5f6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .key:hover {
+    background-color: #fff;
+  }
+  
+  /* BEGIN (write your solution here) */
+  .keyboard {
+      display: grid;
+      grid-template-rows: repeat(30, 1fr);
+      grid-template-rows: repeat(30, 30px);
+      column-gap: 20px;
+  }
+  /* END */
+  
+  .span-4 {
+    grid-column: span 4;
+  }
+  
+  .p-0 {
+    padding: 0;
+  }
+  
+  .w-100 {
+    width: 100%;
+  }
+  
+  .border-none {
+    border: none;
+  }
+  
