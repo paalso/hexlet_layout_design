@@ -1,0 +1,46 @@
+:root {
+  --red: #f44336;
+  --green: #4caf50;
+  --blue: #2196f3;
+  --side: 200px;
+}
+
+body {
+  width: 600px;
+  height: 400px;
+  margin: 0;
+}
+
+/* Для расчётов можно использовать функцию calc и значение переменной --side,
+например calc(var(--side) * 5). Эта строка вернёт значение переменной --side
+умноженной на 5 */
+/* BEGIN (write your solution here) */
+body {
+  position: relative;
+}
+
+.square-blue, .square-green, .square-red {
+  position: absolute;
+  width: var(--side);
+  height: var(--side);
+}
+
+.square-red {
+  top: 0;
+  left: 0;
+  background-color: var(--red);
+}
+
+.square-blue {
+  top: 0;
+  right: 0;
+  background-color: var(--blue);
+}
+
+.square-green {
+  top: var(--side);
+  right: var(--side);
+  background-color: var(--green);
+}
+
+/* END */
