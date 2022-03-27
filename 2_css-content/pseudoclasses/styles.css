@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  font: 18px/1.5 sans-serif;
+}
+
+.chessboard {
+  width: 500px;
+  height: 500px;
+
+  background: #b58763;
+
+  border-collapse: collapse;
+}
+
+/* BEGIN (write your solution here) */
+.chessboard tr:nth-child(odd) td:nth-child(odd) {
+  background: #f1d9b5;
+}
+
+.chessboard tr:nth-child(even) td:nth-child(even) {
+  background: #f1d9b5;
+}
+
+/* END */
