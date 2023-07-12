@@ -1,0 +1,50 @@
+@font-face {
+  font-weight: normal;
+  font-family: Comfortaa;
+  src: url("../assets/fonts/Comfortaa-Regular.ttf");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: Comfortaa;
+  src: url("../assets/fonts/Comfortaa-Bold.ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  color: #eee;
+  font: 18px/1.5 Comfortaa, sans-serif;
+
+  background: #222831;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #fd7014;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+  padding: 50px 30px;
+}
+
+.definitions {
+  padding: 30px;
+
+  background: #393e46;
+}
+
+.definitions-term {
+  color: #fd7014;
+  font-weight: bold;
+  font-variant: small-caps;
+}
