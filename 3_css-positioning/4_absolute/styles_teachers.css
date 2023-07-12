@@ -1,0 +1,29 @@
+/* BEGIN */
+
+[class^="square"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: var(--side);
+  height: var(--side);
+}
+
+.square-red {
+  background: var(--red);
+}
+
+.square-green {
+  top: var(--side);
+  left: var(--side);
+
+  background: var(--green);
+}
+
+.square-blue {
+  left: calc(var(--side) * 2);
+
+  background: var(--blue);
+}
+
+/* END */
