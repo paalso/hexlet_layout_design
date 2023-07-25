@@ -1,0 +1,56 @@
+:root {
+  --font-size: 27px;
+  --line-height: 37.5px;
+}
+
+/* BEGIN (write your solution here) */
+@font-face {
+  font-family: "Caveat";
+  src: url("../assets/fonts/Caveat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "MarckScript";
+  src: url("../assets/fonts/MarckScript-Regular.ttf");
+}
+/* END */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+
+  background-color: #4db6ac;
+}
+
+.notebook {
+  position: relative;
+
+  /* BEGIN (write your solution here) */
+  
+  /* END */
+
+  word-spacing: 6px;
+
+  background-color: #fff;
+  box-shadow: 4px 6px 16px 3px #009688;
+}
+
+.notebook::before {
+  position: absolute;
+  top: 0;
+  left: 50px;
+
+  width: 2px;
+  height: 100%;
+
+  background-color: #ff5722;
+
+  content: "";
+}
+
+/* BEGIN (write your solution here) */
+
+/* END */
