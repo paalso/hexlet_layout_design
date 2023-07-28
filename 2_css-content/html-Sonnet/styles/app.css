@@ -6,13 +6,14 @@
 /* BEGIN (write your solution here) */
 @font-face {
   font-family: "Caveat";
-  src: url("../assets/fonts/Caveat-Regular.ttf");
+  src: url("../assets/fonts/caveat.woff2");
 }
 
 @font-face {
-  font-family: "MarckScript";
-  src: url("../assets/fonts/MarckScript-Regular.ttf");
+  font-family: "Marck Script";
+  src: url("../assets/fonts/marckscript.woff2");
 }
+
 /* END */
 
 body {
@@ -29,7 +30,10 @@ body {
   position: relative;
 
   /* BEGIN (write your solution here) */
-  
+  box-sizing: border-box;
+  width: 750px;
+  height: 700px;
+  padding-top: 50px;
   /* END */
 
   word-spacing: 6px;
@@ -52,5 +56,26 @@ body {
 }
 
 /* BEGIN (write your solution here) */
+.paper {
+  height: 100%;
+  padding: 0 60px;
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  background: repeating-linear-gradient(#fff,
+      #fff calc(var(--line-height) - 1px),
+      #80cbc4 calc(var(--line-height) - 1px),
+      #80cbc4 var(--line-height));
+}
+
+pre {
+  margin: 0;
+  padding-top: 10px;
+  font-family: Caveat, sans-serif;
+}
+
+.author {
+  text-align: right;
+  font-family: "Marck Script", sans-serif;
+}
 
 /* END */
