@@ -1,0 +1,100 @@
+/* BEGIN (write your solution here) */
+@font-face {
+  font-weight: normal;
+  font-family: Raleway;
+  src: url("../assets/fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: Raleway;
+  src: url("../assets/fonts/Raleway-Bold.ttf");
+}
+
+/* END */
+
+body {
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 50px;
+
+  color: #eee;
+
+  /* BEGIN (write your solution here) */
+  font: 20px/1.5 Raleway, sans-serif;
+  /* END */
+
+  background-image: linear-gradient(to right top, #222831, #282d36, #2d333b, #333841, #393e46);
+}
+
+img {
+  max-width: 100%;
+
+  vertical-align: middle;
+}
+
+a {
+  color: inherit;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  color: #00adb5;
+  font-size: 1.5em;
+}
+
+.tabs {
+  width: 1024px;
+  margin: 0 auto;
+
+  /* BEGIN (write your solution here) */
+  column-count: 3;
+  column-gap: 0;
+  /* END */
+}
+
+/* BEGIN (write your solution here) */
+.tab-name {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #00adb5;
+}
+
+.tab-name:hover,
+.tab-name:focus
+ {
+  border-bottom: solid #5ffbf1 3px;
+}
+
+.tabs-content {
+  background-color: #393e46;
+}
+
+.tabs-content-item {
+  display: none;
+  columns: 3;
+  column-gap: 30px;
+  padding: 20px;
+}
+
+[data-tab="html"]:hover~.tabs-content [data-tab-content="html"],
+[data-tab="html"]:focus~.tabs-content [data-tab-content="html"],
+[data-tab="css"]:hover~.tabs-content [data-tab-content="css"],
+[data-tab="css"]:focus~.tabs-content [data-tab-content="css"],
+[data-tab="js"]:hover~.tabs-content [data-tab-content="js"],
+[data-tab="js"]:focus~.tabs-content [data-tab-content="js"] {
+  display: block;
+}
+
+/* END */
+
+.span-all {
+  column-span: all;
+}
