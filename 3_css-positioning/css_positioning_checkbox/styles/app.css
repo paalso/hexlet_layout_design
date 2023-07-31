@@ -1,0 +1,63 @@
+:root {
+  /*
+    Переменная для свойства background. Здесь сокращённая запись свойств в таком порядке:
+    background-image
+    background-position / background-size
+    background-repeat
+    background-color
+  */
+  --checkbox-checked: url("../assets/images/check.png") center / 0.5rem no-repeat #288cff;
+  --checkbox-side: 1rem;
+  --checkbox-border: 1px solid #ced4da;
+  --checkbox-radius: 0.3rem;
+  --checkbox-label-before-left: -1.5rem;
+}
+
+body {
+  font: 18px/1.5 sans-serif;
+
+  background: #f8fafc;
+}
+
+.hexlet-control {
+  padding-left: 2rem;
+}
+
+.hexlet-checkbox {
+  position: absolute;
+
+  opacity: 0;
+}
+
+/* BEGIN (write your solution here) */
+.hexlet-checkbox-label {
+  position: relative;
+
+  cursor: pointer;
+}
+
+.hexlet-checkbox-label::before {
+  position: absolute;
+  top: 0;
+  left: var(--checkbox-label-before-left);
+
+  display: block;
+  width: var(--checkbox-side);
+  height: var(--checkbox-side);
+
+  border: var(--checkbox-border);
+  border-radius: var(--checkbox-radius);
+
+  content: "";
+}
+
+.hexlet-checkbox-label:hover::before {
+  background: var(--checkbox-checked);
+  opacity: 0.5;
+}
+
+.hexlet-checkbox:checked ~ .hexlet-checkbox-label::before {
+  background: var(--checkbox-checked);
+  opacity: 1;
+}
+/* END */
