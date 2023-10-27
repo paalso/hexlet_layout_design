@@ -1,0 +1,117 @@
+@font-face {
+  font-weight: normal;
+  font-family: Brygada1918;
+  src: url('../assets/fonts/Brygada-1918.woff2');
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: OpenSans;
+  src: url('../assets/fonts/OpenSans-Regular.woff2');
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: OpenSans;
+  src: url('../assets/fonts/OpenSans-Bold.woff2');
+}
+
+:root {
+  --yellow: #f7df1e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0;
+
+  font-family: OpenSans, sans-serif;
+  font-size: 16px;
+  line-height: 2.3;
+  color: #fff;
+  background: #0b1d26;
+}
+
+.hero-section {
+  position: relative;
+  display: flex;
+  width: 1280px;
+  height: 713px;
+}
+
+.hero-info {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  padding: 0 30px 0 30px;
+}
+
+.hero-section::before {
+  position: absolute;
+  left: -68px;
+  top: -92px;
+  width: 234px;
+  
+  content: '01';
+  font-size: 200px;
+  font-weight: bold;
+  opacity: 10%;
+  border: red dotted 1px;
+}
+
+.hero-logo {
+  width: 50%;
+  padding-left: 130px;
+}
+
+.hero-section .title {
+  position: relative;
+  margin-bottom: 17px;
+  padding-left: 100px;
+  letter-spacing: 4.2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--yellow);
+}
+
+.hero-section .title::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 70px;
+  height: 2px;
+  content: '';
+  background-color: var(--yellow);
+}
+
+.hero-section .header {
+  margin-top: 17px;
+
+  font-family: Brygada1918, serif;
+  font-size: 64px;
+  line-height: 70.4px;
+  font-weight: normal;
+}
+
+.hero-section .promo {
+  margin-top: 71px;
+}
+
+.hero-section .learn-more {
+  margin-top: 32px;
+
+  font-size: 17px;
+  color: var(--yellow);
+}
+
+.hero-section .learn-more span {
+  font-size: 25.5px;
+}

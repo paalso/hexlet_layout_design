@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+
+  color: #212529;
+  font: 18px/1.5 sans-serif;
+
+  background-color: #f7f8fa;
+}
+
+img {
+  width: 100%;
+
+  vertical-align: middle;
+}
+
+h2 {
+  text-align: center;
+}
+
+.catalog {
+  /* BEGIN (write your solution here) */
+  display: flex;
+  flex-wrap: wrap;
+  /* END */
+
+  text-align: center;
+}
+
+.catalog-item {
+  /* BEGIN (write your solution here) */
+  width: 350px;
+
+  list-style: none;
+  border: red dotted 1px;
+  /* END */
+}
