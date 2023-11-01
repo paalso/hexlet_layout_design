@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>График продаж литературы</title>
+    <link rel="stylesheet" href="styles/app.css" />
+  </head>
+
+  <body>
+    <section class="container">
+      <h1>Продажа литературы</h1>
+      <table class="histogram">
+        <!-- BEGIN (write your solution here) -->
+        <thead class="histogram-header">
+          <tr>
+            <th>Жанры:</th>
+            <th class="px-20 histogram-header-blue">Классическая</th>
+            <th class="px-20 histogram-header-red">Фантастика</th>
+            <th class="px-20 histogram-header-green">Романы</th>
+          </tr>
+        </thead>
+
+        <tbody class="histogram-body mt-50px">
+          <tr class="histogram-row">
+            <td class="histogram-name">2018 год</td>
+            <td class="histogram-col" style="--data-value: 40%">
+              <span class="w-50px histogram-blue"></span>
+              <p>40k</p>
+            </td>
+            <td class="histogram-col" style="--data-value: 80%">
+              <span class="w-50px histogram-red"></span>
+              <p>80k</p>
+            </td>
+            <td class="histogram-col" style="--data-value: 75%">
+              <span class="w-50px histogram-green"></span>
+              <p>75k</p>
+            </td>
+          </tr>
+          <tr class="histogram-row">
+            <td class="histogram-name">2019 год</td>
+            <td class="histogram-col" style="--data-value: 35%">
+              <span class="w-50px histogram-blue"></span>
+              <p>35k</p>
+            </td>
+            <td class="histogram-col" style="--data-value: 63%">
+              <span class="w-50px histogram-red"></span>
+              <p>63k</p>
+            </td>
+            <td class="histogram-col" style="--data-value: 50%">
+              <span class="w-50px histogram-green"></span>
+              <p>50k</p>
+            </td>
+          </tr>
+          <tr class="histogram-row">
+            <td class="histogram-name">2020 год</td>
+            <td class="histogram-col" style="--data-value: 90%">
+              <span class="w-50px histogram-blue"></span>
+              <p>90k</p>
+            </td>
+            <td class="histogram-col" style="--data-value: 77%">
+              <span class="w-50px histogram-red"></span>
+              <p>77k</p>
+            </td>
+            <td class="histogram-col" style="--data-value: 80%">
+              <span class="w-50px histogram-green"></span>
+              <p>80k</p>
+            </td>
+          </tr>
+        </tbody>
+        <!-- END -->
+      </table>
+    </section>
+  </body>
+</html>
