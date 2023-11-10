@@ -1,0 +1,51 @@
+:root {
+  --print-background: #fff;
+  --print-basic: #000;
+  --print-highlight-tag: #c62828;
+  --print-highlight-attr: #936315;
+  --print-highlight-string: #2e7d32;
+}
+
+@media print {
+  body {
+    background: var(--print-background) !important;
+  }
+
+  .terminal {
+    border: solid 1px var(--print-basic);
+
+    color: var(--print-basic);
+    background: var(--print-background);
+  }
+
+  .code-tag {
+    color: var(--print-highlight-tag);
+  }
+
+  .code-attr {
+    color: var(--print-highlight-attr);
+  }
+
+  .code-string {
+    color: var(--print-highlight-string);
+  }
+}
+
+/* Hexlet's version */
+/*
+@media print {
+  :root {
+    --main-bg: #fff;
+    --terminal-bg: none;
+    --highlight-tag: #c62828;
+    --highlight-attr: #936315;
+    --highlight-string: #2e7d32;
+  }
+
+  .terminal {
+    color: #000;
+
+    border: 1px solid #000;
+  }
+}
+*/

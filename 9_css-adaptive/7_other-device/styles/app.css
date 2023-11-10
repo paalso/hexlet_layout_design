@@ -1,0 +1,19 @@
+@import url("./variables.css");
+@import url("./terminal-screen.css");
+@import url("./terminal-print.css");
+
+@font-face {
+  font-weight: 400;
+  font-family: "JetBrains Mono";
+  src: url("../assets/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  
+  background: var(--main-bg);
+}

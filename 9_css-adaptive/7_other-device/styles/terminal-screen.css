@@ -1,0 +1,56 @@
+.terminal {
+  padding: 20px 30px;
+
+  color: #fff;
+
+  background: var(--terminal-bg);
+
+  border-radius: 5px;
+}
+
+.terminal-header {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 5px;
+  padding: 0;
+
+  border: 0;
+  border-radius: 50%;
+}
+
+.btn-red {
+  background: var(--red);
+}
+
+.btn-yellow {
+  background: var(--yellow);
+}
+
+.btn-green {
+  background: var(--green);
+}
+
+.terminal-body pre {
+  margin: 0;
+}
+
+.terminal-body code {
+  font: 18px/1.5 "JetBrains Mono", monospace;
+}
+
+.code-tag {
+  color: var(--highlight-tag);
+}
+
+.code-attr {
+  color: var(--highlight-attr);
+}
+
+.code-string {
+  color: var(--highlight-string);
+}
