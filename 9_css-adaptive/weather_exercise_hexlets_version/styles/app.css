@@ -6,8 +6,8 @@
 body {
   /* BEGIN (write your solution here) */
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   /* END */
   width: 100vw;
   height: 100vh;
@@ -27,7 +27,6 @@ img {
 .weather {
   /* BEGIN (write your solution here) */
   display: flex;
-  gap: 30px;
   /* END */
   width: 355px;
   height: 125px;
@@ -39,7 +38,7 @@ img {
 
 .weather-info {
   /* BEGIN (write your solution here) */
-  width: calc(100% * 2 / 3);
+  flex-grow: 2;
   /* END */
 }
 
@@ -64,30 +63,28 @@ img {
 .weather-img {
   /* BEGIN (write your solution here) */
   display: flex;
+  flex-grow: 1;
   align-items: center;
-
-  width: calc(100% / 2);
+  justify-content: center;
   /* END */
 }
 
 /* BEGIN (write your solution here) */
-@media (max-width: 399px) {
+@media screen and (max-width: 399px) {
   .weather {
     flex-direction: column-reverse;
-    gap: 1rem;
-
+    width: 100%;
     height: auto;
   }
 
-  .weather>* {
-    width: 100%;
+  .weather-info {
+    margin-top: 1rem;
+
+    text-align: center;
   }
 
-  .weather-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .weather-value {
+    justify-content: center;
   }
 }
-
 /* END */
