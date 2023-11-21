@@ -1,0 +1,96 @@
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
+
+@font-face {
+  font-family: JetBrainsMono;
+  src: url("../assets/fonts/JetBrainsMono-Regular.ttf");
+}
+
+.code-editor {
+  /* BEGIN (write your solution here) */
+  display: grid;
+  grid-template-areas: 
+    "header header header header header header"
+    "aside  aside  main   main   main   main"
+    "aside  aside  footer footer footer footer";
+  
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: max-content;
+  /* END */
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+
+  color: #fff;
+  font: 18px/1.5 JetBrainsMono, monospace;
+
+  background: #33235a;
+}
+
+.code-editor pre {
+  font-family: JetBrainsMono, monospace;
+}
+
+.editor-header {
+  --font-size: 10px;
+  --line-height: 1.5;
+
+  /* BEGIN (write your solution here) */
+  grid-area: header;
+  /* END */
+  height: calc(var(--font-size) * var(--line-height));
+  padding: 5px 0;
+
+  color: #fff;
+  font: var(--font-size) / var(--line-height) sans-serif;
+  text-align: center;
+
+  background: #241a3d;
+}
+
+.editor-tree {
+  /* BEGIN (write your solution here) */
+  grid-area: aside;
+  /* END */
+  border-right: 3px solid #00ffc0;
+}
+
+.editor-main {
+  /* BEGIN (write your solution here) */
+  grid-area: main;
+  /* END */
+  padding: 30px;
+
+  background: #241a3d;
+  border-bottom: 3px solid #00ffc0;
+}
+
+.editor-footer {
+  /* BEGIN (write your solution here) */
+  grid-area: footer;
+  /* END */
+  padding: 30px;
+}
+
+.code-selector {
+  color: #03a9f4;
+}
+
+.code-rule {
+  color: #ffcb6b;
+}
+
+.code-value {
+  color: #ff5370;
+}
+
+.dir {
+  color: #4caf50;
+}
+
+.git {
+  color: #03a9f4;
+}
+
+.git-branch {
+  color: #f44336;
+}
