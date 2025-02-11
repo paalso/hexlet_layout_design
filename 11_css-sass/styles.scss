@@ -1,0 +1,30 @@
+header {
+  width: 50%;
+  background: brown;
+
+  &.w-100 {
+      width: 100%;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &.justify-content-between {
+    justify-content: space-between;
+  }
+
+  &.align-items-center {
+    align-items: center;
+  }
+}
+
+.link {
+  color: #fff;
+
+  &:hover {
+    color: #ccc;
+    font-weight: bold;
+  }
+}
+
