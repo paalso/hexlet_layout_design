@@ -1,3 +1,15 @@
 body {
   margin: 0;
 }
+
+.border-red {
+  border: red dotted 1px;
+}
+
+.border-blue {
+  border: blue dotted 1px;
+}
+
+.border {
+  border: black dotted 1px;
+}
