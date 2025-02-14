@@ -1,3 +1,3 @@
-import app from './src/my-application/index.js';
+import app from './src/index.js';
 
 app();
