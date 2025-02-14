@@ -1,3 +1,14 @@
+$dark: #303846;
+$light: #f7f7f7;
+$primary: #09d3ac;
+$secondary: #2196f3;
+
+%flex-element-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header {
   width: 50%;
   background: brown;
@@ -7,24 +18,15 @@ header {
   }
 }
 
-.flex {
-  display: flex;
-
-  &.justify-content-between {
-    justify-content: space-between;
-  }
-
-  &.align-items-center {
-    align-items: center;
-  }
+.card {
+  background: $light;
+  border: 1px solid $dark;
+}
+  
+.flex-center {
+  @extend %flex-element-center;
 }
 
-.link {
-  color: #fff;
-
-  &:hover {
-    color: #ccc;
-    font-weight: bold;
-  }
-}
-
+// Компиляция:
+// sass styles.cscc
+// sass styles.cscc styles.css

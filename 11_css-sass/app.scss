@@ -1,0 +1,10 @@
+// app.scss
+@use "config" as *;
+
+.card {
+  background: $primary;
+
+  .btn {
+    background: $secondary;
+  }
+}
