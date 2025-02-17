@@ -12,3 +12,9 @@
 
 [Решение](https://ru.hexlet.io/code_reviews/1715414)
 
+##### [Работа с текстом](https://ru.hexlet.io/courses/bootstrap-basic/lessons/text-content/theory_unit)
+
+[Упражение](https://ru.hexlet.io/courses/bootstrap-basic/lessons/text-content/exercise_unit)
+
+[Решение](https://ru.hexlet.io/code_reviews/1717954)
+
