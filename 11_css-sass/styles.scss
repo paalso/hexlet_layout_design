@@ -1,32 +1,43 @@
-$dark: #303846;
-$light: #f7f7f7;
-$primary: #09d3ac;
-$secondary: #2196f3;
+@use "colors";
+@use "sizes";
 
-%flex-element-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@mixin opacity-transition-1s {
+    transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
 }
 
-header {
-  width: 50%;
-  background: brown;
-
-  &.w-100 {
-      width: 100%;
-  }
+@mixin link-hover {
+    opacity: 0.5;
+    @include opacity-transition-1s;
 }
 
-.card {
-  background: $light;
-  border: 1px solid $dark;
-}
-  
-.flex-center {
-  @extend %flex-element-center;
+@mixin hover-element {
+    &:hover {
+        opacity: 0.5;
+        @include opacity-transition-1s;
+    }
 }
 
-// Компиляция:
-// sass styles.cscc
-// sass styles.cscc styles.css
+@mixin link {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    &:hover {
+        @include link-hover;
+    }
+}
+
+.link {
+    @include link;
+}
+
+.block {
+    width: sizes.$block-size;
+    height: sizes.$block-size;
+    
+    border: colors.$red dotted sizes.$border-size;
+    background-color: colors.$primary;
+
+    @include hover-element;
+}

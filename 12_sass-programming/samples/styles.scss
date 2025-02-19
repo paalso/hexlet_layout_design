@@ -1,0 +1,23 @@
+@mixin bg-gradient($color1, $color2, $color3) {
+    background: $color2;
+    background: linear-gradient(90deg, $color1 0%, $color2 35%, $color3 100%);
+}
+
+
+p {
+    @include bg-gradient(#D16BA5, #86A8E7, #5FFBF1);
+    $value: 10;
+    
+    @debug type-of($value); // => number
+}
+
+@mixin icon($name, $size) {
+    .icon-#{$name} {
+      background: url("images/icon-#{$name}.svg");
+      width: #{$size}px;
+      height: #{$size}px;
+    }
+  }
+  
+@include icon("login", "32");
+
