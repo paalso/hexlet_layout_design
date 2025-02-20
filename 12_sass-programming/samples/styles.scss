@@ -1,23 +1,51 @@
+$grid-width: 45px;
+$gutter-width: 15px;
+$dark-mode: true;
+$main-font-size: 14px;
+
 @mixin bg-gradient($color1, $color2, $color3) {
-    background: $color2;
-    background: linear-gradient(90deg, $color1 0%, $color2 35%, $color3 100%);
+  background: $color2;
+  background: linear-gradient(90deg, $color1 0%, $color2 35%, $color3 100%);
 }
 
-
-p {
-    @include bg-gradient(#D16BA5, #86A8E7, #5FFBF1);
-    $value: 10;
-    
-    @debug type-of($value); // => number
+@function grid-container-width($cols_number) {
+  @return $cols_number * ($gutter-width + $grid-width) - $gutter-width;
 }
 
-@mixin icon($name, $size) {
-    .icon-#{$name} {
-      background: url("images/icon-#{$name}.svg");
-      width: #{$size}px;
-      height: #{$size}px;
+@mixin card {
+  // Цвета для светлой темы
+  $primary-color: #f9f9f9;
+  $text-color: #424242;
+
+  @if $dark-mode ==true {
+    // Если условие сработает, то мы просто перезапишем значения переменных.
+    $primary-color: #161625;
+    $text-color: #e1e1ff;
+  }
+
+  .card {
+    .card-body {
+      background: $primary-color;
+      color: $text-color;
     }
   }
-  
-@include icon("login", "32");
+}
 
+html {
+  font-size: $main-font-size;
+}
+
+body {
+  padding: 1rem 3rem;
+}
+
+// $main-font-size: 16px;
+
+
+@media (max-width: 768px) {
+  @if $main-font-size < 16px {
+    html {
+      font-size: $main-font-size * 1.5;
+    }
+  }
+}
