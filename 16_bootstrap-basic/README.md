@@ -18,3 +18,15 @@
 
 [Решение](https://ru.hexlet.io/code_reviews/1717954)
 
+##### [Таблицы](https://ru.hexlet.io/courses/bootstrap-basic/lessons/table/theory_unit)
+
+[Упражение](https://ru.hexlet.io/courses/bootstrap-basic/lessons/table/exercise_unit)
+
+[Решение](https://ru.hexlet.io/code_reviews/1720389)
+
+##### [Компоненты](https://ru.hexlet.io/courses/bootstrap-basic/lessons/components/theory_unit)
+
+[Упражение](https://ru.hexlet.io/courses/bootstrap-basic/lessons/components/exercise_unit)
+
+[Решение](https://ru.hexlet.io/code_reviews/1721749)
+    
