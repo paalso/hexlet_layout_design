@@ -1,0 +1,23 @@
+@import url("vendor/bootstrap.min.css");
+
+@font-face {
+  font-weight: normal;
+  font-family: roboto;
+  src: url("assets/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-weight: bold;
+  font-family: roboto;
+  src: url("assets/fonts/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: roboto;
+  src: url("assets/fonts/Roboto-Medium.ttf");
+}
+
+:root {
+  --bs-font-sans-serif: roboto, sans-serif;
+}

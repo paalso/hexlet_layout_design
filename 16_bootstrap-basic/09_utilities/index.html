@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Компонент Карточка</title>
+</head>
+
+<!-- https://ru.hexlet.io/code_reviews/1740931 -->
+
+<body class="p-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <div class="bg-body-tertiary border-opacity-10 border-secondary card p-xl-1 rounded-4 shadow-sm">
+          <div class="card-body">
+            <div class="mb-3" style="font: 14px/21px normal Roboto, sans-serif;">профессия • от 6 300 ₽ в месяц</div>
+
+            <h2 class="h5 card-title mb-3" style="font: 24px 500 Roboto sans-serif;">Фронтенд-разработчик</h2>
+
+            <p class="card-text mb-4" style="font: 14px normal Roboto, sans-serif" ;>Разработка фронтенд-компонентов для
+              веб-приложений</p>
+
+            <div class="d-flex justify-content-between align-items-center">
+              <span style="font: 14px/21px normal Roboto, sans-serif;">10 месяцев • с нуля</span>
+
+              <button type="button" class="btn btn-primary btn-sm bg-black rounded-pill">Старт 1 июня</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-4">
+        <div class="bg-body-tertiary border-opacity-10 border-secondary card p-xl-1 rounded-4 shadow-sm">
+          <div class="card-body">
+            <div class="mb-3">
+              <div class="d-flex small">
+                <div class="me-2">профессия</div>
+                <div>
+                  <span class="me-2 ms-1">•</span>
+                  от 6 300 ₽ в месяц
+                </div>
+              </div>
+            </div>
+
+            <h2 class="h4 card-title mb-3">Фронтенд-разработчик</h2>
+
+            <p class="small text-body-secondary mb-4">
+              Разработка фронтенд-компонентов для веб-приложений
+            </p>
+
+            <div class="d-flex">
+              <div class="d-flex small">
+                <div>
+                  10 месяцев
+                  <span class="me-2 ms-1">•</span>
+                </div>
+                с нуля
+              </div>
+              <div class="ms-auto">
+                <div class="px-3 rounded-4 small text-bg-dark">
+                  Старт
+                  1 июня
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+
+</html>
