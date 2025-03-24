@@ -1,0 +1,15 @@
+$grid-width: 45px;
+$gutter-width: 15px;
+
+@function grid-container-width($cols-number) {
+  @if $cols-number < 1 {
+    @return $grid-width;  
+  } @else {
+    @return ($grid-width + $gutter-width) * $cols-number - $gutter-width;
+  }
+}
+
+
+.container {
+  width: grid-container-width(-15);
+}
