@@ -1,15 +1,27 @@
-$grid-width: 45px;
-$gutter-width: 15px;
+@use "sass:map";
+@use "sass:string";
 
-@function grid-container-width($cols-number) {
-  @if $cols-number < 1 {
-    @return $grid-width;  
-  } @else {
-    @return ($grid-width + $gutter-width) * $cols-number - $gutter-width;
+
+$theme-colors: (
+  "primary":    ("light": "#F5E6E8", "dark": "#1B262C"),
+  "secondary":  ("light": "#D5C6E0", "dark": "#0F4C75"),
+  "success":    ("light": "#AAA1C8", "dark": "#3282B8"),
+  "info":       ("light": "#967AA1", "dark": "#F9F9F9"),
+  "warning":    ("light": "#192A51", "dark": "#BBE1FA"),
+);
+
+@mixin colors($theme-colors, $tone:'light') {
+  @each $type, $scheme in $theme-colors {
+    $color: string.unquote(map.get($scheme, $tone));
+
+    .bg-#{$type} {
+      background: $color;
+    }
+    .text-#{$type} {
+      color: $color;
+    }
   }
 }
 
 
-.container {
-  width: grid-container-width(-15);
-}
+@include colors($theme-colors);
