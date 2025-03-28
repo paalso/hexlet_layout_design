@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: #666;
+  font: 2em/1.5 "Headers", sans-serif;
+}

@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(rel='icon' type='image/x-icon' href='favicon.ico')
+
+    title Hexlet. Pug: Include
+
+    link(rel='stylesheet' href='./styles/app.css')
+
+    style
+      include ../../styles/basic.css
+
+  body
+    //- Подключение шапки сайта
+    include ../includes/header.pug
+
+    main
+      include:markdown-it main.md
+
+      h2 Преимущества работы программистом:
+      ul
+        li Зарплата
+        li Прикольно
+        li Развивает мозги
+        li Кофе и печеньки в офисе
+
+    //- Подключение футера сайта
+    include ../includes/footer.pug
