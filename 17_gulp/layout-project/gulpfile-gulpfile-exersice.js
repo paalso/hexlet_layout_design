@@ -1,3 +1,7 @@
+// Gulp: Gulpfile 
+// https://ru.hexlet.io/courses/gulp/lessons/gulpfile/exercise_unit
+// https://ru.hexlet.io/code_reviews/1758094
+
 // const { parallel } = require('gulp');
 const { series } = require('gulp');
 
