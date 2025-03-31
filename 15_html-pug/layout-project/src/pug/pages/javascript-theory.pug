@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(rel='icon' type='image/x-icon' href='favicon.ico')
+
+    title Hexlet. Pug: Javascript
+
+body
+h1 Javascript
+
+h2 Небуферизованный код
+
+  - const title = "Программы обучения на Хекслете"; // JavaScript код
+
+.container
+  .row
+    .col-12
+      h3 #{title}
+
+- const one = 1;
+- const two = 2;
+- const action = "plus";
+
+.calculation
+  | #{one} #{action} #{two} = #{one + two}
+
+- const html = "<p>Текст параграфа</p>";
+
+.result
+  | #{html}
+
+h2 Буферизованный код
+
+.plus
+  p= 2 + 2
+
+.buffer
+  p= "<span>Hello</span>, Hexlet"
+
+ul
+  each item in ["яблоко", "банан", "вишня"]
+    li= item
+
+h3 Дополнительное задание
+ul
+  - for(let i = 1; i < 10; i += 2) {
+    li= i
+  - }
+
+p а можно так:
+
+ul
+  - for(let i = 1; i < 10; i += 2) {
+    li #{i}
+  - }

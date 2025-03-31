@@ -1,0 +1,44 @@
+//- HTML: Препроцессор Pug. JavaScript
+//- https://ru.hexlet.io/courses/html-pug/lessons/javascript/exercise_unit
+//- 
+
+-
+  const title = 'Количество курсов на Хекслете';
+  const javascript = 32;
+  const php = 24;
+  const python = 14;
+  const layout = 12;
+
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Курсы на Hexlet
+  body
+    //- BEGIN (write your solution here)
+    h1 Количество курсов на Хекслете
+
+    table
+      thead
+        tr
+          th Курс
+          th Количество уроков
+      tbody
+        tr
+          td JavaScript
+          td= javascript
+        tr
+          td PHP
+          td= php
+        tr
+          td Python
+          td= python
+        tr
+          td Вёрстка
+          td= layout
+
+    - total_courses_count = javascript + php + layout + python
+    p Всего курсов: #{total_courses_count}
+    //- END

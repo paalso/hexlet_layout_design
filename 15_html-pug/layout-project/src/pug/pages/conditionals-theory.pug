@@ -1,0 +1,50 @@
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    link(rel='icon' type='image/x-icon' href='favicon.ico')
+
+    title Условные конструкции
+
+    link(rel='stylesheet' href='./styles/app.css')
+
+  body
+    - const isLogin = true;
+
+    .container
+      .row
+        .col
+          if isLogin
+            section.profile
+              h1 Добро пожаловать!
+          else
+            section.registration
+              h1 Зарегистрируйтесь!
+
+    -
+      const user = {
+        name: 'Кодовёнок',
+        surname: 'Хекслетович',
+        login: 'hexlet-code',
+      }
+
+    section.user-profile
+      p.name
+        if user.name && user.surname
+          | #{user.name} #{user.surname}
+        else
+          | #{user.login}
+
+    -
+      const titles = {
+        home: "Домашняя страница",
+        product: "Наши продукты",
+      }
+
+    - const isAdmin = false;
+
+    unless isAdmin
+      h1 Недостаточно прав для просмотра страницы
+    else
+      h1 Добро пожаловать
