@@ -2,8 +2,7 @@
 // https://ru.hexlet.io/courses/gulp/lessons/gulpfile/exercise_unit
 // https://ru.hexlet.io/code_reviews/1758094
 
-// const { parallel } = require('gulp');
-const { series } = require('gulp');
+const { parallel } = require('gulp');
 
 
 const myFirstGulpTask = (done) => {
@@ -17,8 +16,7 @@ const mySecondGulpTask = (done) => {
   done();
 }
 
-// exports.default = parallel(myFirstGulpTask, mySecondGulpTask);
-exports.default = series(myFirstGulpTask, mySecondGulpTask);
+exports.default = parallel(myFirstGulpTask, mySecondGulpTask);
 exports.myFirstGulpTask = myFirstGulpTask;
 exports.mySecondGulpTask = mySecondGulpTask;
 
