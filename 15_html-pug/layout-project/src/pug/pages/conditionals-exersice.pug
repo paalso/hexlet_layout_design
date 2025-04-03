@@ -1,0 +1,48 @@
+//- HTML: Препроцессор Pug. Условные конструкции
+//- https://ru.hexlet.io/courses/html-pug/lessons/conditionals/exercise_unit
+//- https://ru.hexlet.io/code_reviews/1764725
+
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Hexlet Profile
+  body
+    -
+      const user = {
+        login: 'hexlet',
+        password: 'hexletpass',
+        name: 'Кодовёнок',
+        surname: 'Хекслетович',
+        role: 'admin',
+        testing: true,
+      }
+
+    section.profile-links
+      h1 Кодовёнок Хекслетович
+      nav
+        a(href="#") Настройки
+
+        .divider
+        a(href="#") Промокод
+        a(href="#") Доступ в подарок
+
+        unless user.role === 'user'
+          .divider
+          a(href="#") Учительская
+          a(href="#") Менторство
+          a(href="#") Маркетинг
+
+        .divider
+        a(href="#") Помощь
+        
+        button Выйти
+    
+      if  user.role === "admin" && user.testing
+        section
+          h2 Сводка по тестированию
+          include data/testing.pug
+  //- BEGIN (write your solution here)
+  //- END

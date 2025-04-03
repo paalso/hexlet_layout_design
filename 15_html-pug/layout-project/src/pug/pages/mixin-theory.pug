@@ -1,0 +1,85 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(rel='icon' type='image/x-icon' href='favicon.ico')
+
+    title Hexlet. Pug: миксины
+
+body
+  //- Constants
+  -
+    const users = [
+      {
+        name: 'Кодовенок',
+        surname: 'Хекслетович',
+        login: 'hexlet-code',
+        score: 1271
+      },
+      {
+        name: 'Король',
+        surname: 'Верстки',
+        login: 'king-of-layout',
+        score: 1100
+      },
+    ]
+
+    const basUsers = []
+
+  //- Mixins
+
+  mixin createUserTable(usersData = [])
+    table
+      thead
+        tr
+          th Имя
+          th Фамилия
+          th Логин
+          th Баллы
+      tbody
+        each user in usersData
+          tr
+            td= user.name
+            td= user.surname
+            td= user.login
+            td= user.score
+        else
+          tr
+            td(colspan='4') Пользователи отсутствуют
+
+  mixin buttonOrder
+    button.btn.btn-order Оформить заявку
+
+  mixin button(title='Заказать')
+    button.btn.btn-order= title
+
+  mixin article(name, author)
+    .post
+      h2= name
+
+      .post-body
+        block
+
+      .post-author= author
+
+  //- Content
+
+  +article('Название статьи', 'Автор статьи')
+    include:markdown-it main.md
+
+  +buttonOrder
+
+  +button
+
+  +button('Отменить заказ')
+
+  section
+    h2 Лучшие из лучших
+    +createUserTable(users)
+
+    h2 Худшие из худших
+    +createUserTable(badUsers)
+
+  +article('Название статьи', 'Автор статьи')
+    include:markdown-it articles/ikea.md

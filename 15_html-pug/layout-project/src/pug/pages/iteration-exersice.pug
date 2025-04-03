@@ -1,0 +1,46 @@
+//- HTML: Препроцессор Pug. Цтклы
+//- https://ru.hexlet.io/courses/html-pug/lessons/iteration/exercise_unit
+//- https://ru.hexlet.io/code_reviews/1765874
+doctype html
+html(lang='ru')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Hexlet Users
+  body
+    -
+      const contacts = {
+        'А': [
+          {
+            name: 'Александр',
+            surname: 'Хекслетович',
+          },
+          {
+            name: 'Андрей',
+            surname: 'Верстальщиков',
+          },
+          {
+            name: 'Артём',
+            surname: 'Джаваскриптов',
+          },
+        ],
+        'Б': [
+          {
+            name: 'Бахтияр',
+            surname: 'Ученичников',
+          },
+          {
+            name: 'Борис',
+            surname: 'Рубинов',
+          },
+        ],
+      };
+
+    each contact_items, letter in contacts
+      h2 #{letter}
+      ul
+        each contact in contact_items
+          li #{contact.name} #{contact.surname}
+        else
+          li Нет пользователей

@@ -1,0 +1,97 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(rel='icon' type='image/x-icon' href='favicon.ico')
+
+    title Hexlet. Pug: Циклы
+
+body
+
+  h1 Циклы
+  -
+    const users1 = [
+      {
+        name: 'Кодовёнок',
+        surname: 'Хекслетович',
+        login: 'hexlet-code',
+        scores: 1271
+      },
+      {
+        name: 'Король',
+        surname: 'Вёрстки',
+        login: 'king-of-layout',
+        scores: 1100
+      },
+    ]
+
+    const users2 = {
+      admin: [
+        {
+          name: 'Кодовёнок',
+          surname: 'Хекслетович',
+        },
+      ],
+      moderator: [
+        {
+          name: 'Король',
+          surname: 'Вёрстки',
+        },
+        {
+          name: 'Алексей',
+          surname: 'Примадонин',
+        },
+      ],
+    }
+
+
+  h2 Вложенные циклы и получение ключа объекта
+
+  section.container
+    h3 Рейтинг пользователей
+
+    table
+      thead
+        tr
+          th Имя
+          th Фамилия
+          th Логин
+          th Баллы
+      tbody
+        each user in users1
+          tr
+            td= user.name
+            td= user.surname
+            td= user.login
+            td= user.scores
+        else
+          tr
+            td(colspan='4') Нет пользователей
+
+  section.container
+    each people, position in users2
+      h4= position
+      ul
+        each user in people
+          li= user.name + ' ' + user.surname
+
+  h2 Цикл while
+
+  - let count = 1;
+
+  ul
+    while count < 6
+      li= "Hello, my number is " + count
+      - count += 1
+
+  h2 Дополнительное задание
+
+  include data/icon.pug
+
+  each icon_items, payment_status in icons
+    h2= payment_status
+
+    each icon in icon_items
+      li
+        a(href=icon.url) #{icon.name}
