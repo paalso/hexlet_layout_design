@@ -54,19 +54,25 @@ body
   mixin button(title='Заказать')
     button.btn.btn-order= title
 
-  mixin article(name, author)
-    .post
-      h2= name
+  mixin article(name='Hexlet', author='Кодовенок')
 
-      .post-body
-        block
+    if block
+      .post
+        h2= name
 
-      .post-author= author
+        .post-body
+          block
+
+        .post-author= author
+    else
+      p ERROR!
 
   //- Content
 
   +article('Название статьи', 'Автор статьи')
     include:markdown-it main.md
+
+  hr
 
   +buttonOrder
 
@@ -81,5 +87,16 @@ body
     h2 Худшие из худших
     +createUserTable(badUsers)
 
-  +article('Название статьи', 'Автор статьи')
-    include:markdown-it articles/ikea.md
+  hr
+
+  +article
+    include:markdown-it articles/coding.md
+
+  hr
+
+  +article
+    include:markdown-it articles/empty.md
+
+  hr
+
+  +article

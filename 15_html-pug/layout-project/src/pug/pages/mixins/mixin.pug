@@ -1,0 +1,12 @@
+mixin table(header_items, rows)
+  table
+    thead
+      tr
+        each item in header_items
+          th= item
+
+    tbody
+      each row_items in rows
+        tr
+          each item in row_items
+              td= item
