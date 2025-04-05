@@ -1,6 +1,6 @@
 // Gulp: Watch
 // https://ru.hexlet.io/courses/gulp/lessons/watch/exercise_unit
-//
+// https://ru.hexlet.io/code_reviews/1767475
 
 
 const { dest, src, series, watch } = require('gulp');
