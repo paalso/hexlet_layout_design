@@ -59,5 +59,4 @@ exports.buildPug = buildPug;
 exports.server = browserSyncJob;
 exports.build = series(clean, parallel(buildSass, buildPug));
 exports.development = series(exports.build, browserSyncJob);
-
 exports.default = exports.development;
