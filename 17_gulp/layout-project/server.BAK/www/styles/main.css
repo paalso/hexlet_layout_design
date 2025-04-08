@@ -1,0 +1,1 @@
+body{display:flex;align-items:center;justify-content:center;width:100vw;height:100vh}header{background-color:#faebd7}header>h1{font-size:4em}header>h2{font-size:3em}header>h3{font-size:2em}header>h4{font-size:1em}header>h4 small{color:#ccc}

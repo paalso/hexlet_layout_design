@@ -1,0 +1,39 @@
+.notifications {
+    width: 500px;
+    height: 500px;
+    padding: 1rem;
+    overflow: auto;
+  
+    background: #fff;
+    border: 1px solid rgb(98 105 118 / 16%);
+    box-shadow: rgb(30 41 59 / 4%) 0 2px 4px 0;
+  
+    small {
+      color: #626976;
+    }
+  
+    .notifications-item {
+      padding: 1rem 0;
+  
+      border-bottom: 1px solid rgb(98 105 118 / 16%);
+  
+      &:last-child {
+        padding-bottom: 0;
+  
+        border: none;
+      }
+  
+      h3 {
+        margin: 0;
+        overflow: hidden;
+  
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+  
+      p {
+        margin: 0;
+      }
+    }
+  }
+  
