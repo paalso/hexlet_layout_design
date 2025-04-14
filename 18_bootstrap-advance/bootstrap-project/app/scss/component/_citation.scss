@@ -1,0 +1,75 @@
+@use "sass:map";
+
+$citation-padding: map.get($spacers, 5) map.get($spacers, 4) map.get($spacers, 3);
+$citation-color: $blockquote-footer-color;
+$citation-bg: transparent;
+$citation-font-size: $blockquote-font-size;
+$citation-border-radius: $border-radius;
+
+$citation-before-top: map.get($spacers, 4) * -1;
+$citation-before-font-size: map.get($display-font-sizes, 1);
+$citation-before-font-family: $font-family-serif;
+
+$citation-footer-margin: $spacer 0 0;
+$citation-footer-padding: map.get($spacers, 2) 0 0;
+$citation-footer-font-size: $blockquote-footer-font-size;
+$citation-footer-border: 1px solid;
+
+.citation {
+  --#{$prefix}citation-padding: #{$citation-padding};
+  --#{$prefix}citation-color: #{$citation-color};
+  --#{$prefix}citation-bg: #{$citation-bg};
+  --#{$prefix}citation-font-size: #{$citation-font-size};
+  --#{$prefix}citation-border-radius: #{$citation-border-radius};
+  --#{$prefix}citation-before-top: #{$citation-before-top};
+  --#{$prefix}citation-before-font-size: #{$citation-before-font-size};
+  --#{$prefix}citation-before-font-family: #{$citation-before-font-family};
+  --#{$prefix}citation-footer-margin: #{$citation-footer-margin};
+  --#{$prefix}citation-footer-padding: #{$citation-footer-padding};
+  --#{$prefix}citation-footer-font-size: #{$citation-footer-font-size};
+  --#{$prefix}citation-footer-border: #{$citation-footer-border};
+
+  position: relative;
+
+  display: block;
+
+  margin: 0;
+  padding: var(--#{$prefix}citation-padding);
+
+  color: var(--#{$prefix}citation-color);
+  font-size: var(--#{$prefix}citation-font-size);
+
+  background-color: var(--#{$prefix}citation-bg);
+
+  border-radius: var(--#{$prefix}citation-border-radius);
+  @include box-shadow($box-shadow);
+
+  // кавычка для компонента
+  &::before {
+    position: absolute;
+    top: var(--#{$prefix}citation-before-top);
+
+    font-size: var(--#{$prefix}citation-before-font-size);
+    font-family: var(--#{$prefix}citation-before-font-family);
+
+    content: "“";
+  }
+
+  // footer для компонента
+  &>&-footer {
+    margin: var(--#{$prefix}citation-footer-margin);
+    -padding: var(--#{$prefix}citation-footer-padding);
+
+    font-size: var(--#{$prefix}citation-footer-font-size);
+    font-style: italic;
+
+    border-top: var(--#{$prefix}citation-footer-border);
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .citation-#{$color} {
+    --#{$prefix}citation-color: var(--#{$prefix}#{$color}-text-emphasis);
+    --#{$prefix}citation-bg: var(--#{$prefix}#{$color}-bg-subtle);
+  }
+}

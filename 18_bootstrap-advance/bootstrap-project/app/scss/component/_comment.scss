@@ -1,0 +1,102 @@
+@use "sass:map";
+@use "sass:color";
+
+$comment-spacer: $spacer;
+$comment-spacers: (
+  0: 0,
+  1: $comment-spacer * .25,
+  2: $comment-spacer * .5,
+  3: $comment-spacer,
+  4: $comment-spacer * 1.5,
+  5: $comment-spacer * 3,
+);
+
+$comment-font-size: $comment-spacer;
+$comment-margin: map.get($comment-spacers, 4) 0;
+$comment-padding: map.get($comment-spacers, 4) map.get($comment-spacers, 4);
+$comment-border-radius: 0.3rem;
+$comment-box-shadow: 0 0.5rem 1rem #{rgba(0, 0, 0, 0.15)};
+
+$gray: $gray-800;
+$lightgray: $gray-600;
+$white: $white;
+
+$green-border: #28a745;
+$red-border: $red;
+$blue-border: #17a2b8;
+$yellow-border: $yellow;
+
+$green: #84e8ba;
+$red: #fae3e5;
+$blue: #cdf4fc;
+$yellow: #fff4d3;
+
+$border-color: #007bff;
+
+
+.comment {
+  --#{$prefix}comment-spacer: #{$comment-spacer};
+  --#{$prefix}comment-margin: #{$comment-margin};
+  --#{$prefix}comment-padding: #{$comment-padding};
+  --#{$prefix}comment-font-size: #{$comment-font-size};
+  --#{$prefix}comment-border-radius: #{$comment-border-radius};
+  --#{$prefix}comment-box-shadow: #{$comment-box-shadow};
+
+  --#{$prefix}comment-color: #{$gray};
+  --#{$prefix}comment-bg: #{$white};
+  --#{$prefix}comment-border-color: #{$border-color};
+
+  margin: var(--#{$prefix}comment-margin);
+  padding: var(--#{$prefix}comment-padding);
+
+  color: var(--#{$prefix}comment-color);
+  
+  background-color: var(--#{$prefix}comment-bg);
+
+  box-shadow: var(--#{$prefix}comment-box-shadow);
+  border-radius: var(--#{$prefix}comment-border-radius);
+
+  border-left: var(--#{$prefix}comment-border-color) 5px solid;
+}
+
+.comment-header {
+  margin-bottom: #{0.75 * $comment-spacer};
+  font-weight: bold;
+}
+
+.comment-body {
+  margin-bottom: #{0.75 * $comment-spacer};
+  line-height: 1.5;
+}
+
+.comment-footer {
+  --#{$prefix}comment-footer-font-size: 0.875rem;
+  --#{$prefix}comment-color-muted: #{$lightgray};
+
+  font-size: var(--#{$prefix}comment-footer-font-size);
+  color: var(--#{$prefix}comment-color-muted);
+
+  text-align: right;
+}
+
+.comment {
+  &.comment-success {
+    --#{$prefix}comment-bg: #{$green};
+    --#{$prefix}comment-border-color: #{$green-border};
+  }
+
+  &.comment-danger {
+    --#{$prefix}comment-bg: #{$red};
+    --#{$prefix}comment-border-color: #{$red-border};
+  }
+
+  &.comment-info {
+    --#{$prefix}comment-bg: #{$blue};
+    --#{$prefix}comment-border-color: #{$blue-border};
+  }
+
+  &.comment-warning {
+    --#{$prefix}comment-bg: #{$yellow};
+    --#{$prefix}comment-border-color: #{$yellow-border};
+  }
+}
