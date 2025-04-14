@@ -1,0 +1,59 @@
+// https://ru.hexlet.io/code_reviews/1776477
+
+@use "sass:map";
+@use "sass:color";
+
+$comment-padding: map.get($spacers, 4);
+$comment-color: $gray-900;
+$comment-bg: $white;
+$comment-font-size: 1rem;
+$comment-border-radius: $border-radius-lg;
+$comment-box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+$comment-types: (
+  "success": $success,
+  "danger": $danger,
+  "info": $info,
+  "warning": $warning
+);
+
+.comment {
+  --comment-padding: #{$comment-padding};
+  --comment-color: #{$comment-color};
+  --comment-bg: #{$comment-bg};
+  --comment-font-size: #{$comment-font-size};
+  --comment-border-radius: #{$comment-border-radius};
+  --comment-box-shadow: #{$comment-box-shadow};
+
+  margin: 1.5rem 0;
+  padding: var(--comment-padding);
+  color: var(--comment-color);
+  font-size: var(--comment-font-size);
+  background-color: var(--comment-bg);
+  border-radius: var(--comment-border-radius);
+  box-shadow: var(--comment-box-shadow);
+  border-left: 5px solid var(--comment-border-color, #007bff);
+
+  &-header {
+    font-weight: bold;
+    margin-bottom: 0.75rem;
+  }
+
+  &-body {
+    margin-bottom: 0.75rem;
+    line-height: 1.5;
+  }
+
+  &-footer {
+    font-size: 0.875rem;
+    color: $gray-600;
+    text-align: right;
+  }
+
+  @each $type, $color in $comment-types {
+    &-#{$type} {
+      --comment-border-color: #{$color};
+      background-color: color.adjust($color, $lightness: 40%);
+      color: color.adjust($color, $lightness: -40%);
+    }
+  }
+}
