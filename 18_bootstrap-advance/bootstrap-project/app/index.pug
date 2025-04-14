@@ -18,10 +18,36 @@ html(lang="ru")
         div.col Second
         div.col Third
 
-      h3 Мудрость дня
+      h2.mt-5 Создание пользовательского компонента 
+
+      h3.mt-4 Компонент "цитата"
+
+      h4.mt-3 Мудрость дня
       blockquote(class='citation citation-warning')
         .citation-body
           | Основная задача не в том, чтобы найти ошибку.
           | А в том, чтобы найти условия, при которых код продолжает свою работу
         .citation-footer 
           cite Кирилл Мокевнин
+
+      h3.mt-4 Компонент "комментарий"
+
+      div(class='comment comment-success')
+        .comment-header Комментарий от пользователя
+        .comment-body Это успешный комментарий. Он выделяется зеленым цветом.
+        .comment-footer 10 минут назад
+
+      div(class='comment comment-danger')
+        .comment-header Комментарий от администратора
+        .comment-body Это комментарий сигнализирующий об ошибке. Он выделяется красным цветом.
+        .comment-footer 5 минут назад
+
+      div(class='comment comment-info')
+        .comment-header Комментарий от модератора
+        .comment-body Это информационный комментарий. Он выделяется синим цветом.
+        .comment-footer 2 минут назад
+
+      div(class='comment comment-warning')
+        .comment-header Комментарий от гостя
+        .comment-body Это предупреждающий комментарий. Он выделяется желтым цветом.
+        .comment-footer 1 минуту назад

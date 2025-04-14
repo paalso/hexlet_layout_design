@@ -11916,7 +11916,7 @@ textarea.form-control-lg {
 }
 .citation > .citation-footer {
   margin: var(--bs-citation-footer-margin);
-  padding: var(--bs-citation-footer-padding);
+  -padding: var(--bs-citation-footer-padding);
   font-size: var(--bs-citation-footer-font-size);
   font-style: italic;
   border-top: var(--bs-citation-footer-border);
@@ -11960,4 +11960,58 @@ textarea.form-control-lg {
 .citation-dark {
   --bs-citation-color: var(--bs-dark-text-emphasis);
   --bs-citation-bg: var(--bs-dark-bg-subtle);
+}
+
+.comment {
+  --bs-comment-spacer: 1rem;
+  --bs-comment-margin: 1.5rem 0;
+  --bs-comment-padding: 1.5rem 1.5rem;
+  --bs-comment-font-size: 1rem;
+  --bs-comment-border-radius: 0.3rem;
+  --bs-comment-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  --bs-comment-color: #343a40;
+  --bs-comment-bg: #fff;
+  --bs-comment-border-color: #007bff;
+  margin: var(--bs-comment-margin);
+  padding: var(--bs-comment-padding);
+  color: var(--bs-comment-color);
+  background-color: var(--bs-comment-bg);
+  box-shadow: var(--bs-comment-box-shadow);
+  border-radius: var(--bs-comment-border-radius);
+  border-left: var(--bs-comment-border-color) 5px solid;
+}
+
+.comment-header {
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+}
+
+.comment-body {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.comment-footer {
+  --bs-comment-footer-font-size: 0.875rem;
+  --bs-comment-color-muted: #6c757d;
+  font-size: var(--bs-comment-footer-font-size);
+  color: var(--bs-comment-color-muted);
+  text-align: right;
+}
+
+.comment.comment-success {
+  --bs-comment-bg: #84e8ba;
+  --bs-comment-border-color: #28a745;
+}
+.comment.comment-danger {
+  --bs-comment-bg: #fae3e5;
+  --bs-comment-border-color: #dc3545;
+}
+.comment.comment-info {
+  --bs-comment-bg: #cdf4fc;
+  --bs-comment-border-color: #17a2b8;
+}
+.comment.comment-warning {
+  --bs-comment-bg: #fff4d3;
+  --bs-comment-border-color: #ffc107;
 }
