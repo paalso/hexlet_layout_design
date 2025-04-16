@@ -1,7 +1,24 @@
-$enable-shadows: true; // включаем миксин box-shadow
+// Настройки Bootstrap (до всех импортов!)
+$enable-shadows: true;
 $font-family-serif: "Times New Roman", Times, serif;
 
+// Подключение Bootstrap core
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/variables-dark";
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+// Кастомные утилиты
+@import "./utilities/utilities";
+
+// Генерация утилит
+@import "../../node_modules/bootstrap/scss/utilities/api";
+
+// Весь Bootstrap (на финальном этапе)
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Компоненты
 @import "./component/citation";
 @import "./component/comment";
-

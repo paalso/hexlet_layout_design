@@ -1,4 +1,4 @@
-const { src, dest, parallel, watch } = require('gulp');
+const { src, dest, parallel, series, watch } = require('gulp');
 const concat = require('gulp-concat');
 const sass = require('gulp-sass')(require('sass'));
 const pug = require('gulp-pug');
@@ -44,5 +44,5 @@ const pug2html = () => {
     .pipe(browserSync.stream())
 };
 
-exports.build = parallel(scripts, sass2css, pug2html);
+exports.build = series(scripts, sass2css, pug2html);
 exports.default = browsersync;

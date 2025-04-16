@@ -1,0 +1,25 @@
+@use 'sass:map';
+
+$utilities: map.merge(
+  $utilities,
+  (
+    "cursor": (
+      property: cursor,
+      values: pointer help wait progress zoom-in zoom-out none,
+    )
+  )
+);
+
+// https://ru.hexlet.io/courses/bootstrap-advanced/lessons/creating-a-utility/exercise_unit
+// https://ru.hexlet.io/code_reviews/1779086
+$utilities: map.merge(
+  $utilities,
+  (
+    "background-color": map.merge(
+      map.get($utilities, "background-color"),
+      (
+        state: hover
+      ),
+    ),
+  )
+);

@@ -30,7 +30,9 @@ html(lang="ru")
         .citation-footer 
           cite Кирилл Мокевнин
 
-      h3.mt-4 Компонент "комментарий"
+      h4.mt-4
+        a(href='https://ru.hexlet.io/courses/bootstrap-advanced/lessons/creating-a-component/exercise_unit')
+          | Exercise: Компонент "комментарий"
 
       div(class='comment comment-success')
         .comment-header Комментарий от пользователя
@@ -51,3 +53,35 @@ html(lang="ru")
         .comment-header Комментарий от гостя
         .comment-body Это предупреждающий комментарий. Он выделяется желтым цветом.
         .comment-footer 1 минуту назад
+
+      // Пользовательские утилиты
+      h2.mt-5 Создание пользовательских утилит
+
+      // Тест утилиты cursor
+      h3.mt-4.mb-2 Тест утилиты cursor
+      div.d-flex.flex-wrap.gap-3
+        each val in ['pointer', 'help', 'wait', 'progress', 'zoom-in', 'zoom-out', 'none']
+          div(class=`cursor-${val} border p-3`, style="border: 1px solid #ccc;")
+            | Курсор: #{val}
+
+      // Тест hover:bg-* утилит
+      h3.mt-4.mb-2 Тест утилиты hover:bg
+      div.d-flex.flex-wrap.gap-3
+        each color in ['primary', 'success', 'warning', 'danger', 'info']
+          - const hoverClass = `bg-${color}-hover`
+          div(class=[hoverClass, 'text-white', 'p-3', 'rounded'].join(' '), style="background-color: #6c757d; transition: background-color 0.3s;")
+            | Наведи на меня (#{color})
+
+      h4.mt-4
+        a(href='https://ru.hexlet.io/courses/bootstrap-advanced/lessons/creating-a-utility/exercise_unit')
+          | Exercise: Обновление утилиты background-color
+
+      //- https://ru.hexlet.io/courses/bootstrap-advanced/lessons/creating-a-utility/exercise_unit
+      //- https://ru.hexlet.io/code_reviews/1779086
+      h1 Utility Classes Test
+
+      - const bg_classes = ["Primary", "Secondary", "Success", "Info", "Warning", "Danger", "Light"]
+      
+      each color in bg_classes
+        - const bg_class = `bg-${color.toLowerCase()}-hover`;
+        p(class=bg_class) #{color}
