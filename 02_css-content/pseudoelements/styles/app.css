@@ -1,0 +1,40 @@
+/* https://ru.hexlet.io/courses/css-content/lessons/pseudoelements/exercise_unit */
+/* https://ru.hexlet.io/code_reviews/1778640 */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font: 18px/1.5 sans-serif;
+}
+
+.profile-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+
+/* BEGIN (write your solution here) */
+.profile-card h2::before {
+  content: '👤';
+  margin-right: 5px;
+}
+
+.profile-card h2::after {
+  display: block;
+  content: '';
+  width: 100%;
+  margin-top: 5px;
+  height: 2px;
+  background-color: #ccc;
+}
+
+.profile-card p::first-letter {
+  color: #6936f4;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+/* END */

@@ -1,3 +1,5 @@
+/* https://ru.hexlet.io/code_reviews/1779710 */
+
 body {
   display: flex;
   align-items: center;
@@ -22,7 +24,7 @@ small {
   padding: 1rem;
 
   /* BEGIN (write your solution here) */
-  overflow: scroll;
+  overflow-y: hidden;
   /* END */
 
   background: #fff;
@@ -46,7 +48,7 @@ small {
   margin: 0;
 
   /* BEGIN (write your solution here) */
-  overflow: hidden;
+  overflow-x: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   /* END */
