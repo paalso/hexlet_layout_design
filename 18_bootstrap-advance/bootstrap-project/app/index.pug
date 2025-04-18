@@ -6,6 +6,7 @@ html(lang="ru")
     meta(name="viewport" content="width=device-width,initial-scale=1")
     meta(name="description" content="")
     link(rel="stylesheet" type="text/css" href="styles/main.css")
+    script(src="./js/theme_switch.js")
   body
     div.container
       h1 Hello, advanced Bootstrap!
@@ -96,3 +97,55 @@ html(lang="ru")
           each color in bg_classes
             - const bg_class = `text-bg-${color.toLowerCase()}`;
             div(class=[bg_class, 'col', 'p-3'].join(' ')) #{color}
+
+      h2.mt-5 Темная и светлая тема
+
+      - const theme="dark";
+
+      section(data-tag="dark-light-theme-section" data-bs-theme=theme style="width: 500px; margin: 0 auto")
+
+      .form-check.form-switch.form-check-reverse.display-6
+          input#darkModeSwitch.form-check-input(type="checkbox" role="switch")
+          label.form-check-label(for="darkModeSwitch") Тёмная тема
+
+      .container
+          .border.row.lh-1.mt-5.p-5.rounded-5
+          .align-items-center.col.d-flex.flex-wrap.mb-3
+              h1.fs-6.lh-1.m-0.text-uppercase Посадочный талон
+              span.fs-6.fw-light.ms-2.text-dark-emphasis.text-uppercase Boarding Pass
+
+          .border.border-2.border-warning.col-12.mb-5.px-5.py-3.rounded-4
+              .gap-4.row.row-cols-1
+              .align-items-center.col.d-flex.flex-wrap
+                  h2.fs-6.lh-1.m-0.text-uppercase Рейс
+                  span.fs-6.fw-light.ms-2.text-dark-emphasis.text-uppercase Flight
+                  p.fs-2.fw-bold.mb-0.mt-2.w-100 SU 2101
+
+              .align-items-center.col.d-flex.flex-wrap
+                  h2.fs-6.lh-1.m-0.text-uppercase Посадка
+                  span.fs-6.fw-light.ms-2.text-dark-emphasis.text-uppercase Boarding
+                  p.fs-2.fw-bold.mb-0.mt-2.w-100 17:55–18:20
+
+              .align-items-center.d-flex.flex-wrap
+                  h2.fs-6.lh-1.m-0.text-uppercase Выход
+                  span.fs-6.fw-light.ms-2.text-dark-emphasis.text-uppercase Gate
+                  p.fs-2.fw-bold.mb-0.mt-2.text-primary.w-100 C1
+
+              .align-items-center.col.d-flex.flex-wrap
+                  h2.fs-6.lh-1.m-0.text-uppercase Место
+                  span.fs-6.fw-light.ms-2.text-dark-emphasis.text-uppercase Seat
+                  p.fs-2.fw-bold.mb-0.mt-2.text-primary.w-100 F12
+
+          .col-12.d-flex
+              .font-monospace.me-5
+              .d-flex.flex-wrap.text-info
+                  span.w-100.fs-6.text-dark-emphasis.text-uppercase 26.06.2020
+                  h2.m-0.text-uppercase Berlin
+                  span.h2.mb-0.ms-2.text-dark-emphasis.text-uppercase SVO
+                  p.fs-2.fw-bold.mb-0.w-100 18:45
+              .display-1.text-dark-emphasis ↓
+              .d-flex.flex-wrap.text-success
+                  span.w-100.fs-6.text-dark-emphasis.text-uppercase 27.06.2020
+                  h2.m-0.text-uppercase Tokyo
+                  span.h2.mb-0.ms-2.text-dark-emphasis.text-uppercase VVO
+                  p.fs-2.fw-bold.mb-0.w-100 01:20

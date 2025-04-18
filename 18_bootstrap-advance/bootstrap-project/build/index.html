@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="description" content="">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <script src="js/theme_switch.js"></script>
   </head>
   <body>
     <div class="container">
@@ -96,6 +97,49 @@
           <div class="text-bg-danger col p-3">Danger</div>
           <div class="text-bg-light col p-3">Light</div>
           <div class="text-bg-dark col p-3">Dark</div>
+        </div>
+      </div>
+      <h2 class="mt-5">Темная и светлая тема</h2>
+      <section data-tag="dark-light-theme-section" data-bs-theme="dark" style="width: 500px; margin: 0 auto"></section>
+      <div class="form-check form-switch form-check-reverse display-6">
+        <input class="form-check-input" id="darkModeSwitch" type="checkbox" role="switch">
+        <label class="form-check-label" for="darkModeSwitch">Тёмная тема</label>
+      </div>
+      <div class="container">
+        <div class="border row lh-1 mt-5 p-5 rounded-5"></div>
+        <div class="align-items-center col d-flex flex-wrap mb-3">
+          <h1 class="fs-6 lh-1 m-0 text-uppercase">Посадочный талон</h1><span class="fs-6 fw-light ms-2 text-dark-emphasis text-uppercase">Boarding Pass</span>
+        </div>
+        <div class="border border-2 border-warning col-12 mb-5 px-5 py-3 rounded-4">
+          <div class="gap-4 row row-cols-1"></div>
+          <div class="align-items-center col d-flex flex-wrap">
+            <h2 class="fs-6 lh-1 m-0 text-uppercase">Рейс</h2><span class="fs-6 fw-light ms-2 text-dark-emphasis text-uppercase">Flight</span>
+            <p class="fs-2 fw-bold mb-0 mt-2 w-100">SU 2101</p>
+          </div>
+          <div class="align-items-center col d-flex flex-wrap">
+            <h2 class="fs-6 lh-1 m-0 text-uppercase">Посадка</h2><span class="fs-6 fw-light ms-2 text-dark-emphasis text-uppercase">Boarding</span>
+            <p class="fs-2 fw-bold mb-0 mt-2 w-100">17:55–18:20</p>
+          </div>
+          <div class="align-items-center d-flex flex-wrap">
+            <h2 class="fs-6 lh-1 m-0 text-uppercase">Выход</h2><span class="fs-6 fw-light ms-2 text-dark-emphasis text-uppercase">Gate</span>
+            <p class="fs-2 fw-bold mb-0 mt-2 text-primary w-100">C1</p>
+          </div>
+          <div class="align-items-center col d-flex flex-wrap">
+            <h2 class="fs-6 lh-1 m-0 text-uppercase">Место</h2><span class="fs-6 fw-light ms-2 text-dark-emphasis text-uppercase">Seat</span>
+            <p class="fs-2 fw-bold mb-0 mt-2 text-primary w-100">F12</p>
+          </div>
+        </div>
+        <div class="col-12 d-flex">
+          <div class="font-monospace me-5"></div>
+          <div class="d-flex flex-wrap text-info"><span class="w-100 fs-6 text-dark-emphasis text-uppercase">26.06.2020</span>
+            <h2 class="m-0 text-uppercase">Berlin</h2><span class="h2 mb-0 ms-2 text-dark-emphasis text-uppercase">SVO</span>
+            <p class="fs-2 fw-bold mb-0 w-100">18:45</p>
+          </div>
+          <div class="display-1 text-dark-emphasis">↓</div>
+          <div class="d-flex flex-wrap text-success"><span class="w-100 fs-6 text-dark-emphasis text-uppercase">27.06.2020</span>
+            <h2 class="m-0 text-uppercase">Tokyo</h2><span class="h2 mb-0 ms-2 text-dark-emphasis text-uppercase">VVO</span>
+            <p class="fs-2 fw-bold mb-0 w-100">01:20</p>
+          </div>
         </div>
       </div>
     </div>
