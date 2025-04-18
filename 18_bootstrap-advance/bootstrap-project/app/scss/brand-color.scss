@@ -1,0 +1,21 @@
+@use "sass:map";
+
+$brand-theme-colors: (
+	"primary": #a8d8ea,
+	"secondary": #aa96da,
+	"success": #bbfcba,
+	"danger": #fcbad3,
+	"warning": #ffffd2,
+	"info": #96a9da,
+	"light": #f0f8ff,
+	"dark": #696969
+);
+
+$primary: map.get($brand-theme-colors, "primary");
+$secondary: map.get($brand-theme-colors, "secondary");
+$success: map.get($brand-theme-colors, "success");
+$danger: map.get($brand-theme-colors, "danger");
+$warning: map.get($brand-theme-colors, "warning");
+$info: map.get($brand-theme-colors, "info");
+$light: map.get($brand-theme-colors, "light");
+$dark: map.get($brand-theme-colors, "dark");

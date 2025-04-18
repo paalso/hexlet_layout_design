@@ -80,8 +80,19 @@ html(lang="ru")
       //- https://ru.hexlet.io/code_reviews/1779086
       h1 Utility Classes Test
 
-      - const bg_classes = ["Primary", "Secondary", "Success", "Info", "Warning", "Danger", "Light"]
-      
+      - const bg_classes = ["Primary", "Secondary", "Success", "Info", "Warning", "Danger", "Light", "Dark"]
+
       each color in bg_classes
         - const bg_class = `bg-${color.toLowerCase()}-hover`;
         p(class=bg_class) #{color}
+
+        //- https://ru.hexlet.io/courses/bootstrap-advanced/lessons/color-scheme/exercise_unit
+        //- https://ru.hexlet.io/code_reviews/1780927
+
+      h2.mt-5 Цветовые схемы Bootstrap
+
+      .container.p-5
+        .row.gap-3
+          each color in bg_classes
+            - const bg_class = `text-bg-${color.toLowerCase()}`;
+            div(class=[bg_class, 'col', 'p-3'].join(' ')) #{color}

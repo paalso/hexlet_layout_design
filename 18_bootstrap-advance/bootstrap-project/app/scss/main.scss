@@ -2,6 +2,9 @@
 $enable-shadows: true;
 $font-family-serif: "Times New Roman", Times, serif;
 
+// Кастомная цветовая схема (ДОЛЖНА идти ДО variables)
+@import "./brand-color";
+
 // Подключение Bootstrap core
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables";
