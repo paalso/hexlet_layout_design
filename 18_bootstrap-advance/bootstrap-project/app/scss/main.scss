@@ -3,7 +3,7 @@ $enable-shadows: true;
 $font-family-serif: "Times New Roman", Times, serif;
 
 // Кастомная цветовая схема (ДОЛЖНА идти ДО variables)
-@import "./brand-color";
+// @import "./brand-color";
 
 // Подключение Bootstrap core
 @import "../../node_modules/bootstrap/scss/functions";
@@ -19,8 +19,10 @@ $font-family-serif: "Times New Roman", Times, serif;
 // Генерация утилит
 @import "../../node_modules/bootstrap/scss/utilities/api";
 
+
 // Весь Bootstrap (на финальном этапе)
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
 
 // Компоненты
 @import "./component/citation";
